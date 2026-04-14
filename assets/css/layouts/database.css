@@ -1,0 +1,215 @@
+/**
+ * evolvewp-predictiveerp - Database Layout Styles
+ * 
+ * Layout structures for database administration pages.
+ * 
+ * @package evolvewp-predictiveerp/CSS/Layouts
+ * @since 1.0.0
+ */
+
+/* Database Settings Container */
+.evolvewp-predictiveerp-database-settings {
+    margin: var(--evolvewp-predictiveerp-spacing-xl) 0;
+}
+
+/* Install Tables Action */
+.evolvewp-predictiveerp-install-tables-action {
+    margin-top: var(--evolvewp-predictiveerp-spacing-lg);
+}
+
+.evolvewp-predictiveerp-install-tables-action .spinner {
+    visibility: hidden;
+    margin-left: var(--evolvewp-predictiveerp-spacing-md);
+    vertical-align: middle;
+}
+
+.evolvewp-predictiveerp-install-tables-action .spinner.is-active {
+    visibility: visible;
+}
+
+/* Data Tables Container */
+.evolvewp-predictiveerp-data-tables-container {
+    margin: var(--evolvewp-predictiveerp-spacing-xl) 0;
+}
+
+/* Section Header */
+.evolvewp-predictiveerp-section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--evolvewp-predictiveerp-spacing-lg);
+}
+
+.evolvewp-predictiveerp-section-header h2 {
+    margin: 0;
+}
+
+.evolvewp-predictiveerp-section-actions {
+    display: flex;
+    gap: var(--evolvewp-predictiveerp-spacing-md);
+}
+
+.evolvewp-predictiveerp-section-actions .button {
+    display: flex;
+    align-items: center;
+}
+
+.evolvewp-predictiveerp-section-actions .dashicons {
+    margin-right: 5px;
+}
+
+.evolvewp-predictiveerp-section-description {
+    margin-bottom: var(--evolvewp-predictiveerp-spacing-xl);
+    color: #666;
+}
+
+/* Table Groups */
+.evolvewp-predictiveerp-table-group {
+    margin-bottom: 30px;
+}
+
+.evolvewp-predictiveerp-table-group h4 {
+    margin: 15px 0 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #eee;
+}
+
+/* Tables Grid */
+.evolvewp-predictiveerp-tables-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: var(--evolvewp-predictiveerp-spacing-xl);
+    margin-top: var(--evolvewp-predictiveerp-spacing-xl);
+}
+
+/* Stats Layout */
+.evolvewp-predictiveerp-stats-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--evolvewp-predictiveerp-spacing-lg);
+    margin-bottom: var(--evolvewp-predictiveerp-spacing-xl);
+}
+
+.evolvewp-predictiveerp-stats-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--evolvewp-predictiveerp-spacing-xl);
+    margin-bottom: var(--evolvewp-predictiveerp-spacing-xl);
+}
+
+.evolvewp-predictiveerp-stats-column {
+    flex: 1;
+    min-width: 300px;
+}
+
+.evolvewp-predictiveerp-stats-table {
+    background: var(--evolvewp-predictiveerp-color-white);
+    border: 1px solid #ccd0d4;
+    border-radius: var(--evolvewp-predictiveerp-border-radius);
+    overflow: hidden;
+}
+
+/* API Details Section */
+.evolvewp-predictiveerp-api-details-section {
+    margin-bottom: var(--evolvewp-predictiveerp-spacing-xl);
+}
+
+.evolvewp-predictiveerp-api-details-section h3 {
+    margin-top: 0;
+    margin-bottom: var(--evolvewp-predictiveerp-spacing-md);
+    font-size: 16px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
+}
+
+/* Database Summary */
+.evolvewp-predictiveerp-database-summary {
+    margin: 20px 0;
+    padding: 15px;
+    background-color: #fff;
+    border: 1px solid #ccd0d4;
+    border-radius: 4px;
+}
+
+/* Table Status Styling */
+.evolvewp-predictiveerp-table-exists {
+    color: #46b450;
+    font-weight: bold;
+}
+
+.evolvewp-predictiveerp-table-missing {
+    color: #dc3232;
+    font-weight: bold;
+}
+
+.evolvewp-predictiveerp-missing-table {
+    background-color: #fff9f9 !important;
+}
+
+.evolvewp-predictiveerp-warning-table {
+    background-color: #ffffd8 !important;
+}
+
+.evolvewp-predictiveerp-table-warning {
+    display: flex;
+    align-items: center;
+}
+
+.evolvewp-predictiveerp-table-warning .dashicons {
+    color: #f0b849;
+    margin-right: 5px;
+}
+
+/* Filter Forms */
+.evolvewp-predictiveerp-filter-form {
+    background: #fff;
+    border: 1px solid #ccd0d4;
+    border-radius: 4px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.filter-controls {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.filter-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    align-items: flex-end;
+}
+
+.filter-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.filter-actions {
+    display: flex;
+    gap: 5px;
+}
+
+/* Feature Notice */
+.feature-not-implemented {
+    padding: 15px;
+    background-color: #f8f8f8;
+    border-left: 4px solid #646970;
+    margin-bottom: 15px;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 782px) {
+    .filter-row {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .filter-item {
+        width: 100%;
+    }
+}
+
+/* Legacy classes mapping for backward compatibility */

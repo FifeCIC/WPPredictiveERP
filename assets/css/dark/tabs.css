@@ -1,0 +1,59 @@
+/**
+ * evolvewp-predictiveerp Dark Theme - Tabs Layout Styles
+ * 
+ * Dark theme overrides for tab interfaces.
+ * 
+ * @package evolvewp-predictiveerp/CSS/Dark
+ * @since 1.0.0
+ */
+
+/* Tabs Navigation */
+.evolvewp-predictiveerp-dark-theme .evolvewp-predictiveerp-tabs-nav {
+    border-bottom: 1px solid var(--evolvewp-predictiveerp-color-gray-400);
+}
+
+.evolvewp-predictiveerp-dark-theme .evolvewp-predictiveerp-tab-nav-item a {
+    color: var(--evolvewp-predictiveerp-color-gray-700);
+    background-color: transparent;
+}
+
+.evolvewp-predictiveerp-dark-theme .evolvewp-predictiveerp-tab-nav-item a:hover {
+    background-color: var(--evolvewp-predictiveerp-color-gray-100);
+    color: var(--evolvewp-predictiveerp-color-black);
+}
+
+.evolvewp-predictiveerp-dark-theme .evolvewp-predictiveerp-tab-nav-item.active a {
+    border-color: var(--evolvewp-predictiveerp-color-gray-400);
+    background-color: var(--evolvewp-predictiveerp-color-white);
+    color: var(--evolvewp-predictiveerp-color-black);
+    border-bottom: 1px solid var(--evolvewp-predictiveerp-color-white);
+}
+
+/* Tab Content */
+.evolvewp-predictiveerp-dark-theme .evolvewp-predictiveerp-tab-content {
+    background-color: var(--evolvewp-predictiveerp-color-white);
+    color: var(--evolvewp-predictiveerp-color-black);
+}
+
+/* WordPress Nav Tabs Override */
+.evolvewp-predictiveerp-dark-theme .nav-tab-wrapper {
+    border-bottom: 1px solid var(--evolvewp-predictiveerp-color-gray-400);
+}
+
+.evolvewp-predictiveerp-dark-theme .nav-tab {
+    color: var(--evolvewp-predictiveerp-color-gray-700);
+    background-color: transparent;
+    border: 1px solid transparent;
+}
+
+.evolvewp-predictiveerp-dark-theme .nav-tab:hover {
+    background-color: var(--evolvewp-predictiveerp-color-gray-100);
+    color: var(--evolvewp-predictiveerp-color-black);
+}
+
+.evolvewp-predictiveerp-dark-theme .nav-tab-active {
+    border-color: var(--evolvewp-predictiveerp-color-gray-400);
+    background-color: var(--evolvewp-predictiveerp-color-white);
+    color: var(--evolvewp-predictiveerp-color-black);
+    border-bottom-color: var(--evolvewp-predictiveerp-color-white);
+}

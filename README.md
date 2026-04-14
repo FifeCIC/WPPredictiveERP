@@ -1,74 +1,41 @@
 # EvolveWP PredictiveERP
 
-🚧 **In Development** | **Coming Soon**
-
-📈 **AI-driven business intelligence, financial forecasting, and resource planning directly within WordPress.**
+**Finance, stock, and predictive analytics for the EvolveWP ecosystem.**
 
 Built by [FifeCIC](https://fifecic.scot) | Part of the [EvolveWP Ecosystem](https://evolvewp.dev)
 
 ---
 
-## 📖 Overview
+## Overview
 
-**EvolveWP PredictiveERP** brings enterprise-grade resource planning to WordPress. It moves beyond simple reporting by using historical data to forecast future trends in revenue, resource usage, and project capacity.
+EvolveWP PredictiveERP brings invoicing, expenses, stock management, and
+predictive analytics into WordPress. Time-to-invoice workflows, purchasing,
+and forecasting — all native WordPress admin UI.
 
-Designed to integrate with *OpsStudio* (for project data) and *Client Journey* (for revenue data), it acts as the "brain" of the EvolveWP suite, helping business owners make data-backed decisions.
+**Requires:** [EvolveWP Core](https://github.com/FifeCIC/EvolveWP.Core)
 
----
+## Planned Features
 
-## ✨ Planned Features
+- Company setup wizard
+- Contact and company management
+- Invoicing and expenses
+- Time-to-invoice workflow (integrates with OpsStudio)
+- Stock management and purchasing
+- Sales pipeline and deal tracking
+- Predictive analytics and forecasting
 
-✅ **Financial Forecasting** - Project cash flow and revenue based on active subscriptions and project pipelines.
-✅ **Resource Capacity Planning** - Visualise team availability and predict hiring needs.
-✅ **AI Insights** - Anomaly detection for expenses and automated suggestions for efficiency.
-✅ **Unified Reporting** - Centralised dashboard combining data from all EvolveWP plugins.
-✅ **Scenario Modelling** - "What if" analysis for pricing changes or new project intake.
+## Installation
 
----
+1. Install and activate [EvolveWP Core](https://github.com/FifeCIC/EvolveWP.Core)
+2. Upload `EvolveWPPredictiveERP` to `/wp-content/plugins/`
+3. Activate via WordPress Admin → Plugins
 
-## 🚀 Getting Started
+## Requirements
 
-### Prerequisites
-
-- WordPress 6.0+
+- WordPress 5.6+
 - PHP 7.4+
-- [EvolveWP Core](https://github.com/FifeCIC/EvolveWPCore) (Required)
-- [EvolveWP OpsStudio](https://github.com/FifeCIC/WPOpsStudio) (Recommended for full functionality)
+- EvolveWP Core (required dependency)
 
-### Installation
+## Licence
 
-1. **Clone the Repository**
-   ```bash
-   git clone https://github.com/FifeCIC/EvolveWPPredictiveERP.git
-Install Dependencies
-
-bash
-composer install
-npm install
-Build Assets
-
-bash
-npm run build
-Activate
-
-Upload to your /wp-content/plugins/ directory.
-Activate EvolveWP PredictiveERP via the WordPress Admin.
-📁 Project Structure
-text
- Show full code block 
-evolvewp-predictive-erp/
-├── evolvewp-predictive-erp.php # Main plugin file
-├── includes/
-│   ├── Admin/                  # Dashboard & Reports UI
-│   ├── Engine/                 # Forecasting & Analysis Logic
-│   ├── Models/                 # Data Models (Forecast, Report)
-│   └── Integrations/           # Connectors for OpsStudio/ClientJourney
-├── assets/                     # Compiled CSS/JS (Charts.js/D3.js)
-└── tests/                      # PHPUnit tests
-🤝 Contributing
-We welcome contributions! Please see our Contribution Guidelines for details on coding standards and pull request processes.
-
-📜 License
-This project is licensed under the GPLv2 or later - see the LICENSE file for details.
-
-Built with ❤️ by FifeCIC, empowering local businesses with professional WordPress tools.
+GPL-3.0-or-later — see [LICENSE](LICENSE) for details.

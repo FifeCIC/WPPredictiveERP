@@ -1,0 +1,119 @@
+/**
+ * evolvewp-predictiveerp - Task Items Component Styles
+ * 
+ * Styles for task cards, current task display, and task actions.
+ * 
+ * HTML Structure:
+ * <div class="evolvewp-predictiveerp-task-item">
+ *   <div class="evolvewp-predictiveerp-task-item-header">
+ *     <h3 class="evolvewp-predictiveerp-task-item-title">Task Title</h3>
+ *     <span class="evolvewp-predictiveerp-task-item-badge">Status</span>
+ *   </div>
+ *   <div class="evolvewp-predictiveerp-task-item-body">
+ *     <div class="evolvewp-predictiveerp-task-item-meta">...</div>
+ *     <div class="evolvewp-predictiveerp-task-item-description">...</div>
+ *   </div>
+ *   <div class="evolvewp-predictiveerp-task-item-actions">...</div>
+ * </div>
+ * 
+ * @package evolvewp-predictiveerp/CSS/Components
+ * @since 1.0.0
+ */
+
+/* Task Item Container */
+.evolvewp-predictiveerp-task-item {
+    background: var(--evolvewp-predictiveerp-color-white);
+    border: var(--evolvewp-predictiveerp-border-standard);
+    border-radius: var(--evolvewp-predictiveerp-border-radius);
+    padding: var(--evolvewp-predictiveerp-spacing-xl);
+    margin-bottom: var(--evolvewp-predictiveerp-spacing-xl);
+    box-shadow: var(--evolvewp-predictiveerp-shadow);
+}
+
+/* Task Item Header */
+.evolvewp-predictiveerp-task-item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--evolvewp-predictiveerp-spacing-lg);
+    padding-bottom: var(--evolvewp-predictiveerp-spacing-md);
+    border-bottom: var(--evolvewp-predictiveerp-border-standard);
+}
+
+.evolvewp-predictiveerp-task-item-title {
+    margin: 0;
+    font-size: 18px;
+    font-weight: var(--evolvewp-predictiveerp-font-weight-semibold);
+}
+
+.evolvewp-predictiveerp-task-item-badge {
+    display: inline-block;
+    padding: 3px 8px;
+    border-radius: var(--evolvewp-predictiveerp-border-radius-sm);
+    font-size: 12px;
+    font-weight: var(--evolvewp-predictiveerp-font-weight-semibold);
+    text-transform: uppercase;
+}
+
+.evolvewp-predictiveerp-task-item-badge.in-progress {
+    background-color: #e9f3fa;
+    color: #1e6586;
+}
+
+.evolvewp-predictiveerp-task-item-badge.completed {
+    background-color: #f0f9eb;
+    color: #2a6b31;
+}
+
+.evolvewp-predictiveerp-task-item-badge.pending {
+    background-color: #f1f1f1;
+    color: #666;
+}
+
+.evolvewp-predictiveerp-task-item-badge.on-hold {
+    background-color: #fcf8e3;
+    color: #8a6d3b;
+}
+
+/* Task Item Body */
+.evolvewp-predictiveerp-task-item-body {
+    margin-bottom: var(--evolvewp-predictiveerp-spacing-lg);
+}
+
+.evolvewp-predictiveerp-task-item-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--evolvewp-predictiveerp-spacing-md);
+    margin-bottom: var(--evolvewp-predictiveerp-spacing-md);
+}
+
+.evolvewp-predictiveerp-task-item-meta-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.evolvewp-predictiveerp-task-item-meta-label {
+    font-size: 12px;
+    color: #666;
+    margin-bottom: 2px;
+}
+
+.evolvewp-predictiveerp-task-item-meta-value {
+    font-weight: var(--evolvewp-predictiveerp-font-weight-medium);
+}
+
+.evolvewp-predictiveerp-task-item-description {
+    margin-top: var(--evolvewp-predictiveerp-spacing-md);
+    line-height: 1.5;
+}
+
+/* Task Item Actions */
+.evolvewp-predictiveerp-task-item-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--evolvewp-predictiveerp-spacing-sm);
+    padding-top: var(--evolvewp-predictiveerp-spacing-md);
+    border-top: var(--evolvewp-predictiveerp-border-standard);
+}
+
+/* Legacy classes mapping for backward compatibility */

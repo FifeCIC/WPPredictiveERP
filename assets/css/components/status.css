@@ -1,0 +1,1219 @@
+/**
+ * evolvewp-predictiveerp - Status Component Styles
+ * 
+ * Status indicators, badges, and operational status elements.
+ * 
+ * HTML Structure:
+ * <div class="evolvewp-predictiveerp-status evolvewp-predictiveerp-status-active">
+ *   <span class="evolvewp-predictiveerp-status-indicator"></span>
+ *   <span class="evolvewp-predictiveerp-status-text">Status Text</span>
+ * </div>
+ * 
+ * @package evolvewp-predictiveerp/CSS/Components
+ * @since 1.0.0
+ */
+
+/* Status Badges */
+.evolvewp-predictiveerp-status {
+    display: inline-block;
+    padding: 3px 8px;
+    border-radius: var(--evolvewp-predictiveerp-border-radius-sm);
+    font-size: var(--evolvewp-predictiveerp-font-size-xs);
+    font-weight: var(--evolvewp-predictiveerp-font-weight-medium);
+}
+
+.evolvewp-predictiveerp-status-success {
+    background-color: #dff0d8;
+    color: var(--evolvewp-predictiveerp-color-success);
+}
+
+.evolvewp-predictiveerp-status-warning {
+    background-color: #fcf8e3;
+    color: var(--evolvewp-predictiveerp-color-warning-dark);
+}
+
+.evolvewp-predictiveerp-status-error {
+    background-color: #f2dede;
+    color: var(--evolvewp-predictiveerp-color-error-dark);
+}
+
+.evolvewp-predictiveerp-status-info {
+    background-color: #d9edf7;
+    color: var(--evolvewp-predictiveerp-color-info-dark);
+}
+
+/* Old Styles Mapping */
+/* Service Status Badges */
+.service-status-badge {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: var(--evolvewp-predictiveerp-border-radius-sm);
+    font-weight: var(--evolvewp-predictiveerp-font-weight-bold);
+}
+
+.service-status-badge.operational {
+    background-color: #edfaef;
+    color: var(--evolvewp-predictiveerp-color-success);
+}
+
+.service-status-badge.disruption {
+    background-color: var(--evolvewp-predictiveerp-color-warning-light);
+    color: var(--evolvewp-predictiveerp-color-warning-dark);
+}
+
+.service-status-badge.outage {
+    background-color: #fbeaea;
+    color: var(--evolvewp-predictiveerp-color-error);
+}
+
+/* Method Badges */
+.method-badge {
+    display: inline-block;
+    padding: 3px 8px;
+    border-radius: var(--evolvewp-predictiveerp-border-radius-sm);
+    font-size: var(--evolvewp-predictiveerp-font-size-xs);
+    font-weight: var(--evolvewp-predictiveerp-font-weight-bold);
+    color: var(--evolvewp-predictiveerp-color-white);
+    text-align: center;
+    min-width: 50px;
+}
+
+.method-get {
+    background-color: var(--evolvewp-predictiveerp-color-method-get);
+}
+
+.method-post {
+    background-color: var(--evolvewp-predictiveerp-color-method-post);
+}
+
+.method-put {
+    background-color: var(--evolvewp-predictiveerp-color-method-put);
+}
+
+.method-delete {
+    background-color: var(--evolvewp-predictiveerp-color-method-delete);
+}
+
+.method-ws {
+    background-color: var(--evolvewp-predictiveerp-color-method-ws);
+}
+
+/* Directive Type Badges */
+.evolvewp-predictiveerp-directive-type {
+    display: inline-block;
+    padding: 3px 8px;
+    border-radius: 3px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.evolvewp-predictiveerp-directive-type.bullish {
+    background-color: #c8e6c9;
+    color: #2e7d32;
+}
+
+.evolvewp-predictiveerp-directive-type.bearish {
+    background-color: #ffcdd2;
+    color: #c62828;
+}
+
+.evolvewp-predictiveerp-directive-type.neutral {
+    background-color: #e0e0e0;
+    color: #616161;
+}
+
+/* Directive Status Badges */
+.evolvewp-predictiveerp-directive-status {
+    display: inline-block;
+    padding: 3px 8px;
+    border-radius: 3px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.evolvewp-predictiveerp-directive-status.ready {
+    background-color: #bbdefb;
+    color: #1565c0;
+}
+
+.evolvewp-predictiveerp-directive-status.not-ready {
+    background-color: #ffe0b2;
+    color: #ef6c00;
+}
+
+/* Legacy classes mapping for backward compatibility */
+/* Premium Badge */
+.premium-badge {
+    display: inline-block;
+    background: var(--evolvewp-predictiveerp-color-premium);
+    color: var(--evolvewp-predictiveerp-color-white);
+    font-size: 10px;
+    padding: 2px 5px;
+    border-radius: var(--evolvewp-predictiveerp-border-radius-sm);
+    margin-left: 5px;
+}
+
+/* Feature Status Badge */
+.feature-status-badge {
+    display: inline-block;
+    padding: 3px 8px;
+    border-radius: var(--evolvewp-predictiveerp-border-radius-sm);
+    font-size: var(--evolvewp-predictiveerp-font-size-xs);
+    font-weight: var(--evolvewp-predictiveerp-font-weight-medium);
+}
+
+.status-live {
+    background: #d1ffd6;
+    color: var(--evolvewp-predictiveerp-color-success-dark);
+}
+
+.status-demo {
+    background: var(--evolvewp-predictiveerp-color-warning-light);
+    color: #96600c;
+}
+
+/* Completion Stats Section */
+.completion-stats {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    background: var(--evolvewp-predictiveerp-color-white);
+    border: 1px solid var(--evolvewp-predictiveerp-color-gray-200);
+    padding: 15px;
+}
+
+.stat-box {
+    margin-right: 30px;
+    margin-bottom: 10px;
+}
+
+.stat-label {
+    font-weight: var(--evolvewp-predictiveerp-font-weight-bold);
+    margin-right: 5px;
+}
+
+.feature-tab-link {
+    margin-left: 10px;
+    text-decoration: none;
+    color: var(--evolvewp-predictiveerp-color-wp-blue);
+}
+
+.feature-tab-link:hover {
+    color: var(--evolvewp-predictiveerp-color-wp-blue-hover);
+    text-decoration: underline;
+}
+
+/* Issue Status Badge */
+.issue-status-badge {
+    display: inline-block;
+    padding: 3px 8px;
+    border-radius: var(--evolvewp-predictiveerp-border-radius-sm);
+    font-size: var(--evolvewp-predictiveerp-font-size-xs);
+    text-transform: capitalize;
+}
+
+.issue-status-badge.open {
+    background-color: #2cbe4e;
+    color: var(--evolvewp-predictiveerp-color-white);
+}
+
+.issue-status-badge.closed {
+    background-color: #cb2431;
+    color: var(--evolvewp-predictiveerp-color-white);
+}
+
+/* Status Indicator System */
+.status-indicator {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.status-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.status-green {
+    background-color: var(--evolvewp-predictiveerp-color-success);
+}
+
+.status-orange {
+    background-color: var(--evolvewp-predictiveerp-color-warning);
+}
+
+.status-red {
+    background-color: var(--evolvewp-predictiveerp-color-error);
+}
+
+.status-grey {
+    background-color: #72777c;
+}
+
+/* Status Header with Actions */
+.status-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.status-header h3 {
+    margin: 0;
+}
+
+.status-actions {
+    display: flex;
+    gap: 5px;
+}
+
+/* Progress Bar */
+.progress-bar-wrapper {
+    background-color: #f0f0f1;
+    height: 16px;
+    position: relative;
+    border-radius: var(--evolvewp-predictiveerp-border-radius-sm);
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+.progress-bar {
+    background-color: var(--evolvewp-predictiveerp-color-wp-blue);
+    height: 100%;
+    border-radius: var(--evolvewp-predictiveerp-border-radius-sm);
+}
+
+/* Environment indicators */
+.demo-env {
+    color: var(--evolvewp-predictiveerp-color-orange);
+    font-weight: bold;
+}
+
+.live-env {
+    color: var(--evolvewp-predictiveerp-color-success);
+    font-weight: bold;
+}
+
+.live-trading {
+    color: var(--evolvewp-predictiveerp-color-error);
+    font-weight: bold;
+}
+
+.paper-trading {
+    color: var(--evolvewp-predictiveerp-color-info);
+    font-weight: bold;
+}
+
+/* Consensus indicators */
+.consensus-high { 
+    color: var(--evolvewp-predictiveerp-color-success); 
+    font-weight: bold; 
+}
+
+.consensus-medium { 
+    color: var(--evolvewp-predictiveerp-color-warning); 
+    font-weight: bold; 
+}
+
+.consensus-low { 
+    color: var(--evolvewp-predictiveerp-color-error-dark); 
+    font-weight: bold; 
+}
+
+/* Percentage difference indicators */
+.positive-pct { 
+    color: var(--evolvewp-predictiveerp-color-success); 
+    font-weight: bold; 
+}
+
+.negative-pct { 
+    color: var(--evolvewp-predictiveerp-color-error-dark); 
+    font-weight: bold; 
+}
+
+/* Status Containers */
+.evolvewp-predictiveerp-status-header {
+    border-bottom: 1px solid var(--evolvewp-predictiveerp-color-gray-200);
+    padding: var(--evolvewp-predictiveerp-spacing-lg);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--evolvewp-predictiveerp-color-gray-100);
+}
+
+.evolvewp-predictiveerp-status-header h3 {
+    margin: 0;
+    font-size: var(--evolvewp-predictiveerp-font-size);
+    font-weight: var(--evolvewp-predictiveerp-font-weight-semibold);
+}
+
+.evolvewp-predictiveerp-status-actions {
+    display: flex;
+    gap: var(--evolvewp-predictiveerp-spacing-md);
+}
+
+.evolvewp-predictiveerp-status-actions a {
+    text-decoration: none;
+    color: #555;
+}
+
+.evolvewp-predictiveerp-status-actions a:hover {
+    color: #0073aa;
+}
+
+/* Status Data Display */
+.evolvewp-predictiveerp-status-data-columns {
+    display: flex;
+    flex-wrap: wrap;
+    padding: var(--evolvewp-predictiveerp-spacing-lg);
+    gap: var(--evolvewp-predictiveerp-spacing-xl);
+}
+
+.evolvewp-predictiveerp-status-data-column {
+    flex: 1;
+    min-width: 250px;
+}
+
+.evolvewp-predictiveerp-status-data-item {
+    margin-bottom: var(--evolvewp-predictiveerp-spacing-xl);
+}
+
+.evolvewp-predictiveerp-status-label {
+    font-weight: var(--evolvewp-predictiveerp-font-weight-semibold);
+    margin-bottom: var(--evolvewp-predictiveerp-spacing-xs);
+}
+
+.evolvewp-predictiveerp-status-value {
+    font-size: 16px;
+    font-weight: var(--evolvewp-predictiveerp-font-weight-medium);
+    margin-bottom: var(--evolvewp-predictiveerp-spacing-xs);
+}
+
+.evolvewp-predictiveerp-status-value.active {
+    color: #46b450;
+}
+
+.evolvewp-predictiveerp-status-value.inactive {
+    color: #dc3232;
+}
+
+.evolvewp-predictiveerp-status-value.operational {
+    color: #46b450;
+}
+
+.evolvewp-predictiveerp-status-value.disruption, 
+.evolvewp-predictiveerp-status-value.outage, 
+.evolvewp-predictiveerp-status-value.maintenance {
+    color: #dc3232;
+}
+
+.evolvewp-predictiveerp-status-message {
+    color: #666;
+    font-size: 13px;
+    margin-bottom: var(--evolvewp-predictiveerp-spacing-xs);
+}
+
+.evolvewp-predictiveerp-status-timestamp {
+    font-size: 12px;
+    color: #999;
+}
+
+/* Rate Limits */
+.evolvewp-predictiveerp-rate-limits {
+    margin-top: var(--evolvewp-predictiveerp-spacing-xs);
+}
+
+.evolvewp-predictiveerp-rate-limit-item {
+    margin-bottom: var(--evolvewp-predictiveerp-spacing-md);
+}
+
+.evolvewp-predictiveerp-rate-limit-title {
+    font-weight: var(--evolvewp-predictiveerp-font-weight-medium);
+    margin-bottom: var(--evolvewp-predictiveerp-spacing-xs);
+}
+
+.evolvewp-predictiveerp-rate-limit-bar {
+    height: 6px;
+    background-color: #f1f1f1;
+    border-radius: 3px;
+    overflow: hidden;
+    margin-bottom: var(--evolvewp-predictiveerp-spacing-xs);
+}
+
+.evolvewp-predictiveerp-rate-limit-progress {
+    height: 100%;
+    background-color: #0073aa;
+    width: 0;
+}
+
+.evolvewp-predictiveerp-rate-limit-text {
+    font-size: 12px;
+    color: #666;
+}
+
+.evolvewp-predictiveerp-rate-limit-reset {
+    font-size: 12px;
+    color: #999;
+    margin-top: var(--evolvewp-predictiveerp-spacing-md);
+}
+
+/* API Status Indicators */
+.evolvewp-predictiveerp-api-status {
+    display: flex;
+    align-items: center;
+    gap: var(--evolvewp-predictiveerp-spacing-md);
+    padding: var(--evolvewp-predictiveerp-spacing-md) var(--evolvewp-predictiveerp-spacing-xl);
+    margin-left: auto;
+}
+
+.evolvewp-predictiveerp-api-status.active .evolvewp-predictiveerp-status-indicator {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #46b450;
+}
+
+.evolvewp-predictiveerp-api-status.inactive .evolvewp-predictiveerp-status-indicator {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #dc3232;
+}
+
+.evolvewp-predictiveerp-status-text {
+    font-weight: var(--evolvewp-predictiveerp-font-weight-medium);
+}
+
+.evolvewp-predictiveerp-api-status.active .evolvewp-predictiveerp-status-text {
+    color: #46b450;
+}
+
+.evolvewp-predictiveerp-api-status.inactive .evolvewp-predictiveerp-status-text {
+    color: #dc3232;
+}
+
+/* API Badges */
+.evolvewp-predictiveerp-api-badges {
+    display: flex;
+    gap: var(--evolvewp-predictiveerp-spacing-md);
+}
+
+.evolvewp-predictiveerp-api-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--evolvewp-predictiveerp-spacing-xs);
+    background: #f1f1f1;
+    color: #555;
+    font-size: 12px;
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+
+/* Key Status */
+.evolvewp-predictiveerp-key-status-container {
+    margin-bottom: var(--evolvewp-predictiveerp-spacing-lg);
+}
+
+.evolvewp-predictiveerp-key-status-container h5 {
+    margin: var(--evolvewp-predictiveerp-spacing-md) 0 var(--evolvewp-predictiveerp-spacing-xs);
+    font-size: var(--evolvewp-predictiveerp-font-size);
+    font-weight: var(--evolvewp-predictiveerp-font-weight-semibold);
+    color: #50575e;
+}
+
+.evolvewp-predictiveerp-key-status {
+    margin-bottom: var(--evolvewp-predictiveerp-spacing-md);
+    padding: 8px 10px;
+    border-radius: 3px;
+    font-size: 13px;
+    line-height: 1.5;
+    display: flex;
+    align-items: center;
+}
+
+.evolvewp-predictiveerp-key-status.missing-key {
+    background-color: #fdf2f2;
+    border-left: 4px solid #dc3232;
+}
+
+.evolvewp-predictiveerp-key-status.valid-key {
+    background-color: #f0f9eb;
+    border-left: 4px solid #46b450;
+}
+
+.evolvewp-predictiveerp-key-status .dashicons {
+    margin-right: var(--evolvewp-predictiveerp-spacing-xs);
+    vertical-align: middle;
+}
+
+.evolvewp-predictiveerp-key-status .dashicons-warning {
+    color: #dc3232;
+}
+
+.evolvewp-predictiveerp-key-status .dashicons-yes {
+    color: #46b450;
+}
+
+/* Mode Toggle Buttons */
+.evolvewp-predictiveerp-mode-toggle-button {
+    display: inline-block;
+    padding: 3px 8px;
+    border-radius: 3px;
+    font-size: 12px;
+    font-weight: var(--evolvewp-predictiveerp-font-weight-semibold);
+    text-transform: uppercase;
+    margin-left: 8px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Trading Mode Button Styles */
+.evolvewp-predictiveerp-trading-mode-toggle-button.paper {
+    background-color: #f0c33c;
+    color: #644c00;
+}
+
+.evolvewp-predictiveerp-trading-mode-toggle-button.live {
+    background-color: #46b450;
+    color: var(--evolvewp-predictiveerp-color-white);
+}
+
+/* Service Status Button Styles */
+.evolvewp-predictiveerp-service-status-toggle-button.operational {
+    background-color: #46b450;
+    color: var(--evolvewp-predictiveerp-color-white);
+}
+
+.evolvewp-predictiveerp-service-status-toggle-button.disabled {
+    background-color: #dc3232;
+    color: var(--evolvewp-predictiveerp-color-white);
+}
+
+/* Demo Mode Button Styles */
+.evolvewp-predictiveerp-demo-mode-toggle-button.demo-on {
+    background-color: #f0c33c;
+    color: #644c00;
+}
+
+.evolvewp-predictiveerp-demo-mode-toggle-button.demo-off {
+    background-color: #47a8d7;
+    color: var(--evolvewp-predictiveerp-color-white);
+}
+
+/* Button Forms */
+.evolvewp-predictiveerp-service-status-form, 
+.evolvewp-predictiveerp-trading-mode-button-form, 
+.evolvewp-predictiveerp-demo-mode-button-form {
+    display: inline-block;
+    margin-left: 8px;
+}
+
+/* Legacy classes mapping for backward compatibility */
+/* Algorithm Status Indicators */
+.evolvewp-predictiveerp-status-indicator-wrapper {
+    text-align: center;
+    margin: var(--evolvewp-predictiveerp-spacing-xl) 0;
+}
+
+.evolvewp-predictiveerp-status-indicator {
+    display: inline-flex;
+    align-items: center;
+    border-radius: 20px;
+    padding: 8px 16px;
+    background: #f1f1f1;
+}
+
+.evolvewp-predictiveerp-status-running {
+    background: #d4f4e2;
+    color: #1d9d74;
+}
+
+.evolvewp-predictiveerp-status-stopped {
+    background: #f8d7da;
+    color: #dc3545;
+}
+
+.evolvewp-predictiveerp-status-dot {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+.evolvewp-predictiveerp-status-running .evolvewp-predictiveerp-status-dot {
+    background-color: #1d9d74;
+    animation: pulse 2s infinite;
+}
+
+.evolvewp-predictiveerp-status-stopped .evolvewp-predictiveerp-status-dot {
+    background-color: #dc3545;
+}
+
+.evolvewp-predictiveerp-runtime-display {
+    text-align: center;
+    margin: var(--evolvewp-predictiveerp-spacing-xl) 0;
+}
+
+/* Trade Action Status */
+.evolvewp-predictiveerp-trade-action {
+    display: inline-block;
+    padding: 3px 8px;
+    border-radius: var(--evolvewp-predictiveerp-border-radius);
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.evolvewp-predictiveerp-trade-buy {
+    background-color: #d4f4e2;
+    color: #1d9d74;
+}
+
+.evolvewp-predictiveerp-trade-sell {
+    background-color: #f8d7da;
+    color: #dc3545;
+}
+
+.evolvewp-predictiveerp-score {
+    display: inline-block;
+    padding: 3px 8px;
+    border-radius: var(--evolvewp-predictiveerp-border-radius);
+    font-weight: bold;
+}
+
+.evolvewp-predictiveerp-score-high {
+    background-color: #d4f4e2;
+    color: #1d9d74;
+}
+
+.evolvewp-predictiveerp-score-medium {
+    background-color: #fff3cd;
+    color: #856404;
+}
+
+.evolvewp-predictiveerp-score-low {
+    background-color: #f8d7da;
+    color: #dc3545;
+}
+
+/* Legacy classes mapping for backward compatibility */
+/* Automation Status Indicators */
+.evolvewp-predictiveerp-status-card {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: var(--evolvewp-predictiveerp-spacing-lg);
+    background: var(--evolvewp-predictiveerp-color-gray-100);
+    border: 1px solid var(--evolvewp-predictiveerp-color-gray-200);
+    margin-bottom: var(--evolvewp-predictiveerp-spacing-xl);
+}
+
+.evolvewp-predictiveerp-status-dot {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: var(--evolvewp-predictiveerp-spacing-sm);
+}
+
+.evolvewp-predictiveerp-status-running .evolvewp-predictiveerp-status-dot {
+    background-color: #46b450;
+    box-shadow: 0 0 0 3px rgba(70, 180, 80, 0.3);
+}
+
+.evolvewp-predictiveerp-status-stopped .evolvewp-predictiveerp-status-dot {
+    background-color: #dc3232;
+    box-shadow: 0 0 0 3px rgba(220, 50, 50, 0.3);
+}
+
+.evolvewp-predictiveerp-runtime-display {
+    margin-right: var(--evolvewp-predictiveerp-spacing-xl);
+}
+
+/* Legacy classes mapping for backward compatibility */
+/* Database Table Status */
+.evolvewp-predictiveerp-table-status {
+    padding: 4px 8px;
+    border-radius: 3px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.evolvewp-predictiveerp-status-good {
+    background-color: #d4f9d4;
+    color: #1e7e1e;
+}
+
+.evolvewp-predictiveerp-status-warning {
+    background-color: #fff8e5;
+    color: #956d00;
+}
+
+.evolvewp-predictiveerp-status-error {
+    background-color: #ffd6d6;
+    color: #c72121;
+}
+
+.evolvewp-predictiveerp-process-status-badge {
+    padding: 3px 8px;
+    border-radius: 3px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.evolvewp-predictiveerp-status-badge-active {
+    background-color: #d4f9d4;
+    color: #1e7e1e;
+}
+
+.evolvewp-predictiveerp-status-badge-warning {
+    background-color: #fff8e5;
+    color: #956d00;
+}
+
+.evolvewp-predictiveerp-status-badge-error, 
+.evolvewp-predictiveerp-status-badge-inactive {
+    background-color: #ffd6d6;
+    color: #c72121;
+}
+
+.evolvewp-predictiveerp-status-badge-not-implemented {
+    background-color: #f0f0f0;
+    color: #6c6c6c;
+}
+
+/* Database Table Status */
+.evolvewp-predictiveerp-table-exists {
+    color: #46b450;
+    font-weight: bold;
+}
+
+.evolvewp-predictiveerp-table-missing {
+    color: #dc3232;
+    font-weight: bold;
+}
+
+.evolvewp-predictiveerp-missing-table {
+    background-color: #fff9f9 !important;
+}
+
+.evolvewp-predictiveerp-warning-table {
+    background-color: #ffffd8 !important;
+}
+
+.evolvewp-predictiveerp-table-warning {
+    display: flex;
+    align-items: center;
+}
+
+.evolvewp-predictiveerp-table-warning .dashicons {
+    color: #f0b849;
+    margin-right: 5px;
+}
+
+/* Process Status */
+.evolvewp-predictiveerp-process-status-good {
+    color: #1e7e1e;
+}
+
+.evolvewp-predictiveerp-process-status-warning {
+    color: #956d00;
+}
+
+.evolvewp-predictiveerp-process-status-error {
+    color: #c72121;
+}
+
+.evolvewp-predictiveerp-process-status-not-implemented {
+    color: #6c6c6c;
+}
+
+.evolvewp-predictiveerp-not-implemented-count {
+    font-size: 11px;
+    font-weight: normal;
+    font-style: italic;
+    color: #6c6c6c;
+}
+
+.evolvewp-predictiveerp-process-issues {
+    font-size: 11px;
+    font-weight: normal;
+}
+
+.evolvewp-predictiveerp-warning-count {
+    color: #956d00;
+}
+
+.evolvewp-predictiveerp-error-count {
+    color: #c72121;
+}
+
+/* API Status Badge */
+.evolvewp-predictiveerp-status-badge {
+    display: inline-block;
+    padding: 3px 8px;
+    border-radius: 3px;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.evolvewp-predictiveerp-status-success {
+    background-color: #d4f9d4;
+    color: #1e7e1e;
+}
+
+.evolvewp-predictiveerp-status-error {
+    background-color: #ffd6d6;
+    color: #c72121;
+}
+
+.evolvewp-predictiveerp-status-pending {
+    background-color: #e5e5e5;
+    color: #666;
+}
+
+/* Status badge styling */
+.evolvewp-predictiveerp-status-badge {
+    display: inline-block;
+    padding: 3px 8px;
+    border-radius: 3px;
+    font-size: 12px;
+    font-weight: var(--evolvewp-predictiveerp-font-weight-semibold);
+    text-transform: uppercase;
+    text-align: center;
+    min-width: 60px;
+}
+
+.evolvewp-predictiveerp-status-badge.ready {
+    background-color: #e7f7ed;
+    color: #46b450;
+    border: 1px solid #c8e6d0;
+}
+
+.evolvewp-predictiveerp-status-badge.wip {
+    background-color: #f6f7f7;
+    color: #72777c;
+    border: 1px solid #ddd;
+}
+
+.evolvewp-predictiveerp-status-badge.live {
+    background-color: #e7f7ed;
+    color: #46b450;
+    border: 1px solid #c8e6d0;
+}
+
+.evolvewp-predictiveerp-status-badge.demo {
+    background-color: #fef8e8;
+    color: #f0c33c;
+    border: 1px solid #f8e6b8;
+}
+
+.evolvewp-predictiveerp-status-badge.disabled {
+    background-color: #f6f7f7;
+    color: #72777c;
+    border: 1px solid #ddd;
+}
+
+/* Feature Mode Indicators */
+.evolvewp-predictiveerp-feature-mode-indicator {
+    display: inline-block;
+    padding: 3px 8px;
+    border-radius: 3px;
+    font-size: 12px;
+    font-weight: var(--evolvewp-predictiveerp-font-weight-semibold);
+    text-transform: uppercase;
+    margin-left: 10px;
+}
+
+.evolvewp-predictiveerp-feature-mode-indicator.live {
+    background-color: #e7f7ed;
+    color: #46b450;
+    border: 1px solid #c8e6d0;
+}
+
+.evolvewp-predictiveerp-feature-mode-indicator.demo {
+    background-color: #fef8e8;
+    color: #f0c33c;
+    border: 1px solid #f8e6b8;
+}
+
+.evolvewp-predictiveerp-feature-mode-indicator.disabled {
+    background-color: #f6f7f7;
+    color: #72777c;
+    border: 1px solid #ddd;
+}
+
+.evolvewp-predictiveerp-feature-mode.live {
+    color: #46b450;
+}
+
+.evolvewp-predictiveerp-feature-mode.demo {
+    color: #f0c33c;
+}
+
+/* Legacy classes mapping for backward compatibility */
+/* Status Panel */
+.evolvewp-predictiveerp-status-panel {
+    background: #f9f9f9;
+    border-radius: var(--evolvewp-predictiveerp-border-radius);
+    padding: 15px;
+}
+
+.evolvewp-predictiveerp-status-section {
+    margin-bottom: var(--evolvewp-predictiveerp-spacing-xl);
+    border-bottom: 1px solid var(--evolvewp-predictiveerp-color-gray-200);
+    padding-bottom: 15px;
+}
+
+.evolvewp-predictiveerp-status-section:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.evolvewp-predictiveerp-status-section h4 {
+    margin: 0 0 var(--evolvewp-predictiveerp-spacing-md);
+    font-size: var(--evolvewp-predictiveerp-font-size);
+    font-weight: var(--evolvewp-predictiveerp-font-weight-semibold);
+}
+
+/* Status Indicators */
+.evolvewp-predictiveerp-status-indicator {
+    display: flex;
+    align-items: center;
+    margin-bottom: var(--evolvewp-predictiveerp-spacing-xs);
+}
+
+.evolvewp-predictiveerp-status-success {
+    color: #46b450;
+}
+
+.evolvewp-predictiveerp-status-error {
+    color: #dc3232;
+}
+
+.evolvewp-predictiveerp-status-neutral {
+    color: #646970;
+}
+
+.evolvewp-predictiveerp-status-text {
+    margin-left: var(--evolvewp-predictiveerp-spacing-xs);
+}
+
+/* Status Actions */
+.evolvewp-predictiveerp-status-actions {
+    margin-top: var(--evolvewp-predictiveerp-spacing-lg);
+    text-align: center;
+}
+
+/* Badge System */
+.evolvewp-predictiveerp-admin-badge {
+    position: absolute;
+    top: var(--evolvewp-predictiveerp-spacing-md);
+    right: var(--evolvewp-predictiveerp-spacing-md);
+    background-color: #2271b1;
+    color: white;
+    padding: 2px 8px;
+    font-size: 10px;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+.evolvewp-predictiveerp-demo-badge {
+    position: absolute;
+    top: var(--evolvewp-predictiveerp-spacing-md);
+    right: var(--evolvewp-predictiveerp-spacing-md);
+    background-color: #dba617;
+    color: white;
+    padding: 2px 8px;
+    font-size: 10px;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+/* Legacy classes mapping for backward compatibility */
+/* Task Status Indicators */
+.evolvewp-predictiveerp-status-indicator {
+    width: 12px !important;
+    height: 12px !important;
+    border-radius: 50% !important;
+    margin: 0 auto !important;
+}
+
+.evolvewp-predictiveerp-status-indicator.pending {
+    background-color: #f0ad4e !important;
+}
+
+.evolvewp-predictiveerp-status-indicator.in-progress {
+    background-color: #5bc0de !important;
+}
+
+.evolvewp-predictiveerp-status-indicator.completed {
+    background-color: #5cb85c !important;
+}
+
+/* Priority Indicators */
+.evolvewp-predictiveerp-priority-indicator {
+    display: inline-block !important;
+    padding: 3px 8px !important;
+    border-radius: 3px !important;
+    font-size: 0.9em !important;
+}
+
+.evolvewp-predictiveerp-priority-indicator.priority-1 {
+    background-color: #f2dede !important;
+    color: #a94442 !important;
+}
+
+.evolvewp-predictiveerp-priority-indicator.priority-2 {
+    background-color: #fcf8e3 !important;
+    color: #8a6d3b !important;
+}
+
+.evolvewp-predictiveerp-priority-indicator.priority-3 {
+    background-color: #d9edf7 !important;
+    color: #31708f !important;
+}
+
+/* Detail Status */
+.evolvewp-predictiveerp-detail-status {
+    font-weight: var(--evolvewp-predictiveerp-font-weight-semibold) !important;
+}
+
+.evolvewp-predictiveerp-detail-status.status-completed {
+    background-color: #e8f5e9 !important;
+    color: #2e7d32 !important;
+}
+
+.evolvewp-predictiveerp-detail-status.status-pending {
+    background-color: #fff8e1 !important;
+    color: #f57c00 !important;
+}
+
+.evolvewp-predictiveerp-detail-status.status-in-progress {
+    background-color: #e3f2fd !important;
+    color: #1976d2 !important;
+}
+
+/* Cache Status */
+.evolvewp-predictiveerp-cache-status {
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+    margin-top: var(--evolvewp-predictiveerp-spacing-md) !important;
+    padding: 8px 12px !important;
+    background-color: #f9f9f9 !important;
+    border-radius: var(--evolvewp-predictiveerp-border-radius) !important;
+    font-size: 12px !important;
+}
+
+.evolvewp-predictiveerp-status-label {
+    font-weight: var(--evolvewp-predictiveerp-font-weight-semibold) !important;
+}
+
+.evolvewp-predictiveerp-status-fresh {
+    color: #46b450 !important;
+}
+
+.evolvewp-predictiveerp-status-stale {
+    color: #ffb900 !important;
+}
+
+/* Legacy classes mapping for backward compatibility */
+/* Status Indicators Showcase Styles */
+.status-indicators-showcase .component-demo { 
+    margin-bottom: 20px; 
+}
+
+.status-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    align-items: center;
+}
+
+.status-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.evolvewp-predictiveerp-status-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.evolvewp-predictiveerp-status-success {
+    background-color: var(--evolvewp-predictiveerp-color-success);
+}
+
+.evolvewp-predictiveerp-status-warning {
+    background-color: var(--evolvewp-predictiveerp-color-warning);
+}
+
+.evolvewp-predictiveerp-status-error {
+    background-color: var(--evolvewp-predictiveerp-color-error);
+}
+
+.evolvewp-predictiveerp-status-info {
+    background-color: var(--evolvewp-predictiveerp-color-info);
+}
+
+.evolvewp-predictiveerp-status-processing {
+    background-color: var(--evolvewp-predictiveerp-color-primary);
+}
+
+.evolvewp-predictiveerp-badge {
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.9em;
+    display: inline-block;
+}
+
+.evolvewp-predictiveerp-badge-success {
+    background-color: var(--evolvewp-predictiveerp-color-success-light);
+    color: var(--evolvewp-predictiveerp-color-success);
+}
+
+.evolvewp-predictiveerp-badge-warning {
+    background-color: var(--evolvewp-predictiveerp-color-warning-light);
+    color: var(--evolvewp-predictiveerp-color-warning);
+}
+
+.evolvewp-predictiveerp-badge-error {
+    background-color: var(--evolvewp-predictiveerp-color-error-light);
+    color: var(--evolvewp-predictiveerp-color-error);
+}
+
+.evolvewp-predictiveerp-badge-info {
+    background-color: var(--evolvewp-predictiveerp-color-info-light);
+    color: var(--evolvewp-predictiveerp-color-info);
+}
+
+.evolvewp-predictiveerp-badge-neutral {
+    background-color: var(--evolvewp-predictiveerp-color-border-light);
+    color: var(--evolvewp-predictiveerp-color-text-light);
+}
+
+.evolvewp-predictiveerp-status-success-icon {
+    color: var(--evolvewp-predictiveerp-color-success);
+}
+
+.evolvewp-predictiveerp-status-warning-icon {
+    color: var(--evolvewp-predictiveerp-color-warning);
+}
+
+.evolvewp-predictiveerp-status-error-icon {
+    color: var(--evolvewp-predictiveerp-color-error);
+}
+
+.evolvewp-predictiveerp-status-info-icon {
+    color: var(--evolvewp-predictiveerp-color-info);
+}
+
+.evolvewp-predictiveerp-status-processing-icon {
+    color: var(--evolvewp-predictiveerp-color-primary);
+}

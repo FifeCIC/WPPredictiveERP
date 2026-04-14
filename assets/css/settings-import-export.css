@@ -1,0 +1,23 @@
+/* EvolveWP PredictiveERP Import/Export Settings Styles */
+
+.evolvewp-predictiveerp-import-export {
+    max-width: 800px;
+    background: #fff;
+    padding: 20px;
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+.evolvewp-predictiveerp-import-export h2 {
+    margin-top: 0;
+}
+
+.evolvewp-predictiveerp-import-export .dashicons {
+    margin-right: 5px;
+}
+
+.evolvewp-predictiveerp-import-section,
+.evolvewp-predictiveerp-export-section {
+    margin: 20px 0;
+}

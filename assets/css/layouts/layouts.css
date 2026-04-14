@@ -1,0 +1,73 @@
+/**
+ * Component Group Layout
+ * Provides consistent spacing and grouping for UI components within a section.
+ */
+.evolvewp-predictiveerp-component-group {
+    margin-bottom: var(--evolvewp-predictiveerp-spacing-lg);
+    padding: var(--evolvewp-predictiveerp-spacing-md);
+    border: 1px solid var(--evolvewp-predictiveerp-border-color);
+    border-radius: var(--evolvewp-predictiveerp-border-radius);
+    background-color: var(--evolvewp-predictiveerp-color-white);
+}
+
+/**
+ * Component Showcase
+ * Container for displaying component examples in the UI Library
+ */
+.evolvewp-predictiveerp-component-showcase {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--evolvewp-predictiveerp-spacing-md);
+    padding: var(--evolvewp-predictiveerp-spacing-sm);
+    margin-top: var(--evolvewp-predictiveerp-spacing-sm);
+    background-color: var(--evolvewp-predictiveerp-color-background-light);
+    border-radius: var(--evolvewp-predictiveerp-border-radius);
+}
+
+/**
+ * UI Library Container
+ * Main wrapper for the UI Library page
+ */
+.evolvewp-predictiveerp-ui-library {
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.evolvewp-predictiveerp-ui-container {
+    margin-top: var(--evolvewp-predictiveerp-spacing-lg);
+}
+
+/**
+ * Grid Layouts
+ * Provides consistent grid layouts with different column counts
+ */
+.evolvewp-predictiveerp-grid {
+    display: grid;
+    gap: var(--evolvewp-predictiveerp-spacing-md);
+}
+
+.evolvewp-predictiveerp-grid-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--evolvewp-predictiveerp-spacing-md);
+}
+
+.evolvewp-predictiveerp-grid-2-cols {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--evolvewp-predictiveerp-spacing-md);
+}
+
+.evolvewp-predictiveerp-grid-3-cols {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--evolvewp-predictiveerp-spacing-md);
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 782px) {
+    .evolvewp-predictiveerp-grid-2-cols,
+    .evolvewp-predictiveerp-grid-3-cols {
+        grid-template-columns: 1fr;
+    }
+}

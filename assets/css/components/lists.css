@@ -1,0 +1,99 @@
+/**
+ * evolvewp-predictiveerp - Lists Component Styles
+ * 
+ * Styles for various list types, including task lists, subtasks, etc.
+ * 
+ * HTML Structure:
+ * <ul class="evolvewp-predictiveerp-list">
+ *   <li class="evolvewp-predictiveerp-list-item">
+ *     <div class="evolvewp-predictiveerp-list-content">Content here</div>
+ *   </li>
+ * </ul>
+ * 
+ * @package evolvewp-predictiveerp/CSS/Components
+ * @since 1.0.0
+ */
+
+.evolvewp-predictiveerp-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.evolvewp-predictiveerp-list-item {
+    padding: var(--evolvewp-predictiveerp-spacing-md);
+    border-bottom: var(--evolvewp-predictiveerp-border-standard);
+    display: flex;
+    align-items: center;
+}
+
+.evolvewp-predictiveerp-list-item:last-child {
+    border-bottom: none;
+}
+
+.evolvewp-predictiveerp-list-content {
+    flex: 1;
+}
+
+/* Task Lists */
+.evolvewp-predictiveerp-task-list .evolvewp-predictiveerp-list-item {
+    padding: var(--evolvewp-predictiveerp-spacing-md);
+    transition: background-color 0.2s ease;
+}
+
+.evolvewp-predictiveerp-task-list .evolvewp-predictiveerp-list-item:hover {
+    background-color: var(--evolvewp-predictiveerp-color-gray-50);
+}
+
+.evolvewp-predictiveerp-task-list .evolvewp-predictiveerp-list-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--evolvewp-predictiveerp-spacing-md);
+}
+
+.evolvewp-predictiveerp-task-title {
+    font-weight: var(--evolvewp-predictiveerp-font-weight-semibold);
+    flex: 1;
+    min-width: 200px;
+}
+
+.evolvewp-predictiveerp-task-meta {
+    display: flex;
+    align-items: center;
+    gap: var(--evolvewp-predictiveerp-spacing-lg);
+    color: #666;
+    font-size: 13px;
+}
+
+/* Subtask Lists */
+.evolvewp-predictiveerp-subtask-list {
+    margin-top: var(--evolvewp-predictiveerp-spacing-md);
+}
+
+.evolvewp-predictiveerp-subtask-list .evolvewp-predictiveerp-list-item {
+    padding: var(--evolvewp-predictiveerp-spacing-sm) var(--evolvewp-predictiveerp-spacing-md);
+    background-color: var(--evolvewp-predictiveerp-color-gray-50);
+    border-radius: var(--evolvewp-predictiveerp-border-radius);
+    margin-bottom: var(--evolvewp-predictiveerp-spacing-xs);
+    border: var(--evolvewp-predictiveerp-border-standard);
+}
+
+.evolvewp-predictiveerp-subtask-checkbox {
+    margin-right: var(--evolvewp-predictiveerp-spacing-md);
+}
+
+.evolvewp-predictiveerp-subtask-title {
+    flex: 1;
+}
+
+.evolvewp-predictiveerp-subtask-list .evolvewp-predictiveerp-list-item.completed {
+    background-color: #f0f9eb;
+}
+
+.evolvewp-predictiveerp-subtask-list .evolvewp-predictiveerp-list-item.completed .evolvewp-predictiveerp-subtask-title {
+    text-decoration: line-through;
+    color: #666;
+}
+
+/* Legacy classes mapping for backward compatibility */

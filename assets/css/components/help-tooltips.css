@@ -1,0 +1,135 @@
+/**
+ * EvolveWP PredictiveERP — Help Tooltips for Development Pages
+ *
+ * Lightweight tooltip styles for contextual help on admin pages.
+ * Based on the full tooltip system in components/tooltips.css but
+ * stripped to just what's needed for data-tooltip help tips.
+ *
+ * Usage:
+ *   <span class="evolvewp-predictiveerp-help-tip" data-tooltip="Explanation text here">
+ *       <span class="dashicons dashicons-editor-help"></span>
+ *   </span>
+ *
+ * @package evolvewp-predictiveerp/CSS/Components
+ * @since   3.1.0
+ */
+
+/* Help tip trigger — the clickable/hoverable icon */
+.evolvewp-predictiveerp-help-tip {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: help;
+  color: var(--evolvewp-predictiveerp-color-gray-500);
+  transition: color var(--evolvewp-predictiveerp-transition-fast);
+  position: relative;
+  vertical-align: middle;
+  margin-inline-start: var(--evolvewp-predictiveerp-spacing-xs);
+}
+
+.evolvewp-predictiveerp-help-tip:hover,
+.evolvewp-predictiveerp-help-tip:focus {
+  color: var(--evolvewp-predictiveerp-color-primary);
+}
+
+.evolvewp-predictiveerp-help-tip .dashicons {
+  font-size: 16px;
+  width: 16px;
+  height: 16px;
+}
+
+/* The tooltip bubble — positioned by JS */
+.evolvewp-predictiveerp-help-tooltip {
+  position: absolute;
+  z-index: var(--evolvewp-predictiveerp-z-index-tooltip);
+  max-width: 300px;
+  padding: var(--evolvewp-predictiveerp-spacing-sm) var(--evolvewp-predictiveerp-spacing-md);
+  background: var(--evolvewp-predictiveerp-color-gray-900);
+  color: var(--evolvewp-predictiveerp-color-white);
+  font-size: var(--evolvewp-predictiveerp-font-size-sm);
+  line-height: var(--evolvewp-predictiveerp-line-height-normal);
+  border-radius: var(--evolvewp-predictiveerp-border-radius);
+  box-shadow: var(--evolvewp-predictiveerp-shadow-md);
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity var(--evolvewp-predictiveerp-transition-fast);
+}
+
+.evolvewp-predictiveerp-help-tooltip.evolvewp-predictiveerp-visible {
+  opacity: 1;
+}
+
+/* Arrow */
+.evolvewp-predictiveerp-help-tooltip::after {
+  content: '';
+  position: absolute;
+  border: 6px solid transparent;
+}
+
+/* Default: tooltip above, arrow pointing down */
+.evolvewp-predictiveerp-help-tooltip--top::after {
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-top-color: var(--evolvewp-predictiveerp-color-gray-900);
+}
+
+/* Tooltip below, arrow pointing up */
+.evolvewp-predictiveerp-help-tooltip--bottom::after {
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-bottom-color: var(--evolvewp-predictiveerp-color-gray-900);
+}
+
+/* Section help — larger tooltip for section descriptions */
+.evolvewp-predictiveerp-section-help {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--evolvewp-predictiveerp-spacing-xs);
+  padding: var(--evolvewp-predictiveerp-spacing-xs) var(--evolvewp-predictiveerp-spacing-sm);
+  background: var(--evolvewp-predictiveerp-color-gray-50);
+  border: 1px solid var(--evolvewp-predictiveerp-color-gray-200);
+  border-radius: var(--evolvewp-predictiveerp-border-radius);
+  font-size: var(--evolvewp-predictiveerp-font-size-sm);
+  color: var(--evolvewp-predictiveerp-color-gray-600);
+  cursor: help;
+  transition: all var(--evolvewp-predictiveerp-transition-fast);
+}
+
+.evolvewp-predictiveerp-section-help:hover {
+  background: var(--evolvewp-predictiveerp-color-info-light);
+  border-color: var(--evolvewp-predictiveerp-color-info);
+  color: var(--evolvewp-predictiveerp-color-info-dark);
+}
+
+.evolvewp-predictiveerp-section-help .dashicons {
+  font-size: 14px;
+  width: 14px;
+  height: 14px;
+}
+
+/* Tour button */
+.evolvewp-predictiveerp-tour-button {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--evolvewp-predictiveerp-spacing-xs);
+  padding: var(--evolvewp-predictiveerp-spacing-xs) var(--evolvewp-predictiveerp-spacing-md);
+  background: var(--evolvewp-predictiveerp-color-primary-light);
+  color: var(--evolvewp-predictiveerp-color-white);
+  border: none;
+  border-radius: var(--evolvewp-predictiveerp-border-radius);
+  font-size: var(--evolvewp-predictiveerp-font-size-sm);
+  cursor: pointer;
+  transition: background var(--evolvewp-predictiveerp-transition-fast);
+}
+
+.evolvewp-predictiveerp-tour-button:hover {
+  background: var(--evolvewp-predictiveerp-color-primary);
+}
+
+.evolvewp-predictiveerp-tour-button .dashicons {
+  font-size: 16px;
+  width: 16px;
+  height: 16px;
+}

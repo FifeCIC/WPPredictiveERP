@@ -1,0 +1,183 @@
+/**
+ * evolvewp-predictiveerp CSS Variables
+ * 
+ * Global CSS custom properties for consistent styling
+ * 
+ * @package evolvewp-predictiveerp/CSS/Base
+ * @since 1.0.0
+ * @created 2024-12-21
+ */
+
+:root {
+    /* Colors - WordPress Admin Color Scheme */
+    --evolvewp-predictiveerp-color-primary: #2271b1;
+    --evolvewp-predictiveerp-color-primary-dark: #135e96;
+    --evolvewp-predictiveerp-color-primary-light: #72aee6;
+    
+    --evolvewp-predictiveerp-color-secondary: #646970;
+    --evolvewp-predictiveerp-color-secondary-dark: #50575e;
+    --evolvewp-predictiveerp-color-secondary-light: #8c8f94;
+    
+    --evolvewp-predictiveerp-color-success: #00a32a;
+    --evolvewp-predictiveerp-color-success-dark: #007317;
+    --evolvewp-predictiveerp-color-success-light: #68de7c;
+    
+    --evolvewp-predictiveerp-color-warning: #dba617;
+    --evolvewp-predictiveerp-color-warning-dark: #996b00;
+    --evolvewp-predictiveerp-color-warning-light: #f0c33c;
+    
+    --evolvewp-predictiveerp-color-error: #d63638;
+    --evolvewp-predictiveerp-color-error-dark: #b32d2e;
+    --evolvewp-predictiveerp-color-error-light: #e65054;
+    
+    --evolvewp-predictiveerp-color-info: #72aee6;
+    --evolvewp-predictiveerp-color-info-dark: #2271b1;
+    --evolvewp-predictiveerp-color-info-light: #a7c7e7;
+    
+    /* Neutral Colors */
+    --evolvewp-predictiveerp-color-white: #ffffff;
+    --evolvewp-predictiveerp-color-black: #000000;
+    
+    --evolvewp-predictiveerp-color-gray-50: #f6f7f7;
+    --evolvewp-predictiveerp-color-gray-100: #f0f0f1;
+    --evolvewp-predictiveerp-color-gray-200: #e0e0e0;
+    --evolvewp-predictiveerp-color-gray-300: #dcdcde;
+    --evolvewp-predictiveerp-color-gray-400: #c3c4c7;
+    --evolvewp-predictiveerp-color-gray-500: #a7aaad;
+    --evolvewp-predictiveerp-color-gray-600: #8c8f94;
+    --evolvewp-predictiveerp-color-gray-700: #646970;
+    --evolvewp-predictiveerp-color-gray-800: #50575e;
+    --evolvewp-predictiveerp-color-gray-900: #1d2327;
+    
+    /* WordPress Blue Variants */
+    --evolvewp-predictiveerp-color-wp-blue: #2271b1;
+    --evolvewp-predictiveerp-color-wp-blue-dark: #135e96;
+    --evolvewp-predictiveerp-color-wp-blue-light: #72aee6;
+    
+    /* Spacing Scale */
+    --evolvewp-predictiveerp-spacing-xs: 4px;
+    --evolvewp-predictiveerp-spacing-sm: 8px;
+    --evolvewp-predictiveerp-spacing-md: 12px;
+    --evolvewp-predictiveerp-spacing-lg: 16px;
+    --evolvewp-predictiveerp-spacing-xl: 20px;
+    --evolvewp-predictiveerp-spacing-2xl: 24px;
+    --evolvewp-predictiveerp-spacing-3xl: 32px;
+    --evolvewp-predictiveerp-spacing-4xl: 40px;
+    --evolvewp-predictiveerp-spacing-5xl: 48px;
+    
+    /* Typography */
+    --evolvewp-predictiveerp-font-family-base: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    --evolvewp-predictiveerp-font-family-mono: Consolas, Monaco, monospace;
+    
+    --evolvewp-predictiveerp-font-size-xs: 11px;
+    --evolvewp-predictiveerp-font-size-sm: 12px;
+    --evolvewp-predictiveerp-font-size: 13px;
+    --evolvewp-predictiveerp-font-size-md: 14px;
+    --evolvewp-predictiveerp-font-size-lg: 16px;
+    --evolvewp-predictiveerp-font-size-xl: 18px;
+    --evolvewp-predictiveerp-font-size-2xl: 22px;
+    --evolvewp-predictiveerp-font-size-3xl: 28px;
+    
+    --evolvewp-predictiveerp-font-weight-normal: 400;
+    --evolvewp-predictiveerp-font-weight-medium: 500;
+    --evolvewp-predictiveerp-font-weight-semibold: 600;
+    --evolvewp-predictiveerp-font-weight-bold: 700;
+    
+    --evolvewp-predictiveerp-line-height-tight: 1.2;
+    --evolvewp-predictiveerp-line-height-normal: 1.4;
+    --evolvewp-predictiveerp-line-height-relaxed: 1.6;
+    
+    /* Border Radius */
+    --evolvewp-predictiveerp-border-radius-sm: 2px;
+    --evolvewp-predictiveerp-border-radius: 4px;
+    --evolvewp-predictiveerp-border-radius-md: 6px;
+    --evolvewp-predictiveerp-border-radius-lg: 8px;
+    --evolvewp-predictiveerp-border-radius-xl: 12px;
+    --evolvewp-predictiveerp-border-radius-full: 9999px;
+    
+    /* Borders */
+    --evolvewp-predictiveerp-border-width: 1px;
+    --evolvewp-predictiveerp-border-width-thick: 2px;
+    --evolvewp-predictiveerp-border-style: solid;
+    --evolvewp-predictiveerp-border-color: var(--evolvewp-predictiveerp-color-gray-300);
+    --evolvewp-predictiveerp-border-standard: var(--evolvewp-predictiveerp-border-width) var(--evolvewp-predictiveerp-border-style) var(--evolvewp-predictiveerp-border-color);
+    
+    /* Shadows */
+    --evolvewp-predictiveerp-shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.04);
+    --evolvewp-predictiveerp-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    --evolvewp-predictiveerp-shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --evolvewp-predictiveerp-shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
+    --evolvewp-predictiveerp-shadow-xl: 0 20px 25px rgba(0, 0, 0, 0.1);
+    
+    /* Z-Index Scale */
+    --evolvewp-predictiveerp-z-index-dropdown: 1000;
+    --evolvewp-predictiveerp-z-index-modal: 1050;
+    --evolvewp-predictiveerp-z-index-popover: 1060;
+    --evolvewp-predictiveerp-z-index-tooltip: 1070;
+    --evolvewp-predictiveerp-z-index-toast: 1080;
+    
+    /* Transitions */
+    --evolvewp-predictiveerp-transition-fast: 150ms ease;
+    --evolvewp-predictiveerp-transition-normal: 250ms ease;
+    --evolvewp-predictiveerp-transition-slow: 350ms ease;
+    
+    /* Component Specific */
+    --evolvewp-predictiveerp-button-padding-x: var(--evolvewp-predictiveerp-spacing-md);
+    --evolvewp-predictiveerp-button-padding-y: var(--evolvewp-predictiveerp-spacing-sm);
+    --evolvewp-predictiveerp-input-padding-x: var(--evolvewp-predictiveerp-spacing-md);
+    --evolvewp-predictiveerp-input-padding-y: var(--evolvewp-predictiveerp-spacing-sm);
+    
+    /* Form Controls */
+    --evolvewp-predictiveerp-input-bg: var(--evolvewp-predictiveerp-color-white);
+    --evolvewp-predictiveerp-input-border: var(--evolvewp-predictiveerp-border-standard);
+    --evolvewp-predictiveerp-input-border-focus: var(--evolvewp-predictiveerp-border-width) var(--evolvewp-predictiveerp-border-style) var(--evolvewp-predictiveerp-color-primary);
+    --evolvewp-predictiveerp-input-border-radius: var(--evolvewp-predictiveerp-border-radius);
+    
+    /* Status Colors */
+    --evolvewp-predictiveerp-status-success-bg: #d4edda;
+    --evolvewp-predictiveerp-status-success-border: #c3e6cb;
+    --evolvewp-predictiveerp-status-success-text: #155724;
+    
+    --evolvewp-predictiveerp-status-warning-bg: #fff3cd;
+    --evolvewp-predictiveerp-status-warning-border: #ffeaa7;
+    --evolvewp-predictiveerp-status-warning-text: #856404;
+    
+    --evolvewp-predictiveerp-status-error-bg: #f8d7da;
+    --evolvewp-predictiveerp-status-error-border: #f5c6cb;
+    --evolvewp-predictiveerp-status-error-text: #721c24;
+    
+    --evolvewp-predictiveerp-status-info-bg: #d1ecf1;
+    --evolvewp-predictiveerp-status-info-border: #bee5eb;
+    --evolvewp-predictiveerp-status-info-text: #0c5460;
+
+    /* Focus Ring — consistent focus style for accessibility */
+    --evolvewp-predictiveerp-focus-ring: 2px solid var(--evolvewp-predictiveerp-color-primary);
+    --evolvewp-predictiveerp-focus-ring-offset: 1px;
+
+    /* Accent Color — secondary brand color for highlights */
+    --evolvewp-predictiveerp-color-accent: #2271b1;
+    --evolvewp-predictiveerp-color-accent-light: #72aee6;
+    --evolvewp-predictiveerp-color-accent-dark: #135e96;
+}
+
+/* Color Swatch Classes — used by the UI Library color palette showcase */
+.evolvewp-predictiveerp-color-primary { background-color: var(--evolvewp-predictiveerp-color-primary) !important; }
+.evolvewp-predictiveerp-color-primary-dark { background-color: var(--evolvewp-predictiveerp-color-primary-dark) !important; }
+.evolvewp-predictiveerp-color-primary-light { background-color: var(--evolvewp-predictiveerp-color-primary-light) !important; }
+
+.evolvewp-predictiveerp-color-success { background-color: var(--evolvewp-predictiveerp-color-success) !important; }
+.evolvewp-predictiveerp-color-warning { background-color: var(--evolvewp-predictiveerp-color-warning) !important; }
+.evolvewp-predictiveerp-color-error { background-color: var(--evolvewp-predictiveerp-color-error) !important; }
+
+.evolvewp-predictiveerp-color-white { background-color: var(--evolvewp-predictiveerp-color-white) !important; border: 1px solid var(--evolvewp-predictiveerp-color-gray-300) !important; }
+.evolvewp-predictiveerp-color-gray-100 { background-color: var(--evolvewp-predictiveerp-color-gray-100) !important; }
+.evolvewp-predictiveerp-color-gray-300 { background-color: var(--evolvewp-predictiveerp-color-gray-300) !important; }
+.evolvewp-predictiveerp-color-gray-500 { background-color: var(--evolvewp-predictiveerp-color-gray-500) !important; }
+.evolvewp-predictiveerp-color-gray-700 { background-color: var(--evolvewp-predictiveerp-color-gray-700) !important; }
+.evolvewp-predictiveerp-color-gray-900 { background-color: var(--evolvewp-predictiveerp-color-gray-900) !important; }
+
+/* WordPress Admin Compatibility */
+.wp-admin {
+    --admin-color-scheme-primary: #2271b1;
+    --admin-color-scheme-secondary: #72aee6;
+}

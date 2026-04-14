@@ -1,0 +1,302 @@
+/**
+ * evolvewp-predictiveerp - Metrics Component Styles
+ * 
+ * Styles for displaying metrics, stats, and data visualizations.
+ * 
+ * HTML Structure:
+ * <div class="evolvewp-predictiveerp-metrics-grid">
+ *   <div class="evolvewp-predictiveerp-metric-item">
+ *     <span class="evolvewp-predictiveerp-metric-label">Label</span>
+ *     <span class="evolvewp-predictiveerp-metric-value">Value</span>
+ *   </div>
+ * </div>
+ * 
+ * @package evolvewp-predictiveerp/CSS/Components
+ * @since 1.0.0
+ */
+
+/* Metrics Grid */
+.evolvewp-predictiveerp-metrics-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: var(--evolvewp-predictiveerp-spacing-lg);
+    margin-top: var(--evolvewp-predictiveerp-spacing-lg);
+}
+
+/* Metric Item */
+.evolvewp-predictiveerp-metric-item {
+    padding: var(--evolvewp-predictiveerp-spacing-lg);
+    background: var(--evolvewp-predictiveerp-color-gray-100);
+    border: 1px solid var(--evolvewp-predictiveerp-color-gray-200);
+    text-align: center;
+}
+
+.evolvewp-predictiveerp-metric-label {
+    display: block;
+    font-weight: var(--evolvewp-predictiveerp-font-weight-semibold);
+    margin-bottom: var(--evolvewp-predictiveerp-spacing-xs);
+    color: #444;
+}
+
+.evolvewp-predictiveerp-metric-value {
+    display: block;
+    font-size: 24px;
+    font-weight: 700;
+    color: #2271b1;
+}
+
+/* Component Metrics - Used in automation */
+.evolvewp-predictiveerp-component-metrics {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--evolvewp-predictiveerp-spacing-md);
+    margin: var(--evolvewp-predictiveerp-spacing-lg) 0;
+}
+
+/* Legacy classes mapping for backward compatibility */
+/**
+ * evolvewp-predictiveerp - Metrics Component Styles
+ * 
+ * For displaying data metrics, stats, and numerical information.
+ * 
+ * HTML Structure:
+ * <div class="evolvewp-predictiveerp-stats-grid">
+ *   <div class="evolvewp-predictiveerp-stat-item">
+ *     <div class="evolvewp-predictiveerp-stat-label">Label</div>
+ *     <div class="evolvewp-predictiveerp-stat-value">Value</div>
+ *   </div>
+ * </div>
+ * 
+ * @package evolvewp-predictiveerp/CSS/Components
+ * @since 1.0.0
+ */
+
+/* Stats Numbers */
+.evolvewp-predictiveerp-stat-numbers {
+    display: flex;
+    justify-content: space-between;
+}
+
+.evolvewp-predictiveerp-stat-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.evolvewp-predictiveerp-stat-value {
+    font-size: 24px;
+    font-weight: var(--evolvewp-predictiveerp-font-weight-semibold);
+}
+
+.evolvewp-predictiveerp-stat-label {
+    font-size: 12px;
+    color: #666;
+}
+
+.evolvewp-predictiveerp-stat-detail-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.evolvewp-predictiveerp-stat-detail-label {
+    font-size: 12px;
+    color: #666;
+}
+
+.evolvewp-predictiveerp-stat-detail-value {
+    font-size: 14px;
+    font-weight: var(--evolvewp-predictiveerp-font-weight-semibold);
+}
+
+/* Success/Error Stats */
+.evolvewp-predictiveerp-stat-item.success .evolvewp-predictiveerp-stat-value {
+    color: #46b450;
+}
+
+.evolvewp-predictiveerp-stat-item.error .evolvewp-predictiveerp-stat-value {
+    color: #dc3232;
+}
+
+/* Table Stats */
+.evolvewp-predictiveerp-table-stats {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px 10px;
+}
+
+/* Process Count */
+.evolvewp-predictiveerp-process-count {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* Legacy classes mapping for backward compatibility */
+/**
+ * evolvewp-predictiveerp - Metrics Component Styles
+ * 
+ * Styles for metrics, scores, charts and data visualization elements.
+ * 
+ * HTML Structure:
+ * <div class="evolvewp-predictiveerp-metric-card">
+ *   <div class="evolvewp-predictiveerp-metric-label">Label</div>
+ *   <div class="evolvewp-predictiveerp-metric-value">Value</div>
+ * </div>
+ * 
+ * @package evolvewp-predictiveerp/CSS/Components
+ * @since 1.0.0
+ */
+
+/* Base metrics container */
+.evolvewp-predictiveerp-metrics-container {
+    margin: 20px 0;
+}
+
+/* Metric score visualization */
+.evolvewp-predictiveerp-score-container {
+    position: relative;
+    height: 24px;
+    width: 100%;
+    background-color: #f5f5f5;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.evolvewp-predictiveerp-score-value {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    z-index: 2;
+    color: #333;
+}
+
+.evolvewp-predictiveerp-score-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+    transition: width 0.3s ease;
+}
+
+.evolvewp-predictiveerp-score-high .evolvewp-predictiveerp-score-bar {
+    background-color: #46b450;
+}
+
+.evolvewp-predictiveerp-score-medium .evolvewp-predictiveerp-score-bar {
+    background-color: #ffb900;
+}
+
+.evolvewp-predictiveerp-score-low .evolvewp-predictiveerp-score-bar {
+    background-color: #dc3232;
+}
+
+.evolvewp-predictiveerp-score-star {
+    color: gold;
+    margin-left: 2px;
+    font-size: 14px;
+}
+
+/* Loading indicators */
+.evolvewp-predictiveerp-loader-spinner {
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid #3498db;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 2s linear infinite;
+    margin: 20px auto;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* EPS Change indicators */
+.evolvewp-predictiveerp-value-positive {
+    color: #46b450;
+    font-weight: bold;
+}
+
+.evolvewp-predictiveerp-value-negative {
+    color: #dc3232;
+    font-weight: bold;
+}
+
+.evolvewp-predictiveerp-value-neutral {
+    color: #767676;
+}
+
+/* Whisper difference indicators */
+.evolvewp-predictiveerp-whisper-diff {
+    display: block;
+    font-size: 11px;
+    padding: 1px 4px;
+    border-radius: 3px;
+    margin-top: 2px;
+}
+
+.evolvewp-predictiveerp-whisper-positive {
+    background-color: rgba(70, 180, 80, 0.1);
+    color: #46b450;
+}
+
+.evolvewp-predictiveerp-whisper-negative {
+    background-color: rgba(220, 50, 50, 0.1);
+    color: #dc3232;
+}
+
+/* Importance indicators */
+.evolvewp-predictiveerp-importance-high {
+    background-color: rgba(214, 54, 56, 0.05);
+}
+
+.evolvewp-predictiveerp-importance-indicator {
+    color: #d63638;
+    margin-left: 5px;
+}
+
+/* Legacy classes mapping for backward compatibility */
+/**
+ * evolvewp-predictiveerp - Metrics Component Styles
+ * 
+ * Styles for displaying metrics and statistics.
+ * 
+ * @package evolvewp-predictiveerp/CSS/Components
+ * @since 1.0.0
+ */
+
+/* Stat items */
+.evolvewp-predictiveerp-stat-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 10px;
+    background: #f9f9f9;
+    border-radius: 3px;
+}
+
+.evolvewp-predictiveerp-live-count {
+    color: #46b450;
+    font-weight: var(--evolvewp-predictiveerp-font-weight-semibold);
+}
+
+.evolvewp-predictiveerp-demo-count {
+    color: #f0c33c;
+    font-weight: var(--evolvewp-predictiveerp-font-weight-semibold);
+}
+
+/* Stats grid */
+.evolvewp-predictiveerp-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+/* Legacy classes mapping for backward compatibility */

@@ -1,0 +1,142 @@
+/**
+ * EvolveWP PredictiveERP — Scoped Typography Styles
+ *
+ * Typography for headings, text, links, and code blocks ONLY within
+ * .evolvewp-predictiveerp-admin-wrap containers. Does not affect WordPress admin chrome.
+ *
+ * Uses CSS variables defined in variables.css.
+ *
+ * @package evolvewp-predictiveerp/CSS/Base
+ * @since   1.0.0
+ * @since   3.1.0 Scoped to .evolvewp-predictiveerp-admin-wrap. Helper classes prefixed.
+ */
+
+/* ─────────────────────────────────────────────────────────────────────
+   Headings
+   ───────────────────────────────────────────────────────────────────── */
+
+.evolvewp-predictiveerp-admin-wrap h1,
+.evolvewp-predictiveerp-admin-wrap h2,
+.evolvewp-predictiveerp-admin-wrap h3,
+.evolvewp-predictiveerp-admin-wrap h4,
+.evolvewp-predictiveerp-admin-wrap h5,
+.evolvewp-predictiveerp-admin-wrap h6 {
+  color: var(--evolvewp-predictiveerp-color-gray-900);
+  font-weight: var(--evolvewp-predictiveerp-font-weight-semibold);
+  line-height: 1.2;
+  margin-bottom: var(--evolvewp-predictiveerp-spacing-md);
+}
+
+.evolvewp-predictiveerp-admin-wrap h1 {
+  font-size: 23px;
+  font-weight: var(--evolvewp-predictiveerp-font-weight-bold);
+  margin-top: var(--evolvewp-predictiveerp-spacing-md);
+  margin-bottom: var(--evolvewp-predictiveerp-spacing-lg);
+  padding: 0;
+}
+
+.evolvewp-predictiveerp-admin-wrap h2 {
+  font-size: 20px;
+  margin-top: var(--evolvewp-predictiveerp-spacing-lg);
+}
+
+.evolvewp-predictiveerp-admin-wrap h3 { font-size: 18px; }
+.evolvewp-predictiveerp-admin-wrap h4 { font-size: 16px; }
+.evolvewp-predictiveerp-admin-wrap h5 { font-size: 14px; }
+.evolvewp-predictiveerp-admin-wrap h6 { font-size: 13px; }
+
+/* ─────────────────────────────────────────────────────────────────────
+   Paragraphs and text
+   ───────────────────────────────────────────────────────────────────── */
+
+.evolvewp-predictiveerp-admin-wrap p {
+  margin-bottom: var(--evolvewp-predictiveerp-spacing-md);
+  font-size: var(--evolvewp-predictiveerp-font-size);
+  line-height: 1.5;
+}
+
+.evolvewp-predictiveerp-admin-wrap .description {
+  color: var(--evolvewp-predictiveerp-color-gray-700);
+  font-size: var(--evolvewp-predictiveerp-font-size);
+  font-style: italic;
+}
+
+/* ─────────────────────────────────────────────────────────────────────
+   Lists
+   ───────────────────────────────────────────────────────────────────── */
+
+.evolvewp-predictiveerp-admin-wrap ul,
+.evolvewp-predictiveerp-admin-wrap ol {
+  margin-left: 20px;
+  margin-bottom: var(--evolvewp-predictiveerp-spacing-md);
+}
+
+.evolvewp-predictiveerp-admin-wrap ul { list-style-type: disc; }
+.evolvewp-predictiveerp-admin-wrap ol { list-style-type: decimal; }
+
+.evolvewp-predictiveerp-admin-wrap li {
+  margin-bottom: var(--evolvewp-predictiveerp-spacing-xs);
+}
+
+/* ─────────────────────────────────────────────────────────────────────
+   Inline formatting
+   ───────────────────────────────────────────────────────────────────── */
+
+.evolvewp-predictiveerp-admin-wrap strong,
+.evolvewp-predictiveerp-admin-wrap b {
+  font-weight: var(--evolvewp-predictiveerp-font-weight-bold);
+}
+
+.evolvewp-predictiveerp-admin-wrap code,
+.evolvewp-predictiveerp-admin-wrap pre,
+.evolvewp-predictiveerp-admin-wrap kbd {
+  font-family: var(--evolvewp-predictiveerp-font-family-mono);
+  font-size: var(--evolvewp-predictiveerp-font-size-sm);
+  background-color: var(--evolvewp-predictiveerp-color-gray-100);
+  padding: 2px 4px;
+  border-radius: var(--evolvewp-predictiveerp-border-radius-sm);
+}
+
+.evolvewp-predictiveerp-admin-wrap pre {
+  padding: var(--evolvewp-predictiveerp-spacing-md);
+  margin-bottom: var(--evolvewp-predictiveerp-spacing-md);
+  overflow: auto;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+/* ─────────────────────────────────────────────────────────────────────
+   Section titles
+   ───────────────────────────────────────────────────────────────────── */
+
+.evolvewp-predictiveerp-admin-wrap .section-title {
+  border-bottom: 1px solid var(--evolvewp-predictiveerp-color-gray-300);
+  padding-bottom: var(--evolvewp-predictiveerp-spacing-xs);
+  margin-bottom: var(--evolvewp-predictiveerp-spacing-lg);
+}
+
+/* ─────────────────────────────────────────────────────────────────────
+   Helper classes — prefixed to avoid conflicts.
+   Use .evolvewp-predictiveerp-text-* instead of bare .text-* in templates.
+   ───────────────────────────────────────────────────────────────────── */
+
+.evolvewp-predictiveerp-text-small  { font-size: var(--evolvewp-predictiveerp-font-size-sm); }
+.evolvewp-predictiveerp-text-xs     { font-size: var(--evolvewp-predictiveerp-font-size-xs); }
+.evolvewp-predictiveerp-text-lg     { font-size: var(--evolvewp-predictiveerp-font-size-lg); }
+.evolvewp-predictiveerp-text-center { text-align: center; }
+.evolvewp-predictiveerp-text-right  { text-align: right; }
+.evolvewp-predictiveerp-text-left   { text-align: left; }
+
+.evolvewp-predictiveerp-text-success { color: var(--evolvewp-predictiveerp-color-success); }
+.evolvewp-predictiveerp-text-warning { color: var(--evolvewp-predictiveerp-color-warning); }
+.evolvewp-predictiveerp-text-error   { color: var(--evolvewp-predictiveerp-color-error); }
+.evolvewp-predictiveerp-text-info    { color: var(--evolvewp-predictiveerp-color-info); }
+.evolvewp-predictiveerp-text-muted   { color: var(--evolvewp-predictiveerp-color-gray-600); }
+
+/* ─────────────────────────────────────────────────────────────────────
+   Code syntax highlighting (for architecture/docs tabs)
+   ───────────────────────────────────────────────────────────────────── */
+
+.evolvewp-predictiveerp-admin-wrap .code-comment { color: var(--evolvewp-predictiveerp-color-gray-600); }
+.evolvewp-predictiveerp-admin-wrap .code-string  { color: var(--evolvewp-predictiveerp-color-success-dark); }
+.evolvewp-predictiveerp-admin-wrap .code-keyword { color: var(--evolvewp-predictiveerp-color-wp-blue); }

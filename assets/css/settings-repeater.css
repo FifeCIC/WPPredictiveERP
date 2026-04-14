@@ -1,0 +1,114 @@
+/* EvolveWP PredictiveERP Repeater Field Styles */
+
+.evolvewp-predictiveerp-repeater-container {
+    max-width: 800px;
+}
+
+.evolvewp-predictiveerp-repeater-items {
+    margin-bottom: 15px;
+}
+
+.evolvewp-predictiveerp-repeater-item {
+    background: #fff;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    border-radius: 3px;
+}
+
+.evolvewp-predictiveerp-repeater-item.collapsed .evolvewp-predictiveerp-repeater-item-content {
+    display: none;
+}
+
+.evolvewp-predictiveerp-repeater-item-header {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    background: #f9f9f9;
+    border-bottom: 1px solid #ddd;
+    cursor: move;
+}
+
+.evolvewp-predictiveerp-repeater-item.collapsed .evolvewp-predictiveerp-repeater-item-header {
+    border-bottom: none;
+}
+
+.evolvewp-predictiveerp-repeater-handle {
+    color: #999;
+    margin-right: 10px;
+    cursor: move;
+}
+
+.evolvewp-predictiveerp-repeater-title {
+    flex: 1;
+    font-weight: 600;
+}
+
+.evolvewp-predictiveerp-repeater-toggle,
+.evolvewp-predictiveerp-repeater-remove {
+    padding: 0;
+    margin-left: 10px;
+    color: #666;
+    text-decoration: none;
+}
+
+.evolvewp-predictiveerp-repeater-toggle:hover,
+.evolvewp-predictiveerp-repeater-remove:hover {
+    color: #0073aa;
+}
+
+.evolvewp-predictiveerp-repeater-remove:hover {
+    color: #dc3232;
+}
+
+.evolvewp-predictiveerp-repeater-item-content {
+    padding: 15px;
+}
+
+.evolvewp-predictiveerp-repeater-field {
+    margin-bottom: 15px;
+}
+
+.evolvewp-predictiveerp-repeater-field:last-child {
+    margin-bottom: 0;
+}
+
+.evolvewp-predictiveerp-repeater-field label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.evolvewp-predictiveerp-repeater-field input[type="text"],
+.evolvewp-predictiveerp-repeater-field input[type="email"],
+.evolvewp-predictiveerp-repeater-field input[type="url"],
+.evolvewp-predictiveerp-repeater-field input[type="number"],
+.evolvewp-predictiveerp-repeater-field textarea,
+.evolvewp-predictiveerp-repeater-field select {
+    width: 100%;
+    max-width: 500px;
+}
+
+.evolvewp-predictiveerp-repeater-field textarea {
+    min-height: 80px;
+}
+
+.evolvewp-predictiveerp-repeater-placeholder {
+    background: #f0f0f0;
+    border: 2px dashed #ddd;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.evolvewp-predictiveerp-repeater-add {
+    margin-top: 10px;
+}
+
+.evolvewp-predictiveerp-repeater-template {
+    display: none;
+}
+
+/* Sortable helper */
+.ui-sortable-helper {
+    opacity: 0.8;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}

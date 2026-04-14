@@ -1,0 +1,125 @@
+/**
+ * evolvewp-predictiveerp Dark Theme - Admin Layout Styles
+ * 
+ * Dark theme overrides for admin page layouts and structure.
+ * 
+ * @package evolvewp-predictiveerp/CSS/Dark
+ * @since 1.0.0
+ */
+
+.evolvewp-predictiveerp-dark-theme {
+    background-color: var(--evolvewp-predictiveerp-color-white);
+    color: var(--evolvewp-predictiveerp-color-black);
+}
+
+/* Admin Page Structure */
+.evolvewp-predictiveerp-dark-theme .evolvewp-predictiveerp-admin-page {
+    background-color: var(--evolvewp-predictiveerp-color-white);
+}
+
+.evolvewp-predictiveerp-dark-theme .evolvewp-predictiveerp-admin-section {
+    background: var(--evolvewp-predictiveerp-color-gray-50);
+    border: 1px solid var(--evolvewp-predictiveerp-color-gray-300);
+    color: var(--evolvewp-predictiveerp-color-black);
+}
+
+.evolvewp-predictiveerp-dark-theme .evolvewp-predictiveerp-admin-section h2 {
+    color: var(--evolvewp-predictiveerp-color-black);
+    border-bottom: 1px solid var(--evolvewp-predictiveerp-color-gray-300);
+}
+
+/* Service Card Layout */
+.evolvewp-predictiveerp-dark-theme .service-overview {
+    background: var(--evolvewp-predictiveerp-color-gray-50);
+    border: 1px solid var(--evolvewp-predictiveerp-color-gray-300);
+    color: var(--evolvewp-predictiveerp-color-black);
+}
+
+.evolvewp-predictiveerp-dark-theme .service-details h3 {
+    color: var(--evolvewp-predictiveerp-color-black);
+}
+
+/* Import/Export Layout */
+.evolvewp-predictiveerp-dark-theme .evolvewp-predictiveerp-import-section,
+.evolvewp-predictiveerp-dark-theme .evolvewp-predictiveerp-export-section {
+    background-color: var(--evolvewp-predictiveerp-color-gray-100);
+    border: 1px solid var(--evolvewp-predictiveerp-color-gray-300);
+    color: var(--evolvewp-predictiveerp-color-black);
+}
+
+/* Feature Status Tables */
+.evolvewp-predictiveerp-dark-theme .feature-status-table th {
+    background: var(--evolvewp-predictiveerp-color-gray-100);
+    color: var(--evolvewp-predictiveerp-color-black);
+    border-bottom: 1px solid var(--evolvewp-predictiveerp-color-gray-400);
+}
+
+.evolvewp-predictiveerp-dark-theme .feature-status-table td {
+    color: var(--evolvewp-predictiveerp-color-black);
+    border-bottom: 1px solid var(--evolvewp-predictiveerp-color-gray-200);
+}
+
+.evolvewp-predictiveerp-dark-theme .feature-status-table tr:hover {
+    background: var(--evolvewp-predictiveerp-color-gray-100);
+}
+
+.evolvewp-predictiveerp-dark-theme .feature-tab-header {
+    background: var(--evolvewp-predictiveerp-color-gray-200);
+}
+
+.evolvewp-predictiveerp-dark-theme .completion-stats {
+    background: var(--evolvewp-predictiveerp-color-gray-50);
+    border: 1px solid var(--evolvewp-predictiveerp-color-gray-300);
+    color: var(--evolvewp-predictiveerp-color-black);
+}
+
+/* Button Styles */
+.evolvewp-predictiveerp-dark-theme .test-button {
+    background-color: var(--evolvewp-predictiveerp-color-primary);
+    color: var(--evolvewp-predictiveerp-color-white);
+}
+
+.evolvewp-predictiveerp-dark-theme .test-button:hover {
+    background-color: var(--evolvewp-predictiveerp-color-primary-dark);
+}
+
+.evolvewp-predictiveerp-dark-theme .test-button.maintenance {
+    background-color: var(--evolvewp-predictiveerp-color-gray-500);
+}
+
+/* Quick Actions Bar */
+.evolvewp-predictiveerp-dark-theme .api-quick-actions {
+    background: var(--evolvewp-predictiveerp-color-gray-50);
+    border: 1px solid var(--evolvewp-predictiveerp-color-gray-300);
+}
+
+.evolvewp-predictiveerp-dark-theme .quick-action-button {
+    background: var(--evolvewp-predictiveerp-color-gray-100);
+    border: 1px solid var(--evolvewp-predictiveerp-color-gray-400);
+    color: var(--evolvewp-predictiveerp-color-black);
+}
+
+.evolvewp-predictiveerp-dark-theme .quick-action-button:hover {
+    background: var(--evolvewp-predictiveerp-color-gray-200);
+    color: var(--evolvewp-predictiveerp-color-primary);
+}
+
+/* Issues Tab Styles */
+.evolvewp-predictiveerp-dark-theme .issue-row:hover {
+    background-color: var(--evolvewp-predictiveerp-color-gray-100);
+}
+
+/* BugNet Log Viewer Styles */
+.evolvewp-predictiveerp-dark-theme .bugnet-log-viewer h3 {
+    color: var(--evolvewp-predictiveerp-color-black);
+}
+
+.evolvewp-predictiveerp-dark-theme .bugnet-log-viewer textarea {
+    background: var(--evolvewp-predictiveerp-color-gray-100);
+    border: 1px solid var(--evolvewp-predictiveerp-color-gray-400);
+    color: var(--evolvewp-predictiveerp-color-black);
+}
+
+.evolvewp-predictiveerp-dark-theme .bugnet-log-viewer p {
+    color: var(--evolvewp-predictiveerp-color-gray-700);
+}

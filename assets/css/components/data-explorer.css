@@ -1,0 +1,99 @@
+/**
+ * evolvewp-predictiveerp - Data Explorer Component Styles
+ * 
+ * Interface elements for exploring and displaying data.
+ * 
+ * HTML Structure:
+ * <div class="evolvewp-predictiveerp-data-explorer">
+ *   <div class="evolvewp-predictiveerp-data-explorer-controls">...</div>
+ *   <div class="evolvewp-predictiveerp-data-explorer-response">...</div>
+ * </div>
+ * 
+ * @package evolvewp-predictiveerp/CSS/Components
+ * @since 1.0.0
+ */
+
+/* Data Explorer Content */
+.evolvewp-predictiveerp-data-explorer-content {
+    padding: var(--evolvewp-predictiveerp-spacing-lg);
+}
+
+/* Data Explorer Controls */
+.evolvewp-predictiveerp-data-explorer-controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--evolvewp-predictiveerp-spacing-lg);
+    margin-bottom: var(--evolvewp-predictiveerp-spacing-xl);
+    align-items: flex-end;
+}
+
+.evolvewp-predictiveerp-data-explorer-control {
+    flex: 1;
+    min-width: 200px;
+}
+
+.evolvewp-predictiveerp-data-explorer-control label {
+    display: block;
+    margin-bottom: var(--evolvewp-predictiveerp-spacing-xs);
+    font-weight: var(--evolvewp-predictiveerp-font-weight-medium);
+}
+
+.evolvewp-predictiveerp-data-explorer-control select,
+.evolvewp-predictiveerp-data-explorer-control input {
+    width: 100%;
+}
+
+/* Data Explorer Response */
+.evolvewp-predictiveerp-data-explorer-response {
+    background: #f8f8f8;
+    border: var(--evolvewp-predictiveerp-border-standard);
+    padding: var(--evolvewp-predictiveerp-spacing-lg);
+    overflow: auto;
+    max-height: 400px;
+    white-space: pre-wrap;
+    font-family: monospace;
+    margin-top: var(--evolvewp-predictiveerp-spacing-md);
+}
+
+/* Data Explorer Loading */
+.evolvewp-predictiveerp-data-explorer-loading {
+    display: flex;
+    align-items: center;
+    margin: var(--evolvewp-predictiveerp-spacing-md) 0;
+}
+
+.evolvewp-predictiveerp-data-explorer-loading .spinner {
+    float: none;
+    margin-top: 0;
+    margin-right: var(--evolvewp-predictiveerp-spacing-md);
+}
+
+/* Test Results */
+.evolvewp-predictiveerp-api-test-results {
+    margin-top: var(--evolvewp-predictiveerp-spacing-md);
+}
+
+.evolvewp-predictiveerp-test-result {
+    padding: var(--evolvewp-predictiveerp-spacing-md);
+    border-radius: var(--evolvewp-predictiveerp-border-radius);
+    margin-top: var(--evolvewp-predictiveerp-spacing-md);
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.evolvewp-predictiveerp-test-result.success {
+    background-color: #f0f9eb;
+    border-left: 4px solid #46b450;
+}
+
+.evolvewp-predictiveerp-test-result.error {
+    background-color: #fdf2f2;
+    border-left: 4px solid #dc3232;
+}
+
+.evolvewp-predictiveerp-test-result .dashicons {
+    margin-right: var(--evolvewp-predictiveerp-spacing-xs);
+    vertical-align: middle;
+}
+
+/* Legacy classes mapping for backward compatibility */

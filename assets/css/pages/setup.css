@@ -1,0 +1,906 @@
+/**
+ * evolvewp-predictiveerp Setup Wizard Styles - Modern Trading Theme
+ *
+ * @package evolvewp-predictiveerp/CSS/Pages
+ * @since 2.0.0
+ */
+
+/* CSS Custom Properties for Theme System */
+html, :root {
+    /* Light Theme - Trading Colors */
+    --evolvewp-predictiveerp-primary: #1a365d;
+    --evolvewp-predictiveerp-primary-hover: #2d3748;
+    --evolvewp-predictiveerp-secondary: #0d9488;
+    --evolvewp-predictiveerp-accent: #f59e0b;
+    --evolvewp-predictiveerp-success: #10b981;
+    --evolvewp-predictiveerp-warning: #f59e0b;
+    --evolvewp-predictiveerp-error: #ef4444;
+    --evolvewp-predictiveerp-neutral: #64748b;
+    --evolvewp-predictiveerp-neutral-light: #94a3b8;
+    
+    /* Background Colors */
+    --evolvewp-predictiveerp-bg-primary: #ffffff;
+    --evolvewp-predictiveerp-bg-secondary: #f8fafc;
+    --evolvewp-predictiveerp-bg-tertiary: #f1f5f9;
+    --evolvewp-predictiveerp-bg-card: #ffffff;
+    
+    /* Text Colors */
+    --evolvewp-predictiveerp-text-primary: #1e293b;
+    --evolvewp-predictiveerp-text-secondary: #475569;
+    --evolvewp-predictiveerp-text-muted: #64748b;
+    
+    /* Border Colors */
+    --evolvewp-predictiveerp-border: #e2e8f0;
+    --evolvewp-predictiveerp-border-light: #f1f5f9;
+    
+    /* Shadow */
+    --evolvewp-predictiveerp-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    --evolvewp-predictiveerp-shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+/* Dark Theme */
+html[data-theme="dark"], [data-theme="dark"] {
+    --evolvewp-predictiveerp-primary: #3b82f6;
+    --evolvewp-predictiveerp-primary-hover: #2563eb;
+    --evolvewp-predictiveerp-secondary: #14b8a6;
+    --evolvewp-predictiveerp-accent: #fbbf24;
+    --evolvewp-predictiveerp-success: #22c55e;
+    --evolvewp-predictiveerp-warning: #f59e0b;
+    --evolvewp-predictiveerp-error: #f87171;
+    --evolvewp-predictiveerp-neutral: #9ca3af;
+    --evolvewp-predictiveerp-neutral-light: #6b7280;
+    
+    /* Dark Background Colors */
+    --evolvewp-predictiveerp-bg-primary: #111827;
+    --evolvewp-predictiveerp-bg-secondary: #1f2937;
+    --evolvewp-predictiveerp-bg-tertiary: #374151;
+    --evolvewp-predictiveerp-bg-card: #1f2937;
+    
+    /* Dark Text Colors */
+    --evolvewp-predictiveerp-text-primary: #f9fafb;
+    --evolvewp-predictiveerp-text-secondary: #d1d5db;
+    --evolvewp-predictiveerp-text-muted: #9ca3af;
+    
+    /* Dark Border Colors */
+    --evolvewp-predictiveerp-border: #374151;
+    --evolvewp-predictiveerp-border-light: #4b5563;
+    
+    /* Dark Shadow */
+    --evolvewp-predictiveerp-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3), 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+    --evolvewp-predictiveerp-shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.3), 0 4px 6px -2px rgba(0, 0, 0, 0.2);
+}
+
+/* Theme Toggle Button */
+.evolvewp-predictiveerp-theme-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: var(--evolvewp-predictiveerp-bg-card);
+    border: 1px solid var(--evolvewp-predictiveerp-border);
+    border-radius: 8px;
+    padding: 8px 12px;
+    cursor: pointer;
+    box-shadow: var(--evolvewp-predictiveerp-shadow);
+    color: var(--evolvewp-predictiveerp-text-primary);
+    font-size: 14px;
+    transition: all 0.2s ease;
+    z-index: 1000;
+}
+
+.evolvewp-predictiveerp-theme-toggle:hover {
+    background: var(--evolvewp-predictiveerp-bg-tertiary);
+    transform: translateY(-1px);
+}
+
+/* Notice Components */
+.evolvewp-predictiveerp-notice {
+    padding: 16px 20px;
+    border-radius: 8px;
+    margin: 16px 0;
+    border-left: 4px solid;
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.evolvewp-predictiveerp-notice-icon {
+    font-size: 18px;
+    margin-top: 1px;
+    flex-shrink: 0;
+}
+
+.evolvewp-predictiveerp-notice-success {
+    background: rgba(16, 185, 129, 0.1);
+    border-color: var(--evolvewp-predictiveerp-success);
+    color: var(--evolvewp-predictiveerp-success);
+}
+
+.evolvewp-predictiveerp-notice-warning {
+    background: rgba(245, 158, 11, 0.1);
+    border-color: var(--evolvewp-predictiveerp-warning);
+    color: var(--evolvewp-predictiveerp-warning);
+}
+
+.evolvewp-predictiveerp-notice-error {
+    background: rgba(239, 68, 68, 0.1);
+    border-color: var(--evolvewp-predictiveerp-error);
+    color: var(--evolvewp-predictiveerp-error);
+}
+
+.evolvewp-predictiveerp-notice-info {
+    background: rgba(26, 54, 93, 0.1);
+    border-color: var(--evolvewp-predictiveerp-primary);
+    color: var(--evolvewp-predictiveerp-primary);
+}
+.evolvewp-predictiveerp-setup-wrap {
+    background: var(--evolvewp-predictiveerp-bg-secondary);
+    color: var(--evolvewp-predictiveerp-text-primary);
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    margin: -20px -20px 0;
+    padding: 20px;
+    min-height: calc(100vh - 32px);
+    overflow-x: hidden;
+    width: calc(100vw - 160px);
+    margin-left: -20px;
+}
+
+@media (max-width: 960px) {
+    .evolvewp-predictiveerp-setup-wrap {
+        width: calc(100vw - 36px);
+    }
+}
+
+@media (max-width: 782px) {
+    .evolvewp-predictiveerp-setup-wrap {
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+
+
+#evolvewp-predictiveerp-logo {
+    border: 0;
+    margin: 0 0 32px;
+    padding: 20px;
+    text-align: center;
+}
+
+#evolvewp-predictiveerp-logo a {
+    color: var(--evolvewp-predictiveerp-primary);
+    text-decoration: none;
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+#evolvewp-predictiveerp-logo img {
+    max-width: 200px;
+    height: auto;
+}
+
+.evolvewp-predictiveerp-setup-content {
+    padding: 32px;
+    background: transparent;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    max-width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+.evolvewp-predictiveerp-setup-content h1 {
+    margin: 0 0 32px;
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--evolvewp-predictiveerp-text-primary);
+    letter-spacing: -0.5px;
+    line-height: 1.2;
+}
+
+.evolvewp-predictiveerp-setup-content h2 {
+    margin: 32px 0 16px;
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--evolvewp-predictiveerp-text-primary);
+    letter-spacing: -0.25px;
+    line-height: 1.3;
+}
+
+.evolvewp-predictiveerp-setup-content h3 {
+    margin: 24px 0 12px;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--evolvewp-predictiveerp-text-primary);
+    line-height: 1.4;
+}
+
+.evolvewp-predictiveerp-setup-content p {
+    margin: 0 0 16px;
+    font-size: 15px;
+    line-height: 1.6;
+    color: var(--evolvewp-predictiveerp-text-secondary);
+}
+
+.evolvewp-predictiveerp-setup-content a {
+    color: var(--evolvewp-predictiveerp-primary);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.evolvewp-predictiveerp-setup-content a:hover, .evolvewp-predictiveerp-setup-content a:focus {
+    color: var(--evolvewp-predictiveerp-primary-hover);
+    text-decoration: underline;
+}
+.evolvewp-predictiveerp-setup-content .form-table th {
+    width: 35%;
+    vertical-align: top;
+    font-weight: normal;
+}
+.evolvewp-predictiveerp-setup-content .form-table td {
+    vertical-align: top;
+}
+.evolvewp-predictiveerp-setup-content .form-table td select, .evolvewp-predictiveerp-setup-content .form-table td input[type="text"], .evolvewp-predictiveerp-setup-content .form-table td input[type="password"], .evolvewp-predictiveerp-setup-content .form-table td textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px 16px;
+    border: 2px solid var(--evolvewp-predictiveerp-border);
+    border-radius: 8px;
+    background: var(--evolvewp-predictiveerp-bg-primary);
+    color: var(--evolvewp-predictiveerp-text-primary);
+    font-size: 14px;
+    transition: all 0.2s ease;
+}
+
+.evolvewp-predictiveerp-setup-content .form-table td select:focus, .evolvewp-predictiveerp-setup-content .form-table td input:focus, .evolvewp-predictiveerp-setup-content .form-table td textarea:focus {
+    outline: none;
+    border-color: var(--evolvewp-predictiveerp-primary);
+    box-shadow: 0 0 0 3px rgba(26, 54, 93, 0.1);
+}
+
+.evolvewp-predictiveerp-setup-content .form-table td input[size] {
+    width: auto;
+}
+
+.evolvewp-predictiveerp-setup-content .form-table td .description {
+    line-height: 1.5;
+    display: block;
+    margin-top: 8px;
+    color: var(--evolvewp-predictiveerp-text-muted);
+    font-size: 13px;
+}
+
+.evolvewp-predictiveerp-setup-content .form-table td .input-checkbox, .evolvewp-predictiveerp-setup-content .form-table td .input-radio {
+    width: 18px;
+    height: 18px;
+    margin: 0 8px 0 0;
+    accent-color: var(--evolvewp-predictiveerp-primary);
+}
+.evolvewp-predictiveerp-setup-content .form-table .section_title td {
+    padding: 0;
+}
+.evolvewp-predictiveerp-setup-content .form-table .section_title td h2, .evolvewp-predictiveerp-setup-content .form-table .section_title td p {
+    margin: 12px 0 0;
+}
+.evolvewp-predictiveerp-setup-content .form-table th, .evolvewp-predictiveerp-setup-content .form-table td {
+    padding: 12px 0;
+    margin: 0;
+    border: 0;
+}
+.evolvewp-predictiveerp-setup-content .form-table th:first-child, .evolvewp-predictiveerp-setup-content .form-table td:first-child {
+    padding-right: 1em;
+}
+.evolvewp-predictiveerp-setup-content table.tax-rates {
+    width: 100%;
+    font-size: .92em;
+}
+.evolvewp-predictiveerp-setup-content table.tax-rates th {
+    padding: 0;
+    text-align: center;
+    width: auto;
+    vertical-align: middle;
+}
+.evolvewp-predictiveerp-setup-content table.tax-rates td {
+    border: 1px solid #f5f5f5;
+    padding: 6px;
+    text-align: center;
+    vertical-align: middle;
+}
+.evolvewp-predictiveerp-setup-content table.tax-rates td input {
+    outline: 0;
+    border: 0;
+    padding: 0;
+    box-shadow: none;
+    text-align: center;
+    width: 100%;
+}
+.evolvewp-predictiveerp-setup-content table.tax-rates td.sort {
+    cursor: move;
+    color: #ccc;
+}
+.evolvewp-predictiveerp-setup-content table.tax-rates td.sort:before {
+    content: "\f333";
+    font-family: 'dashicons';
+}
+.evolvewp-predictiveerp-setup-content table.tax-rates td.readonly {
+    background: #f5f5f5;
+}
+.evolvewp-predictiveerp-setup-content table.tax-rates .add {
+    padding: 1em 0 0 1em;
+    line-height: 1em;
+    font-size: 1em;
+    width: 0;
+    margin: 6px 0 0;
+    height: 0;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+}
+.evolvewp-predictiveerp-setup-content table.tax-rates .add:before {
+    content: "\f502";
+    font-family: 'dashicons';
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.evolvewp-predictiveerp-setup-content table.tax-rates .remove {
+    padding: 1em 0 0 1em;
+    line-height: 1em;
+    font-size: 1em;
+    width: 0;
+    margin: 0;
+    height: 0;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+}
+.evolvewp-predictiveerp-setup-content table.tax-rates .remove:before {
+    content: "\f182";
+    font-family: 'dashicons';
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.evolvewp-predictiveerp-setup-content .evolvewp-predictiveerp-setup-extensions {
+    width: 100%;
+    border-top: 1px solid #eee;
+}
+.evolvewp-predictiveerp-setup-content .evolvewp-predictiveerp-setup-extensions thead: th {
+    display: none;
+}
+.evolvewp-predictiveerp-setup-content .evolvewp-predictiveerp-setup-extensions .page-name {
+    width: 30%;
+    font-weight: bold;
+}
+.evolvewp-predictiveerp-setup-content .evolvewp-predictiveerp-setup-extensions th, .evolvewp-predictiveerp-setup-content .evolvewp-predictiveerp-setup-extensions td {
+    padding: 14px 0;
+    border-bottom: 1px solid #eee;
+}
+.evolvewp-predictiveerp-setup-content .evolvewp-predictiveerp-setup-extensions th:first-child, .evolvewp-predictiveerp-setup-content .evolvewp-predictiveerp-setup-extensions td:first-child {
+    padding-right: 9px;
+}
+.evolvewp-predictiveerp-setup-content .evolvewp-predictiveerp-setup-extensions th {
+    padding-top: 0;
+}
+.evolvewp-predictiveerp-setup-content .evolvewp-predictiveerp-setup-extensions .page-options p {
+    color: #777;
+    margin: 6px 0 0 24px;
+    line-height: 1.75em;
+}
+.evolvewp-predictiveerp-setup-content .evolvewp-predictiveerp-setup-extensions .page-options p input {
+    vertical-align: middle;
+    margin: 1px 0 0 0;
+    height: 1.75em;
+    width: 1.75em;
+    line-height: 1.75em;
+}
+.evolvewp-predictiveerp-setup-content .evolvewp-predictiveerp-setup-extensions .page-options p label {
+    line-height: 1;
+}
+@media screen and (max-width: 782px) {
+    .evolvewp-predictiveerp-setup-content .form-table tbody {
+        th {
+            width: auto;
+        }
+    }
+}
+.evolvewp-predictiveerp-setup-content .evolvewp-predictiveerp-setup-next-steps {
+    overflow: hidden;
+    margin: 0 0 24px;
+}
+.evolvewp-predictiveerp-setup-content .evolvewp-predictiveerp-setup-next-steps h2 {
+    margin-bottom: 12px;
+}
+.evolvewp-predictiveerp-setup-content .evolvewp-predictiveerp-setup-next-steps .evolvewp-predictiveerp-setup-next-steps-first {
+    float: left;
+    width: 50%;
+    box-sizing: border-box;
+}
+.evolvewp-predictiveerp-setup-content .evolvewp-predictiveerp-setup-next-steps .evolvewp-predictiveerp-setup-next-steps-last {
+    float: right;
+    width: 50%;
+    box-sizing: border-box;
+}
+.evolvewp-predictiveerp-setup-content .evolvewp-predictiveerp-setup-next-steps ul {
+    padding: 0 2em 0 0;
+    list-style: none outside;
+    margin: 0 0 -.75em;
+}
+.evolvewp-predictiveerp-setup-content .evolvewp-predictiveerp-setup-next-steps ul li: a {
+    display: block;
+    padding: 0 0 .75em;
+}
+.evolvewp-predictiveerp-setup-content .evolvewp-predictiveerp-setup-next-steps ul .setup-thing a {
+    background-color: #472F75;
+    border-color: #472F75;
+    -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.25), 0 1px 0 #472F75;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,.25), 0 1px 0 #472F75;
+    text-shadow: 0px -1px 1px #472F75, 1px 0px 1px #472F75, 0px 1px 1px #472F75, -1px 0px 1px #472F75;
+    font-size: 1em;
+    height: auto;
+    line-height: 1.75em;
+    margin: 0 0 .75em;
+    opacity: 1;
+    padding: 1em;
+    text-align: center;
+}
+.evolvewp-predictiveerp-setup-content .evolvewp-predictiveerp-setup-next-steps ul .setup-thing a:hover, .evolvewp-predictiveerp-setup-content .evolvewp-predictiveerp-setup-next-steps ul .setup-thing a:focus, .evolvewp-predictiveerp-setup-content .evolvewp-predictiveerp-setup-next-steps ul .setup-thing a:active {
+    background: #472F75;
+    border-color: #472F75;
+    -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.25), 0 1px 0 #472F75;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,.25), 0 1px 0 #472F75;
+}
+.evolvewp-predictiveerp-setup-content .evolvewp-predictiveerp-setup-next-steps ul li:a before {
+    color: #82878c;
+    font: normal 20px/1 'dashicons';
+    speak: none;
+    display: inline-block;
+    padding: 0 10px 0 0;
+    top: 1px;
+    position: relative;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-decoration: none !important;
+    vertical-align: top;
+}
+.evolvewp-predictiveerp-setup-content .evolvewp-predictiveerp-setup-next-steps ul .learn-more a:before {
+    content: "\f105";
+}
+.evolvewp-predictiveerp-setup-content .evolvewp-predictiveerp-setup-next-steps ul .video-walkthrough a:before {
+    content: "\f126";
+}
+.evolvewp-predictiveerp-setup-content .evolvewp-predictiveerp-setup-next-steps ul .newsletter a:before {
+    content: "\f465";
+}
+.evolvewp-predictiveerp-setup-content .evolvewp-predictiveerp-tracker, .evolvewp-predictiveerp-setup-content .updated {
+    padding: 24px 24px 0;
+    margin: 0 0 24px 0;
+    overflow: hidden;
+    background: #f5f5f5;
+}
+.evolvewp-predictiveerp-setup-content .evolvewp-predictiveerp-tracker p, .evolvewp-predictiveerp-setup-content .updated p {
+    padding: 0;
+    margin: 0 0 12px;
+}
+.evolvewp-predictiveerp-setup-content .evolvewp-predictiveerp-tracker p:last-child, .evolvewp-predictiveerp-setup-content .updated p:last-child {
+    margin: 0 0 24px 0;
+}
+.evolvewp-predictiveerp-setup-steps {
+    padding: 0 0 24px;
+    margin: 0;
+    list-style: none outside;
+    overflow: hidden;
+    color: #ccc;
+    width:100%;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+}
+.evolvewp-predictiveerp-setup-steps li {
+    width: 20%;
+    float: left;
+    padding: 0 0 0.8em;
+    margin: 0;
+    text-align: center;
+    position: relative;
+    border-bottom: 4px solid #ccc;
+    line-height: 1.4em;
+}
+.evolvewp-predictiveerp-setup-steps li:before {
+    content: "";
+    border: 4px solid #ccc;
+    border-radius: 100%;
+    width: 4px;
+    height: 4px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -6px;
+    margin-bottom: -8px;
+    background: #fff;
+}
+.evolvewp-predictiveerp-setup-steps {
+    background: var(--evolvewp-predictiveerp-bg-card);
+    border-radius: 12px;
+    padding: 24px 0;
+    margin: 0 0 32px;
+    border: 1px solid var(--evolvewp-predictiveerp-border);
+}
+
+.evolvewp-predictiveerp-setup-steps li {
+    color: var(--evolvewp-predictiveerp-text-muted);
+    border-bottom-color: var(--evolvewp-predictiveerp-border);
+    font-weight: 500;
+}
+
+.evolvewp-predictiveerp-setup-steps li:before {
+    border-color: var(--evolvewp-predictiveerp-border);
+    background: var(--evolvewp-predictiveerp-bg-primary);
+}
+
+.evolvewp-predictiveerp-setup-steps li.active {
+    border-color: var(--evolvewp-predictiveerp-primary);
+    color: var(--evolvewp-predictiveerp-primary);
+    font-weight: 600;
+}
+
+.evolvewp-predictiveerp-setup-steps li.active:before {
+    border-color: var(--evolvewp-predictiveerp-primary);
+    background: var(--evolvewp-predictiveerp-primary);
+}
+
+.evolvewp-predictiveerp-setup-steps li.done {
+    border-color: var(--evolvewp-predictiveerp-success);
+    color: var(--evolvewp-predictiveerp-success);
+}
+
+.evolvewp-predictiveerp-setup-steps li.done:before {
+    border-color: var(--evolvewp-predictiveerp-success);
+    background: var(--evolvewp-predictiveerp-success);
+}
+.evolvewp-predictiveerp-setup .evolvewp-predictiveerp-setup-actions {
+    overflow: hidden;
+}
+.evolvewp-predictiveerp-setup .evolvewp-predictiveerp-setup-actions .button {
+    float: right;
+    font-size: 1.25em;
+    padding: .5em 1em;
+    line-height: 1em;
+    margin-right: .5em;
+    margin-bottom: 2px;
+    height: auto;
+    border-radius: 4px;
+}
+.evolvewp-predictiveerp-setup .evolvewp-predictiveerp-setup-actions .button {
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 14px;
+    border: 2px solid;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.evolvewp-predictiveerp-setup .evolvewp-predictiveerp-setup-actions .button-primary {
+    background: var(--evolvewp-predictiveerp-primary);
+    border-color: var(--evolvewp-predictiveerp-primary);
+    color: white;
+    box-shadow: var(--evolvewp-predictiveerp-shadow);
+    text-shadow: none;
+}
+
+.evolvewp-predictiveerp-setup .evolvewp-predictiveerp-setup-actions .button-primary:hover, .evolvewp-predictiveerp-setup .evolvewp-predictiveerp-setup-actions .button-primary:focus {
+    background: var(--evolvewp-predictiveerp-primary-hover);
+    border-color: var(--evolvewp-predictiveerp-primary-hover);
+    transform: translateY(-1px);
+    box-shadow: var(--evolvewp-predictiveerp-shadow-lg);
+}
+
+.evolvewp-predictiveerp-setup .evolvewp-predictiveerp-setup-actions .button:not(.button-primary) {
+    background: var(--evolvewp-predictiveerp-bg-card);
+    border-color: var(--evolvewp-predictiveerp-border);
+    color: var(--evolvewp-predictiveerp-text-secondary);
+}
+
+.evolvewp-predictiveerp-setup .evolvewp-predictiveerp-setup-actions .button:not(.button-primary):hover {
+    background: var(--evolvewp-predictiveerp-bg-tertiary);
+    border-color: var(--evolvewp-predictiveerp-neutral);
+    color: var(--evolvewp-predictiveerp-text-primary);
+}
+.evolvewp-predictiveerp-return-to-dashboard {
+    font-size: 0.85em;
+    color: #b5b5b5;
+    margin: 1.18em 0;
+    display: block;
+    text-align: center;
+}
+ul.evolvewp-predictiveerp-wizard-plugin-extensions {
+    border: 1px solid #eee;
+    border-bottom-width: 2px;
+    padding: 0;
+    margin: 0 0 1em;
+    list-style: none outside;
+    border-radius: 4px;
+}
+ul.evolvewp-predictiveerp-wizard-plugin-extensions li.evolvewp-predictiveerp-wizard-extension {
+    padding: 1.5em 1em 1em 4em;
+    border-top: 1px solid #eee;
+    list-style: none outside;
+    cursor: pointer;
+    color: #555;
+    box-sizing: border-box;
+    clear: both;
+}
+ul.evolvewp-predictiveerp-wizard-plugin-extensions li.evolvewp-predictiveerp-wizard-extension:first-child {
+    border-top: 0;
+}
+ul.evolvewp-predictiveerp-wizard-plugin-extensions li.evolvewp-predictiveerp-wizard-extension.featured {
+    width: 50%;
+    float: left;
+    clear: none;
+    border-right: 1px solid #eee;
+    border-top: 0;
+}
+ul.evolvewp-predictiveerp-wizard-plugin-extensions li.evolvewp-predictiveerp-wizard-extension.featured-row-last {
+    border-right: 0;
+}
+ul.evolvewp-predictiveerp-wizard-plugin-extensions li.evolvewp-predictiveerp-wizard-extension .evolvewp-predictiveerp-wizard-extension-settings {
+    display: none;
+    margin-bottom: 0;
+    cursor: default;
+}
+ul.evolvewp-predictiveerp-wizard-plugin-extensions li.evolvewp-predictiveerp-wizard-extension.checked {
+    background: #C6FFC6;
+}
+ul.evolvewp-predictiveerp-wizard-plugin-extensions li.evolvewp-predictiveerp-wizard-extension.checked .evolvewp-predictiveerp-wizard-extension-settings {
+    display: table;
+}
+ul.evolvewp-predictiveerp-wizard-plugin-extensions li.evolvewp-predictiveerp-wizard-extension .evolvewp-predictiveerp-wizard-extension-description {
+    font-style: italic;
+}
+ul.evolvewp-predictiveerp-wizard-plugin-extensions li.evolvewp-predictiveerp-wizard-extension .evolvewp-predictiveerp-wizard-extension-description p {
+    margin: 0 0 .5em;
+}
+ul.evolvewp-predictiveerp-wizard-plugin-extensions li.evolvewp-predictiveerp-wizard-extension .evolvewp-predictiveerp-wizard-extension-enable {
+    margin: 0 0 .5em;
+}
+ul.evolvewp-predictiveerp-wizard-plugin-extensions li.evolvewp-predictiveerp-wizard-extension .evolvewp-predictiveerp-wizard-extension-enable label {
+    display: block;
+    font-weight: bold;
+    vertical-align: middle;
+}
+ul.evolvewp-predictiveerp-wizard-plugin-extensions li.evolvewp-predictiveerp-wizard-extension .evolvewp-predictiveerp-wizard-extension-enable label img {
+    max-height: 2em;
+    vertical-align: middle;
+}
+ul.evolvewp-predictiveerp-wizard-plugin-extensions li.evolvewp-predictiveerp-wizard-extension .evolvewp-predictiveerp-wizard-extension-enable label:before {
+    content: '';
+    background: #fff;
+    border: 2px solid #eee;
+    display: inline-block;
+    float: left;
+    vertical-align: middle;
+    width: 2em;
+    height: 2em;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.8em;
+    text-align: center;
+    margin: 0 1em 0 -3em;
+    border-radius: 4px;
+}
+ul.evolvewp-predictiveerp-wizard-plugin-extensions li.evolvewp-predictiveerp-wizard-extension .evolvewp-predictiveerp-wizard-extension-enable input {
+    opacity: 0;
+    width: 0;
+    position: absolute;
+}
+ul.evolvewp-predictiveerp-wizard-plugin-extensions li.evolvewp-predictiveerp-wizard-extension .evolvewp-predictiveerp-wizard-extension-enable input:checked + label:before {
+    content: "\f147";
+    font-family: 'dashicons';
+    color: #fff;
+    border-color: #472F75;
+    background: #472F75;
+}
+ul.evolvewp-predictiveerp-wizard-plugin-extensions li.evolvewp-predictiveerp-wizard-extension .evolvewp-predictiveerp-wizard-extension-enable input:focus + label {
+    outline: 1px solid #ddd; /* focus style */
+}
+
+/* Modern Section Styling */
+.evolvewp-predictiveerp-setup-section {
+    background: var(--evolvewp-predictiveerp-bg-card);
+    border: 1px solid var(--evolvewp-predictiveerp-border);
+    border-radius: 12px;
+    padding: 24px;
+    margin-bottom: 24px;
+    box-shadow: var(--evolvewp-predictiveerp-shadow);
+}
+
+.evolvewp-predictiveerp-disclaimer-section {
+    background: var(--evolvewp-predictiveerp-bg-card);
+    border: 2px solid var(--evolvewp-predictiveerp-warning);
+    border-radius: 12px;
+    padding: 24px;
+    margin-bottom: 24px;
+}
+
+.evolvewp-predictiveerp-dev-section {
+    background: var(--evolvewp-predictiveerp-bg-tertiary);
+    border: 1px solid var(--evolvewp-predictiveerp-border);
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 16px;
+    border-left: 4px solid var(--evolvewp-predictiveerp-primary);
+}
+
+/* Vertical Tab-Style Setup Wizard */
+.evolvewp-predictiveerp-wizard-container {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.evolvewp-predictiveerp-wizard-sidebar {
+    width: 250px;
+    flex-shrink: 0;
+}
+
+.wizard-step-tab {
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    margin-bottom: 8px;
+    background: var(--evolvewp-predictiveerp-bg-card);
+    border: 2px solid var(--evolvewp-predictiveerp-border);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    position: relative;
+}
+
+.wizard-step-tab:hover {
+    border-color: var(--evolvewp-predictiveerp-primary);
+    transform: translateX(2px);
+}
+
+.wizard-step-tab.active {
+    background: var(--evolvewp-predictiveerp-primary);
+    border-color: var(--evolvewp-predictiveerp-primary);
+    color: white;
+    transform: translateX(4px);
+    box-shadow: var(--evolvewp-predictiveerp-shadow-lg);
+}
+
+.wizard-step-tab.completed {
+    background: var(--evolvewp-predictiveerp-success);
+    border-color: var(--evolvewp-predictiveerp-success);
+    color: white;
+}
+
+.wizard-step-tab.completed .step-number::after {
+    content: '✓';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.step-number {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 14px;
+    margin-right: 12px;
+    position: relative;
+}
+
+.wizard-step-tab.active .step-number {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.wizard-step-tab.completed .step-number {
+    background: rgba(255, 255, 255, 0.3);
+    color: transparent;
+}
+
+.wizard-step-tab.disabled {
+    background: var(--evolvewp-predictiveerp-bg-secondary);
+    border-color: var(--evolvewp-predictiveerp-border-light);
+    color: var(--evolvewp-predictiveerp-text-muted);
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+.wizard-step-tab.disabled:hover {
+    border-color: var(--evolvewp-predictiveerp-border-light);
+    transform: none;
+}
+
+.wizard-step-tab.disabled .step-number {
+    background: rgba(100, 116, 139, 0.2);
+}
+
+.step-label {
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.evolvewp-predictiveerp-wizard-content {
+    flex: 1;
+    background: var(--evolvewp-predictiveerp-bg-card);
+    border: 1px solid var(--evolvewp-predictiveerp-border);
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: var(--evolvewp-predictiveerp-shadow);
+}
+
+/* Setup Wizard Symbol Selection Styles */
+.evolvewp-predictiveerp-symbols-container {
+    max-height: 300px;
+    overflow-y: auto;
+    margin-bottom: 20px;
+    padding: 16px;
+    background: var(--evolvewp-predictiveerp-bg-card);
+    border: 1px solid var(--evolvewp-predictiveerp-border);
+    border-radius: 8px;
+    overflow: visible;
+}
+
+.evolvewp-predictiveerp-symbols-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 12px;
+}
+
+.evolvewp-predictiveerp-symbol-item {
+    position: relative;
+    cursor: pointer;
+    padding: 8px 12px;
+    background: var(--evolvewp-predictiveerp-bg-tertiary);
+    border: 1px solid var(--evolvewp-predictiveerp-border);
+    border-radius: 6px;
+    transition: all 0.2s ease;
+}
+
+.evolvewp-predictiveerp-symbol-item:hover {
+    background: var(--evolvewp-predictiveerp-bg-secondary);
+    border-color: var(--evolvewp-predictiveerp-primary);
+    transform: translateY(-1px);
+}
+
+.evolvewp-predictiveerp-symbol-item:hover::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    z-index: 100;
+    left: 0;
+    top: 100%;
+    background: var(--evolvewp-predictiveerp-text-primary);
+    color: var(--evolvewp-predictiveerp-bg-primary);
+    border-radius: 6px;
+    padding: 8px 12px;
+    white-space: pre-line;
+    font-size: 12px;
+    min-width: 200px;
+    max-width: 300px;
+    box-shadow: var(--evolvewp-predictiveerp-shadow-lg);
+    margin-top: 4px;
+}
+
+.evolvewp-predictiveerp-symbol-controls {
+    margin-bottom: 20px;
+    padding: 16px;
+    background: var(--evolvewp-predictiveerp-bg-tertiary);
+    border-radius: 8px;
+}

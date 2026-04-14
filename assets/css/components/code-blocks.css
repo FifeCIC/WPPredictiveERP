@@ -1,0 +1,119 @@
+/**
+ * evolvewp-predictiveerp - Code Blocks Component Styles
+ * 
+ * Styles for code blocks, syntax highlighting, and code displays.
+ * 
+ * HTML Structure:
+ * <div class="evolvewp-predictiveerp-code-block">
+ *   <code>Code content goes here</code>
+ *   <button class="evolvewp-predictiveerp-copy-code">Copy</button>
+ * </div>
+ * 
+ * @package evolvewp-predictiveerp/CSS/Components
+ * @since 1.0.0
+ */
+
+/* Code Block Container */
+.evolvewp-predictiveerp-code-block {
+    background-color: #f5f5f5;
+    border: 1px solid var(--evolvewp-predictiveerp-color-gray-200);
+    border-radius: var(--evolvewp-predictiveerp-border-radius);
+    padding: var(--evolvewp-predictiveerp-spacing-sm);
+    margin-bottom: var(--evolvewp-predictiveerp-spacing-md);
+    position: relative;
+    font-family: monospace;
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+/* Code Content */
+.evolvewp-predictiveerp-code-content {
+    white-space: pre-wrap;
+    overflow-x: auto;
+    max-width: 100%;
+}
+
+/* Copy Code Button */
+.evolvewp-predictiveerp-copy-code {
+    position: absolute;
+    top: var(--evolvewp-predictiveerp-spacing-xs);
+    right: var(--evolvewp-predictiveerp-spacing-xs);
+    background-color: transparent;
+    border: none;
+    color: var(--evolvewp-predictiveerp-color-gray-500);
+    cursor: pointer;
+    padding: var(--evolvewp-predictiveerp-spacing-xs);
+    border-radius: var(--evolvewp-predictiveerp-border-radius-sm);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: color 0.3s ease;
+}
+
+.evolvewp-predictiveerp-copy-code:hover {
+    color: var(--evolvewp-predictiveerp-color-wp-blue);
+}
+
+.evolvewp-predictiveerp-code-block:focus-within {
+    box-shadow: 0 0 0 1px var(--evolvewp-predictiveerp-color-wp-blue);
+}
+
+/* Copy Animation */
+@keyframes copy-success {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+
+.evolvewp-predictiveerp-copy-code .dashicons-yes {
+    animation: copy-success 0.3s ease;
+    color: #46b450;
+}
+
+/* Shortcode Display */
+.evolvewp-predictiveerp-shortcode-code {
+    display: inline-block;
+    background-color: #f5f5f5;
+    border: 1px solid var(--evolvewp-predictiveerp-color-gray-200);
+    border-radius: var(--evolvewp-predictiveerp-border-radius);
+    padding: var(--evolvewp-predictiveerp-spacing-xs) var(--evolvewp-predictiveerp-spacing-sm);
+    font-family: monospace;
+    position: relative;
+    margin-right: var(--evolvewp-predictiveerp-spacing-md);
+}
+
+/* Table display for data */
+.evolvewp-predictiveerp-data-table {
+    margin-top: var(--evolvewp-predictiveerp-spacing-xl);
+    background: #f9f9f9;
+    border: 1px solid var(--evolvewp-predictiveerp-color-gray-200);
+    padding: var(--evolvewp-predictiveerp-spacing-lg);
+    border-radius: var(--evolvewp-predictiveerp-border-radius);
+    overflow-x: auto;
+}
+
+.evolvewp-predictiveerp-data-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.evolvewp-predictiveerp-data-table th, 
+.evolvewp-predictiveerp-data-table td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.evolvewp-predictiveerp-data-table th {
+    background-color: #f2f2f2;
+}
+
+/* Log file display */
+.evolvewp-predictiveerp-log-files {
+    background: #f9f9f9;
+    border: 1px solid var(--evolvewp-predictiveerp-color-gray-200);
+    padding: var(--evolvewp-predictiveerp-spacing-lg);
+    border-radius: var(--evolvewp-predictiveerp-border-radius);
+}
+
+/* Legacy classes mapping for backward compatibility */

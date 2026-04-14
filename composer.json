@@ -1,0 +1,18 @@
+{
+    "name": "evolvewp/evolvewp-predictiveerp",
+    "description": "EvolveWP PredictiveERP - Finance, stock, and predictive analytics.",
+    "type": "wordpress-plugin",
+    "license": "GPL-3.0-or-later",
+    "require": {
+        "php": ">=7.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "EvolveWP\\PredictiveERP\\": "includes/"
+        }
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "sort-packages": true
+    }
+}

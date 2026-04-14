@@ -1,0 +1,149 @@
+/**
+ * evolvewp-predictiveerp - Diagnostics Component Styles
+ * 
+ * UI components for diagnostic tools, testing, and debugging.
+ * 
+ * HTML Structure:
+ * <div class="evolvewp-predictiveerp-diagnostics-container">
+ *   <div class="evolvewp-predictiveerp-diagnostics-card">
+ *     <h3>Diagnostics Title</h3>
+ *     <div class="evolvewp-predictiveerp-diagnostics-result">
+ *       <!-- Results go here -->
+ *     </div>
+ *   </div>
+ * </div>
+ * 
+ * @package evolvewp-predictiveerp/CSS/Components
+ * @since 1.0.0
+ */
+
+/* Diagnostics Card Grid */
+.evolvewp-predictiveerp-diagnostics-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--evolvewp-predictiveerp-spacing-xl);
+    margin-top: var(--evolvewp-predictiveerp-spacing-xl);
+}
+
+.evolvewp-predictiveerp-diagnostics-card {
+    background: var(--evolvewp-predictiveerp-color-white);
+    border: var(--evolvewp-predictiveerp-border-standard);
+    border-radius: var(--evolvewp-predictiveerp-border-radius);
+    padding: var(--evolvewp-predictiveerp-spacing-lg);
+    width: calc(33.33% - 14px);
+    min-width: 300px;
+    box-shadow: var(--evolvewp-predictiveerp-shadow);
+}
+
+.evolvewp-predictiveerp-diagnostics-card h3 {
+    margin-top: 0;
+    border-bottom: 1px solid var(--evolvewp-predictiveerp-color-gray-200);
+    padding-bottom: var(--evolvewp-predictiveerp-spacing-md);
+}
+
+.evolvewp-predictiveerp-diagnostics-result {
+    margin-top: var(--evolvewp-predictiveerp-spacing-lg);
+    background: #f8f9fa;
+    padding: var(--evolvewp-predictiveerp-spacing-md);
+    border-radius: var(--evolvewp-predictiveerp-border-radius-sm);
+    min-height: 60px;
+}
+
+/* Status indicators */
+.evolvewp-predictiveerp-diagnostics-result .evolvewp-predictiveerp-success {
+    color: #46b450;
+    font-weight: bold;
+}
+
+.evolvewp-predictiveerp-diagnostics-result .evolvewp-predictiveerp-error {
+    color: #dc3232;
+    font-weight: bold;
+}
+
+/* Data display */
+.evolvewp-predictiveerp-data-results pre, 
+.evolvewp-predictiveerp-timing-results {
+    background: #f1f1f1;
+    padding: var(--evolvewp-predictiveerp-spacing-md);
+    overflow: auto;
+    max-height: 150px;
+    font-size: 12px;
+    margin-top: var(--evolvewp-predictiveerp-spacing-md);
+}
+
+/* Event Debugger Styles */
+.event-debugger-container {
+    background: #fff;
+    border: 1px solid #ccd0d4;
+    box-shadow: 0 1px 1px rgba(0,0,0,.04);
+    padding: 15px;
+    margin-top: 20px;
+}
+
+.event-debugger-controls {
+    margin-bottom: 15px;
+    display: flex;
+    gap: 10px;
+}
+
+.event-log-container {
+    max-height: 300px;
+    overflow-y: auto;
+    border: 1px solid #eee;
+}
+
+.event-log-header, .event-log-entry {
+    display: grid;
+    grid-template-columns: 100px 100px 1fr 1fr;
+    padding: 5px;
+}
+
+.event-log-header {
+    font-weight: bold;
+    background-color: #f0f0f0;
+    border-bottom: 1px solid #ddd;
+}
+
+.event-log-entry {
+    border-bottom: 1px solid #eee;
+    font-family: monospace;
+    font-size: 12px;
+}
+
+.event-log-entry:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+.event-type {
+    color: #2271b1;
+}
+
+.floating-debugger-toggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #2271b1;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    z-index: 9999;
+}
+
+/* Legacy classes mapping for backward compatibility */
+.evolvewp-predictiveerp-diagnostics-container { 
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--evolvewp-predictiveerp-spacing-xl);
+    margin-top: var(--evolvewp-predictiveerp-spacing-xl);
+}
+
+.evolvewp-predictiveerp-diagnostics-card { 
+    background: var(--evolvewp-predictiveerp-color-white);
+    border: var(--evolvewp-predictiveerp-border-standard);
+    border-radius: var(--evolvewp-predictiveerp-border-radius);
+    padding: var(--evolvewp-predictiveerp-spacing-lg);
+    width: calc(33.33% - 14px);
+    min-width: 300px;
+    box-shadow: var(--evolvewp-predictiveerp-shadow);
+}

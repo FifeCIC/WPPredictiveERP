@@ -1,0 +1,120 @@
+/**
+ * evolvewp-predictiveerp - Responsive Layout Styles
+ * 
+ * Media queries and responsive adjustments.
+ * 
+ * @package evolvewp-predictiveerp/CSS/Layouts
+ * @since 1.0.0
+ */
+
+@media screen and (max-width: 1200px) {
+    .api-grid {
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    }
+    
+    .evolvewp-predictiveerp-discord-settings-container {
+        flex-direction: column;
+    }
+    
+    .evolvewp-predictiveerp-discord-card + .evolvewp-predictiveerp-discord-card {
+        margin-top: var(--evolvewp-predictiveerp-spacing-xl);
+    }
+}
+
+@media screen and (max-width: 782px) {
+    .evolvewp-predictiveerp-grid-2col,
+    .evolvewp-predictiveerp-grid-3col,
+    .evolvewp-predictiveerp-grid-4col {
+        grid-template-columns: 1fr !important;
+    }
+    
+    .evolvewp-predictiveerp-card-span2 {
+        grid-column: span 1 !important;
+    }
+    
+    .evolvewp-predictiveerp-form-actions {
+        flex-direction: column !important;
+    }
+    
+    .evolvewp-predictiveerp-button {
+        width: 100% !important;
+        margin-bottom: var(--evolvewp-predictiveerp-spacing-xs) !important;
+    }
+    
+    .api-quick-actions {
+        flex-wrap: wrap;
+    }
+    
+    .endpoints-filter {
+        flex-direction: column;
+    }
+    
+    .evolvewp-predictiveerp-import-export {
+        flex-direction: column;
+    }
+    
+    .github-issues-toolbar {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    
+    .issue-filters {
+        flex-wrap: wrap;
+        flex: initial;
+        width: 100%;
+    }
+    
+    .search-group {
+        flex: 1;
+        max-width: none;
+    }
+    
+    /* Legacy responsive styles from alert-decoder */
+    .results-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .result-card.summary {
+        grid-column: span 1;
+    }
+    
+    .emoji-guide {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .evolvewp-predictiveerp-hide-mobile {
+        display: none !important;
+    }
+    
+    .evolvewp-predictiveerp-card-footer,
+    .evolvewp-predictiveerp-form-actions {
+        flex-direction: column;
+    }
+    
+    .evolvewp-predictiveerp-form-actions .button {
+        width: 100%;
+        margin-bottom: var(--evolvewp-predictiveerp-spacing-xs);
+    }
+    
+    .api-main-section {
+        flex-direction: column;
+    }
+    
+    .api-sidebar {
+        width: 100%;
+    }
+    
+    .completion-stats {
+        flex-direction: column;
+    }
+    
+    .stat-box {
+        margin-right: 0;
+    }
+    
+    .forecast-card {
+        width: 100%;
+    }
+}

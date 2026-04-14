@@ -1,0 +1,73 @@
+/**
+ * evolvewp-predictiveerp - Content Sections Component Styles
+ * 
+ * Reusable content section styles for task details, descriptions, notes.
+ * 
+ * HTML Structure:
+ * <div class="evolvewp-predictiveerp-content-section">
+ *   <h3 class="evolvewp-predictiveerp-section-title">Title</h3>
+ *   <div class="evolvewp-predictiveerp-section-content">Content here</div>
+ * </div>
+ * 
+ * @package evolvewp-predictiveerp/CSS/Components
+ * @since 1.0.0
+ */
+
+.evolvewp-predictiveerp-content-section {
+    margin-bottom: var(--evolvewp-predictiveerp-spacing-xl);
+}
+
+.evolvewp-predictiveerp-section-title {
+    font-size: var(--evolvewp-predictiveerp-font-size);
+    font-weight: var(--evolvewp-predictiveerp-font-weight-semibold);
+    margin: 0 0 var(--evolvewp-predictiveerp-spacing-md) 0;
+    padding-bottom: var(--evolvewp-predictiveerp-spacing-sm);
+    border-bottom: var(--evolvewp-predictiveerp-border-standard);
+}
+
+.evolvewp-predictiveerp-section-content {
+    line-height: 1.5;
+}
+
+.evolvewp-predictiveerp-section-content p {
+    margin-top: 0;
+    margin-bottom: var(--evolvewp-predictiveerp-spacing-md);
+}
+
+.evolvewp-predictiveerp-section-content p:last-child {
+    margin-bottom: 0;
+}
+
+.evolvewp-predictiveerp-section-content ul, 
+.evolvewp-predictiveerp-section-content ol {
+    margin-left: var(--evolvewp-predictiveerp-spacing-xl);
+    margin-bottom: var(--evolvewp-predictiveerp-spacing-md);
+}
+
+.evolvewp-predictiveerp-section-content pre {
+    background-color: var(--evolvewp-predictiveerp-color-gray-50);
+    padding: var(--evolvewp-predictiveerp-spacing-md);
+    border-radius: var(--evolvewp-predictiveerp-border-radius);
+    overflow: auto;
+    margin-bottom: var(--evolvewp-predictiveerp-spacing-md);
+}
+
+.evolvewp-predictiveerp-section-content.empty {
+    color: #666;
+    font-style: italic;
+}
+
+.evolvewp-predictiveerp-section-loading {
+    text-align: center;
+    padding: var(--evolvewp-predictiveerp-spacing-xl);
+    color: #666;
+}
+
+.evolvewp-predictiveerp-section-loading .spinner {
+    float: none;
+    margin-top: 0;
+    margin-bottom: var(--evolvewp-predictiveerp-spacing-md);
+    visibility: visible;
+}
+
+/* Legacy classes mapping for backward compatibility */

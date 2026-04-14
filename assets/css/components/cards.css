@@ -1,0 +1,1194 @@
+/**
+ * evolvewp-predictiveerp - Card Component Styles
+ * 
+ * Styles for card UI elements.
+ * 
+ * HTML Structure:
+ * <div class="evolvewp-predictiveerp-card">
+ *   <h4 class="evolvewp-predictiveerp-card-header">Title</h4>
+ *   <div class="evolvewp-predictiveerp-card-body">
+ *     Content goes here
+ *   </div>
+ * </div>
+ * 
+ * @package evolvewp-predictiveerp/CSS/Components
+ * @since 1.0.0
+ */
+
+/* Card Container */
+.evolvewp-predictiveerp-card {
+    background-color: var(--evolvewp-predictiveerp-color-gray-100);
+    border: var(--evolvewp-predictiveerp-border-standard);
+    border-radius: var(--evolvewp-predictiveerp-border-radius);
+    padding: 12px;
+    box-shadow: var(--evolvewp-predictiveerp-shadow-sm);
+    margin-bottom: var(--evolvewp-predictiveerp-spacing-md);
+}
+
+.evolvewp-predictiveerp-card-header {
+    margin-top: 0;
+    margin-bottom: var(--evolvewp-predictiveerp-spacing-md);
+    padding-bottom: var(--evolvewp-predictiveerp-spacing-sm);
+    border-bottom: 1px solid var(--evolvewp-predictiveerp-color-gray-200);
+    font-size: var(--evolvewp-predictiveerp-font-size);
+    font-weight: var(--evolvewp-predictiveerp-font-weight-semibold);
+}
+
+.evolvewp-predictiveerp-card-body {
+    padding: 15px;
+}
+
+.evolvewp-predictiveerp-card-footer {
+    padding: 10px 15px;
+    border-top: 1px solid var(--evolvewp-predictiveerp-color-gray-200);
+    background-color: var(--evolvewp-predictiveerp-color-gray-100);
+}
+
+.evolvewp-predictiveerp-card-row {
+    margin-bottom: var(--evolvewp-predictiveerp-spacing-sm);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.evolvewp-predictiveerp-card-span2 {
+    grid-column: span 2;
+}
+
+/* Interactive Card - Used for Shortcode Cards */
+.evolvewp-predictiveerp-card-interactive {
+    transition: box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+.evolvewp-predictiveerp-card-interactive:hover {
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    transform: translateY(-2px);
+}
+
+/* API Settings Card */
+.evolvewp-predictiveerp-api-card {
+    background: var(--evolvewp-predictiveerp-color-white);
+    border: 1px solid #ccd0d4;
+    box-shadow: var(--evolvewp-predictiveerp-shadow);
+    padding: 15px 25px;
+    margin-bottom: var(--evolvewp-predictiveerp-spacing-xl);
+    border-radius: var(--evolvewp-predictiveerp-border-radius);
+}
+
+.evolvewp-predictiveerp-api-card h2 {
+    font-size: 1.3em;
+    margin-top: 0;
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--evolvewp-predictiveerp-color-gray-200);
+}
+
+.evolvewp-predictiveerp-api-card .description {
+    color: #666;
+    font-style: italic;
+    margin-bottom: var(--evolvewp-predictiveerp-spacing-xl);
+}
+
+/* API Overview Card */
+.evolvewp-predictiveerp-api-overview {
+    background: var(--evolvewp-predictiveerp-color-white);
+    border: 1px solid #ccd0d4;
+    box-shadow: var(--evolvewp-predictiveerp-shadow);
+    margin-bottom: var(--evolvewp-predictiveerp-spacing-xl);
+    border-radius: var(--evolvewp-predictiveerp-border-radius);
+    overflow: hidden;
+}
+
+.evolvewp-predictiveerp-api-header {
+    padding: var(--evolvewp-predictiveerp-spacing-xl);
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid var(--evolvewp-predictiveerp-color-gray-200);
+}
+
+.evolvewp-predictiveerp-api-logo {
+    width: 60px;
+    height: 60px;
+    margin-right: var(--evolvewp-predictiveerp-spacing-xl);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.evolvewp-predictiveerp-api-logo img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.evolvewp-predictiveerp-api-info {
+    flex: 1;
+}
+
+.evolvewp-predictiveerp-api-info h2 {
+    margin: 0 0 5px 0;
+    font-size: 18px;
+}
+
+.evolvewp-predictiveerp-api-version {
+    font-size: 12px;
+    color: #666;
+    font-weight: normal;
+}
+
+.evolvewp-predictiveerp-api-description {
+    margin: 0 0 10px 0;
+    color: #555;
+}
+
+/* API Credentials Cards */
+.evolvewp-predictiveerp-api-credentials-container {
+    display: flex;
+    flex-direction: row;
+    gap: var(--evolvewp-predictiveerp-spacing-xl);
+    margin-top: var(--evolvewp-predictiveerp-spacing-lg);
+}
+
+.evolvewp-predictiveerp-api-credentials-column {
+    flex: 1;
+    background-color: var(--evolvewp-predictiveerp-color-gray-100);
+    padding: var(--evolvewp-predictiveerp-spacing-lg);
+    border: var(--evolvewp-predictiveerp-border-standard);
+    border-radius: var(--evolvewp-predictiveerp-border-radius);
+}
+
+.evolvewp-predictiveerp-api-credentials-column h4 {
+    margin-top: 0;
+    margin-bottom: var(--evolvewp-predictiveerp-spacing-md);
+    padding-bottom: var(--evolvewp-predictiveerp-spacing-xs);
+    border-bottom: var(--evolvewp-predictiveerp-border-standard);
+    font-size: 16px;
+    font-weight: bold;
+    color: #23282d;
+}
+
+/* Algorithm Control Cards */
+.evolvewp-predictiveerp-algorithm-card {
+    border: 1px solid #ccd0d4;
+    padding: var(--evolvewp-predictiveerp-spacing-xl);
+    border-radius: var(--evolvewp-predictiveerp-border-radius);
+    background: var(--evolvewp-predictiveerp-color-white);
+    margin-bottom: var(--evolvewp-predictiveerp-spacing-md);
+}
+
+/* Scheduling Cards */
+.evolvewp-predictiveerp-schedule-card {
+    border: 1px solid #ccd0d4;
+    padding: var(--evolvewp-predictiveerp-spacing-xl);
+    border-radius: var(--evolvewp-predictiveerp-border-radius);
+    background: var(--evolvewp-predictiveerp-color-white);
+    margin-bottom: var(--evolvewp-predictiveerp-spacing-md);
+}
+
+.evolvewp-predictiveerp-schedule-group {
+    margin: var(--evolvewp-predictiveerp-spacing-xl) 0;
+    border: 1px solid #eee;
+    padding: var(--evolvewp-predictiveerp-spacing-lg);
+    border-radius: var(--evolvewp-predictiveerp-border-radius);
+}
+
+/* Legacy classes mapping for backward compatibility */
+.algorithm-status-card, 
+.algorithm-metrics-card, 
+.cron-schedule-card, 
+.summary-card, 
+/* Legacy result card styles from alert-decoder */
+.result-card {
+    background-color: var(--evolvewp-predictiveerp-color-gray-100);
+    border: 1px solid var(--evolvewp-predictiveerp-color-gray-200);
+    border-radius: var(--evolvewp-predictiveerp-border-radius);
+    padding: 12px;
+    box-shadow: var(--evolvewp-predictiveerp-shadow-sm);
+}
+
+.result-card h4 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--evolvewp-predictiveerp-color-gray-200);
+    font-size: var(--evolvewp-predictiveerp-font-size);
+    font-weight: var(--evolvewp-predictiveerp-font-weight-semibold);
+}
+
+.result-row {
+    margin-bottom: 8px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.result-label {
+    font-weight: var(--evolvewp-predictiveerp-font-weight-semibold);
+    margin-right: 5px;
+}
+
+.result-card.summary {
+    grid-column: span 2;
+}
+
+/* Metric Cards */
+.evolvewp-predictiveerp-metric-card {
+    background: var(--evolvewp-predictiveerp-color-gray-100);
+    padding: 15px;
+    border-radius: var(--evolvewp-predictiveerp-border-radius);
+    box-shadow: var(--evolvewp-predictiveerp-shadow-sm);
+    text-align: center;
+}
+
+.evolvewp-predictiveerp-metric-card h4 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: var(--evolvewp-predictiveerp-font-size);
+    color: var(--evolvewp-predictiveerp-color-gray-700);
+}
+
+.evolvewp-predictiveerp-metric-value {
+    font-size: 24px;
+    font-weight: var(--evolvewp-predictiveerp-font-weight-semibold);
+    margin-bottom: 10px;
+    color: var(--evolvewp-predictiveerp-color-gray-900);
+}
+
+.evolvewp-predictiveerp-metric-description {
+    font-size: var(--evolvewp-predictiveerp-font-size-sm);
+    color: var(--evolvewp-predictiveerp-color-gray-600);
+}
+
+/* Forecast Cards */
+.forecast-cards-wrapper { 
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 15px; 
+    margin-top: 15px;
+}
+
+.forecast-card {
+    background: var(--evolvewp-predictiveerp-color-white);
+    border: 1px solid var(--evolvewp-predictiveerp-color-gray-400);
+    box-shadow: var(--evolvewp-predictiveerp-shadow);
+    width: calc(33.333% - 15px);
+    min-width: 250px;
+    padding: 15px;
+    box-sizing: border-box;
+    border-radius: var(--evolvewp-predictiveerp-border-radius);
+}
+
+.forecast-card h4 {
+    margin-top: 0;
+    border-bottom: 1px solid var(--evolvewp-predictiveerp-color-gray-200);
+    padding-bottom: 10px;
+}
+
+.forecast-card-data {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.forecast-card-label {
+    font-weight: bold;
+}
+
+.forecast-card-value {
+    text-align: right;
+}
+
+/* Watchlist Cards */
+.watchlist-card {
+    background-color: var(--evolvewp-predictiveerp-color-white);
+    border: 1px solid var(--evolvewp-predictiveerp-color-gray-300);
+    border-radius: var(--evolvewp-predictiveerp-border-radius);
+    padding: 15px;
+    margin-bottom: 15px;
+    box-shadow: var(--evolvewp-predictiveerp-shadow-sm);
+}
+
+.watchlist-card h4 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    border-bottom: 1px solid var(--evolvewp-predictiveerp-color-gray-200);
+    padding-bottom: 8px;
+}
+
+.watchlist-symbols {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.watchlist-symbols li {
+    padding: 5px 0;
+    border-bottom: 1px solid var(--evolvewp-predictiveerp-color-gray-50);
+    display: flex;
+    justify-content: space-between;
+}
+
+.watchlist-symbols li:last-child {
+    border-bottom: none;
+}
+
+.watchlist-symbols .symbol {
+    font-weight: bold;
+    font-family: monospace;
+}
+
+.watchlist-symbols .name {
+    color: var(--evolvewp-predictiveerp-color-gray-600);
+    font-size: 0.9em;
+}
+
+.empty-watchlist {
+    font-style: italic;
+    color: var(--evolvewp-predictiveerp-color-gray-600);
+}
+
+/* Automation Section Card */
+.evolvewp-predictiveerp-automation-section {
+    margin-bottom: var(--evolvewp-predictiveerp-spacing-xl);
+    padding: var(--evolvewp-predictiveerp-spacing-xl);
+    background: var(--evolvewp-predictiveerp-color-white);
+    border: 1px solid #ccd0d4;
+    box-shadow: 0 1px 1px rgba(0,0,0,.04);
+}
+
+/* Component Card */
+.evolvewp-predictiveerp-component-card {
+    padding: var(--evolvewp-predictiveerp-spacing-lg);
+    background: var(--evolvewp-predictiveerp-color-gray-100);
+    border: 1px solid var(--evolvewp-predictiveerp-color-gray-200);
+}
+
+.evolvewp-predictiveerp-component-card h4 {
+    margin-top: 0;
+    margin-bottom: var(--evolvewp-predictiveerp-spacing-lg);
+    padding-bottom: var(--evolvewp-predictiveerp-spacing-md);
+    border-bottom: 1px solid var(--evolvewp-predictiveerp-color-gray-200);
+}
+
+.evolvewp-predictiveerp-component-controls {
+    margin-top: var(--evolvewp-predictiveerp-spacing-lg);
+    text-align: center;
+}
+
+/* Components Grid */
+.evolvewp-predictiveerp-components-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: var(--evolvewp-predictiveerp-spacing-xl);
+}
+
+/* Database Summary Card */
+.evolvewp-predictiveerp-database-summary {
+    margin: var(--evolvewp-predictiveerp-spacing-xl) 0;
+    padding: var(--evolvewp-predictiveerp-spacing-lg);
+    background-color: var(--evolvewp-predictiveerp-color-white);
+    border: var(--evolvewp-predictiveerp-border-standard);
+    border-radius: var(--evolvewp-predictiveerp-border-radius);
+}
+
+/* Database Table Card */
+.evolvewp-predictiveerp-table-card {
+    background: var(--evolvewp-predictiveerp-color-white);
+    border: 1px solid #ccd0d4;
+    box-shadow: var(--evolvewp-predictiveerp-shadow);
+    border-radius: var(--evolvewp-predictiveerp-border-radius);
+    overflow: hidden;
+    transition: box-shadow 0.3s ease;
+}
+
+.evolvewp-predictiveerp-table-card:hover {
+    box-shadow: 0 3px 8px rgba(0,0,0,.08);
+}
+
+.evolvewp-predictiveerp-table-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--evolvewp-predictiveerp-spacing-lg);
+    border-bottom: 1px solid var(--evolvewp-predictiveerp-color-gray-200);
+    background: #f8f8f8;
+}
+
+.evolvewp-predictiveerp-table-name {
+    margin: 0;
+    font-size: 16px;
+}
+
+.evolvewp-predictiveerp-table-card-body {
+    padding: var(--evolvewp-predictiveerp-spacing-lg);
+}
+
+.evolvewp-predictiveerp-table-description {
+    margin-top: 0;
+    margin-bottom: var(--evolvewp-predictiveerp-spacing-lg);
+    color: #666;
+}
+
+.evolvewp-predictiveerp-table-card-footer {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+    padding: 10px 15px;
+    border-top: 1px solid var(--evolvewp-predictiveerp-color-gray-200);
+    background: #f8f8f8;
+}
+
+.evolvewp-predictiveerp-table-action {
+    display: flex;
+    align-items: center;
+}
+
+.evolvewp-predictiveerp-table-action .dashicons {
+    font-size: 16px;
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+}
+
+/* Stats Card */
+.evolvewp-predictiveerp-stat-card {
+    background-color: var(--evolvewp-predictiveerp-color-white);
+    border: 1px solid #ccd0d4;
+    border-radius: var(--evolvewp-predictiveerp-border-radius);
+    padding: var(--evolvewp-predictiveerp-spacing-lg);
+    min-width: 200px;
+    flex: 1;
+}
+
+.evolvewp-predictiveerp-stat-card h3 {
+    margin-top: 0;
+    margin-bottom: var(--evolvewp-predictiveerp-spacing-md);
+    font-size: 16px;
+}
+
+/* Process List Item */
+.evolvewp-predictiveerp-process-list-item {
+    background: var(--evolvewp-predictiveerp-color-white);
+    border: 1px solid #e5e5e5;
+    border-radius: var(--evolvewp-predictiveerp-border-radius);
+    margin-bottom: var(--evolvewp-predictiveerp-spacing-lg);
+    padding: var(--evolvewp-predictiveerp-spacing-lg);
+}
+
+.evolvewp-predictiveerp-process-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--evolvewp-predictiveerp-spacing-md);
+}
+
+.evolvewp-predictiveerp-process-name {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.evolvewp-predictiveerp-process-details {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--evolvewp-predictiveerp-spacing-md);
+    margin-bottom: var(--evolvewp-predictiveerp-spacing-md);
+}
+
+.evolvewp-predictiveerp-process-description {
+    margin: var(--evolvewp-predictiveerp-spacing-md) 0 0 0;
+    padding-top: var(--evolvewp-predictiveerp-spacing-md);
+    border-top: 1px solid var(--evolvewp-predictiveerp-color-gray-200);
+    color: #666;
+}
+
+.evolvewp-predictiveerp-process-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+    margin-top: var(--evolvewp-predictiveerp-spacing-md);
+}
+
+/* Discord Setup Cards */
+.evolvewp-predictiveerp-discord-card {
+    background: var(--evolvewp-predictiveerp-color-white);
+    border: var(--evolvewp-predictiveerp-border-standard);
+    border-radius: var(--evolvewp-predictiveerp-border-radius);
+    padding: var(--evolvewp-predictiveerp-spacing-xl);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.evolvewp-predictiveerp-discord-card h3 {
+    margin-top: 0;
+    padding-bottom: var(--evolvewp-predictiveerp-spacing-md);
+    border-bottom: 1px solid var(--evolvewp-predictiveerp-color-gray-200);
+}
+
+/* Bot Info Card */
+.evolvewp-predictiveerp-bot-info {
+    display: flex;
+    align-items: center;
+    background: var(--evolvewp-predictiveerp-color-white);
+    padding: var(--evolvewp-predictiveerp-spacing-md);
+    border-radius: var(--evolvewp-predictiveerp-border-radius);
+    margin-top: var(--evolvewp-predictiveerp-spacing-md);
+}
+
+.evolvewp-predictiveerp-bot-avatar-container {
+    width: 50px;
+    height: 50px;
+    margin-right: var(--evolvewp-predictiveerp-spacing-lg);
+}
+
+.evolvewp-predictiveerp-bot-avatar {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.evolvewp-predictiveerp-bot-avatar-placeholder {
+    width: 100%;
+    height: 100%;
+    background: #646970;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--evolvewp-predictiveerp-color-white);
+}
+
+.evolvewp-predictiveerp-bot-name {
+    font-weight: var(--evolvewp-predictiveerp-font-weight-semibold);
+    margin-bottom: var(--evolvewp-predictiveerp-spacing-xs);
+}
+
+.evolvewp-predictiveerp-bot-id {
+    font-size: 12px;
+    color: #646970;
+}
+
+/* Demo Indicator Card */
+.evolvewp-predictiveerp-demo-indicator {
+    display: flex;
+    align-items: center;
+    background-color: #f0f7ff;
+    border-left: 4px solid #0073aa;
+    padding: 12px 15px;
+    margin-bottom: var(--evolvewp-predictiveerp-spacing-xl);
+    position: relative;
+}
+
+.evolvewp-predictiveerp-demo-icon {
+    font-size: 24px;
+    margin-right: var(--evolvewp-predictiveerp-spacing-lg);
+    color: #0073aa;
+}
+
+.evolvewp-predictiveerp-demo-text h4 {
+    margin: 0 0 5px 0;
+    color: #23282d;
+}
+
+.evolvewp-predictiveerp-demo-text p {
+    margin: 0;
+    color: #666;
+    font-size: 13px;
+}
+
+/* Card-style View */
+.evolvewp-predictiveerp-card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: var(--evolvewp-predictiveerp-spacing-xl);
+    margin-bottom: var(--evolvewp-predictiveerp-spacing-xl);
+}
+
+.evolvewp-predictiveerp-featured-card {
+    background: var(--evolvewp-predictiveerp-color-white);
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    padding: var(--evolvewp-predictiveerp-spacing-lg);
+    border: 1px solid #e0e0e0;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.evolvewp-predictiveerp-featured-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.evolvewp-predictiveerp-featured-card h4 {
+    margin-top: 0;
+    margin-bottom: var(--evolvewp-predictiveerp-spacing-md);
+    font-size: 18px;
+}
+
+.evolvewp-predictiveerp-featured-card p {
+    margin-bottom: var(--evolvewp-predictiveerp-spacing-sm);
+    color: #666;
+}
+
+.evolvewp-predictiveerp-featured-card.evolvewp-predictiveerp-score-high {
+    border-left: 4px solid #46b450;
+}
+
+.evolvewp-predictiveerp-featured-card.evolvewp-predictiveerp-score-medium {
+    border-left: 4px solid #ffb900;
+}
+
+.evolvewp-predictiveerp-featured-card.evolvewp-predictiveerp-score-low {
+    border-left: 4px solid #dc3232;
+}
+
+/* Message Card */
+.evolvewp-predictiveerp-message-card {
+    padding: var(--evolvewp-predictiveerp-spacing-xl);
+    background: var(--evolvewp-predictiveerp-color-gray-100);
+    border: 1px solid var(--evolvewp-predictiveerp-color-gray-200);
+    border-radius: var(--evolvewp-predictiveerp-border-radius);
+    text-align: center;
+}
+
+/* Research Cards */
+.evolvewp-predictiveerp-research-card {
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.evolvewp-predictiveerp-research-card h3 {
+    margin-top: 0;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.evolvewp-predictiveerp-research-card .evolvewp-predictiveerp-card-description {
+    padding: 10px;
+    background: #f9f9f9;
+    border-left: 4px solid #2271b1;
+    margin-top: 10px;
+}
+
+.evolvewp-predictiveerp-metrics-card {
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Research Controls Card */
+.evolvewp-predictiveerp-research-controls {
+    margin-bottom: 20px;
+    padding: 15px;
+    background: #f9f9f9;
+    border: 1px solid #e5e5e5;
+}
+
+.evolvewp-predictiveerp-chart-container {
+    background: #f9f9f9;
+    border: 1px solid #e5e5e5;
+    padding: 15px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.evolvewp-predictiveerp-indicator-card {
+    background: #f9f9f9;
+    border: 1px solid #e5e5e5;
+    padding: 15px;
+    border-radius: 4px;
+}
+
+.evolvewp-predictiveerp-indicator-card h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e5e5e5;
+    font-size: 16px;
+}
+
+.evolvewp-predictiveerp-chart-wrapper {
+    padding: 15px;
+    background: #f9f9f9;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.evolvewp-predictiveerp-chart-wrapper h4 {
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+/* Stock Alert Cards */
+.evolvewp-predictiveerp-alert-card {
+    background: var(--evolvewp-predictiveerp-color-white);
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.evolvewp-predictiveerp-alert-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Alert card types */
+.evolvewp-predictiveerp-alert-card.trade-alert {
+    border-top: 4px solid #e74c3c;
+}
+
+.evolvewp-predictiveerp-alert-card.watchlist {
+    border-top: 4px solid #3498db;
+}
+
+.evolvewp-predictiveerp-alert-card.update {
+    border-top: 4px solid #f39c12;
+}
+
+.evolvewp-predictiveerp-alert-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background: #f9f9f9;
+}
+
+.evolvewp-predictiveerp-alert-ticker {
+    margin: 0;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.evolvewp-predictiveerp-alert-type {
+    font-size: 12px;
+    font-weight: bold;
+    padding: 4px 8px;
+    border-radius: 4px;
+    color: #fff;
+}
+
+.evolvewp-predictiveerp-alert-type.trade-alert {
+    background-color: #e74c3c;
+}
+
+.evolvewp-predictiveerp-alert-type.watchlist {
+    background-color: #3498db;
+}
+
+.evolvewp-predictiveerp-alert-type.update {
+    background-color: #f39c12;
+}
+
+.evolvewp-predictiveerp-company-name {
+    padding: 0 15px;
+    margin-top: 5px;
+    font-size: 14px;
+    color: #555;
+    font-weight: 500;
+}
+
+.evolvewp-predictiveerp-alert-details {
+    padding: 15px;
+}
+
+.evolvewp-predictiveerp-detail-row {
+    display: flex;
+    margin-bottom: 8px;
+}
+
+.evolvewp-predictiveerp-detail-label {
+    flex: 0 0 100px;
+    font-weight: 500;
+    color: #555;
+}
+
+.evolvewp-predictiveerp-detail-value {
+    flex: 1;
+}
+
+.evolvewp-predictiveerp-detail-value.price {
+    font-weight: 700;
+    color: #2ecc71;
+}
+
+.evolvewp-predictiveerp-alert-card-footer {
+    padding: 10px 15px;
+    background: #f9f9f9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #eee;
+}
+
+.evolvewp-predictiveerp-timestamp {
+    font-size: 12px;
+    color: #777;
+}
+
+.evolvewp-predictiveerp-view-details-link {
+    font-size: 13px;
+    text-decoration: none;
+}
+
+/* Statistics Cards */
+.evolvewp-predictiveerp-stat-card {
+    background: var(--evolvewp-predictiveerp-color-white);
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+.evolvewp-predictiveerp-stat-value {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 5px;
+    color: #0073aa;
+}
+
+.evolvewp-predictiveerp-stat-label {
+    color: #555;
+    font-size: 14px;
+}
+
+/* Chart Box */
+.evolvewp-predictiveerp-chart-box {
+    background: var(--evolvewp-predictiveerp-color-white);
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.evolvewp-predictiveerp-chart-box h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.evolvewp-predictiveerp-chart-placeholder {
+    background: #f5f5f5;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+}
+
+.evolvewp-predictiveerp-placeholder-text {
+    color: #777;
+    font-style: italic;
+}
+
+/* Calculator Results Card */
+.evolvewp-predictiveerp-calculator-results {
+    margin-top: var(--evolvewp-predictiveerp-spacing-xxl);
+    padding: var(--evolvewp-predictiveerp-spacing-xl);
+    background: #f9f9f9;
+    border: 1px solid var(--evolvewp-predictiveerp-color-gray-300);
+    border-radius: var(--evolvewp-predictiveerp-border-radius);
+}
+
+.evolvewp-predictiveerp-result-item {
+    display: flex;
+    justify-content: space-between;
+    padding: var(--evolvewp-predictiveerp-spacing-md);
+    background: var(--evolvewp-predictiveerp-color-white);
+    border-radius: var(--evolvewp-predictiveerp-border-radius);
+    border-left: 4px solid #2271b1;
+}
+
+.evolvewp-predictiveerp-result-value {
+    font-weight: var(--evolvewp-predictiveerp-font-weight-semibold);
+}
+
+/* Task Card Styles */
+.evolvewp-predictiveerp-task-card {
+    background: var(--evolvewp-predictiveerp-color-white);
+    border: var(--evolvewp-predictiveerp-border-standard);
+    border-radius: var(--evolvewp-predictiveerp-border-radius);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    margin-bottom: var(--evolvewp-predictiveerp-spacing-xl);
+}
+
+.evolvewp-predictiveerp-task-card-header {
+    background: var(--evolvewp-predictiveerp-color-gray-50);
+    padding: var(--evolvewp-predictiveerp-spacing-lg);
+    border-bottom: var(--evolvewp-predictiveerp-border-standard);
+}
+
+.evolvewp-predictiveerp-task-title {
+    margin: 0 0 var(--evolvewp-predictiveerp-spacing-md) 0;
+    font-size: 18px;
+    color: #23282d;
+}
+
+.evolvewp-predictiveerp-task-card-body {
+    padding: var(--evolvewp-predictiveerp-spacing-lg);
+}
+
+.evolvewp-predictiveerp-task-card-footer {
+    background: #f9f9f9;
+    padding: var(--evolvewp-predictiveerp-spacing-lg);
+    border-top: var(--evolvewp-predictiveerp-border-standard);
+}
+
+.evolvewp-predictiveerp-section-card {
+    background: var(--evolvewp-predictiveerp-color-white);
+    border: var(--evolvewp-predictiveerp-border-standard);
+    border-radius: var(--evolvewp-predictiveerp-border-radius);
+    padding: var(--evolvewp-predictiveerp-spacing-lg);
+    margin-bottom: var(--evolvewp-predictiveerp-spacing-xl);
+}
+
+.evolvewp-predictiveerp-empty-state-card {
+    background: #f9f9f9;
+    border: var(--evolvewp-predictiveerp-border-standard);
+    border-radius: var(--evolvewp-predictiveerp-border-radius);
+    padding: var(--evolvewp-predictiveerp-spacing-lg);
+    text-align: center;
+    color: #555;
+}
+
+/* Legacy class mappings for backward compatibility */
+/* API Status Column Styles */
+.api-status-column {
+    flex: 1;
+    min-width: 300px;
+}
+
+.status-box {
+    background: var(--evolvewp-predictiveerp-color-white);
+    border: 1px solid #ccd0d4;
+    border-radius: var(--evolvewp-predictiveerp-border-radius);
+    padding: var(--evolvewp-predictiveerp-spacing-lg);
+    margin-bottom: var(--evolvewp-predictiveerp-spacing-lg);
+    box-shadow: 0 1px 1px rgba(0,0,0,.04);
+}
+
+.status-box h3 {
+    margin-top: 0;
+    margin-bottom: var(--evolvewp-predictiveerp-spacing-lg);
+    padding-bottom: var(--evolvewp-predictiveerp-spacing-md);
+    border-bottom: 1px solid var(--evolvewp-predictiveerp-color-gray-200);
+    font-size: 16px;
+    font-weight: var(--evolvewp-predictiveerp-font-weight-semibold);
+}
+
+.status-box h4 {
+    margin-top: var(--evolvewp-predictiveerp-spacing-lg);
+    margin-bottom: var(--evolvewp-predictiveerp-spacing-md);
+    font-size: 14px;
+    font-weight: var(--evolvewp-predictiveerp-font-weight-semibold);
+    color: #23282d;
+}
+
+.status-box h5 {
+    margin-top: var(--evolvewp-predictiveerp-spacing-md);
+    margin-bottom: var(--evolvewp-predictiveerp-spacing-xs);
+    font-size: 13px;
+    font-weight: var(--evolvewp-predictiveerp-font-weight-medium);
+    color: #50575e;
+}
+
+.api-type-indicator {
+    display: flex;
+    align-items: flex-start;
+    padding: var(--evolvewp-predictiveerp-spacing-md);
+    background: #f0f7ff;
+    border-left: 4px solid #0073aa;
+    border-radius: var(--evolvewp-predictiveerp-border-radius);
+    margin-bottom: var(--evolvewp-predictiveerp-spacing-lg);
+}
+
+.api-type-indicator .dashicons {
+    margin-right: var(--evolvewp-predictiveerp-spacing-md);
+    color: #0073aa;
+    font-size: 20px;
+    width: 20px;
+    height: 20px;
+    margin-top: 2px;
+}
+
+.api-type-text strong {
+    display: block;
+    margin-bottom: var(--evolvewp-predictiveerp-spacing-xs);
+    color: #23282d;
+}
+
+.api-type-text p {
+    margin: 0;
+    color: #666;
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+.api-features ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.api-features li {
+    display: flex;
+    align-items: center;
+    padding: var(--evolvewp-predictiveerp-spacing-xs) 0;
+    border-bottom: 1px solid var(--evolvewp-predictiveerp-color-gray-100);
+}
+
+.api-features li:last-child {
+    border-bottom: none;
+}
+
+.api-features .dashicons {
+    margin-right: var(--evolvewp-predictiveerp-spacing-sm);
+    color: #46b450;
+    font-size: 16px;
+    width: 16px;
+    height: 16px;
+}
+
+.test-credentials-buttons {
+    margin-top: var(--evolvewp-predictiveerp-spacing-lg);
+    text-align: center;
+}
+
+.test-credentials-buttons .button {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--evolvewp-predictiveerp-spacing-xs);
+}
+
+.test-credentials-buttons .dashicons {
+    font-size: 16px;
+    width: 16px;
+    height: 16px;
+}
+
+/* Additional styles for tables and stats */
+.evolvewp-predictiveerp-decoded-data-card .decoded-data-details dd:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Table Card Styles (from admin-database.css) */
+.tables-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.table-card {
+    background: #fff;
+    border: 1px solid #ccd0d4;
+    box-shadow: 0 1px 1px rgba(0,0,0,.04);
+    border-radius: 4px;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease;
+}
+
+.table-card:hover {
+    box-shadow: 0 3px 8px rgba(0,0,0,.08);
+}
+
+.table-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+    background: #f8f8f8;
+}
+
+.table-name {
+    margin: 0;
+    font-size: 16px;
+}
+
+.table-card-body {
+    padding: 15px;
+}
+
+.table-description {
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #666;
+}
+
+.table-stats {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px 10px;
+}
+
+.table-card-footer {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+    padding: 10px 15px;
+    border-top: 1px solid #eee;
+    background: #f8f8f8;
+}
+
+.table-action {
+    display: flex;
+    align-items: center;
+}
+
+.table-action .dashicons {
+    font-size: 16px;
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+}
+
+/* Stats Card Styles (from admin-database.css) */
+.evolvewp-predictiveerp-stats-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.stat-card {
+    background-color: #fff;
+    border: 1px solid #ccd0d4;
+    border-radius: 4px;
+    padding: 15px;
+    min-width: 200px;
+    flex: 1;
+}
+
+.stat-card h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.stat-numbers {
+    display: flex;
+    justify-content: space-between;
+}
+
+.stat-item .stat-value {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.stat-item .stat-label {
+    font-size: 12px;
+    color: #666;
+}
+
+.stat-item.success .stat-value {
+    color: #46b450;
+}
+
+.stat-item.error .stat-value {
+    color: #dc3232;
+}
+
+@media screen and (max-width: 782px) {
+    .stat-card {
+        min-width: 100%;
+    }
+}

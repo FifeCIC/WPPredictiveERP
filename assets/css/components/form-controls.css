@@ -1,0 +1,83 @@
+/**
+ * evolvewp-predictiveerp - Form Controls Component Styles
+ * 
+ * Special form controls beyond basic inputs.
+ * 
+ * @package evolvewp-predictiveerp/CSS/Components
+ * @since 1.0.0
+ */
+
+/* Radio Group */
+.evolvewp-predictiveerp-radio-group {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: var(--evolvewp-predictiveerp-spacing-md);
+    margin-top: var(--evolvewp-predictiveerp-spacing-md);
+}
+
+/* Weekday Checkboxes */
+.evolvewp-predictiveerp-weekday-checkboxes {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: var(--evolvewp-predictiveerp-spacing-md);
+    margin-top: var(--evolvewp-predictiveerp-spacing-md);
+}
+
+/* Form Row */
+.evolvewp-predictiveerp-form-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -10px;
+}
+
+.evolvewp-predictiveerp-form-group.half {
+    flex: 0 0 calc(50% - 20px);
+    margin: 0 10px;
+}
+
+/* Schedule Actions */
+.evolvewp-predictiveerp-schedule-actions {
+    margin-top: var(--evolvewp-predictiveerp-spacing-xl);
+}
+
+/* Log Controls */
+.evolvewp-predictiveerp-log-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--evolvewp-predictiveerp-spacing-xl);
+    padding: var(--evolvewp-predictiveerp-spacing-lg);
+    background: var(--evolvewp-predictiveerp-color-white);
+    border: 1px solid #ccd0d4;
+    border-radius: var(--evolvewp-predictiveerp-border-radius);
+}
+
+.evolvewp-predictiveerp-log-filter {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--evolvewp-predictiveerp-spacing-md);
+}
+
+/* Trade Filters */
+.evolvewp-predictiveerp-trades-filters {
+    margin-bottom: var(--evolvewp-predictiveerp-spacing-xl);
+    padding: var(--evolvewp-predictiveerp-spacing-lg);
+    background: var(--evolvewp-predictiveerp-color-white);
+    border: 1px solid #ccd0d4;
+    border-radius: var(--evolvewp-predictiveerp-border-radius);
+}
+
+.evolvewp-predictiveerp-filter-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    gap: var(--evolvewp-predictiveerp-spacing-lg);
+}
+
+.evolvewp-predictiveerp-filter-group {
+    flex: 1 1 auto;
+    min-width: 150px;
+}
+
+/* Legacy classes mapping for backward compatibility */

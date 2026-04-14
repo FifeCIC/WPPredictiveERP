@@ -1,0 +1,370 @@
+/**
+ * evolvewp-predictiveerp - Table Component Styles
+ * 
+ * Styles for tables and data display.
+ * 
+ * HTML Structure:
+ * <table class="evolvewp-predictiveerp-table">
+ *   <thead>
+ *     <tr><th>Header 1</th><th>Header 2</th></tr>
+ *   </thead>
+ *   <tbody>
+ *     <tr><td>Data 1</td><td>Data 2</td></tr>
+ *   </tbody>
+ * </table>
+ * 
+ * Variants:
+ * - evolvewp-predictiveerp-table-bordered: Adds borders to all cells
+ * - evolvewp-predictiveerp-table-striped: Adds zebra striping to rows
+ * - evolvewp-predictiveerp-table-hover: Highlights rows on hover
+ * - evolvewp-predictiveerp-table-sm: Compact version with less padding
+ * 
+ * @package evolvewp-predictiveerp/CSS/Components
+ * @since 1.0.0
+ */
+
+/* Base table */
+.evolvewp-predictiveerp-table {
+    width: 100% !important;
+    border-collapse: collapse !important;
+    margin-bottom: var(--evolvewp-predictiveerp-spacing-lg) !important;
+    color: var(--evolvewp-predictiveerp-color-text) !important;
+    vertical-align: top !important;
+}
+
+.evolvewp-predictiveerp-table th,
+.evolvewp-predictiveerp-table td {
+    padding: var(--evolvewp-predictiveerp-spacing-sm) var(--evolvewp-predictiveerp-spacing-md) !important;
+    text-align: left !important;
+    border: var(--evolvewp-predictiveerp-border-standard) !important;
+}
+
+.evolvewp-predictiveerp-table th {
+    background-color: var(--evolvewp-predictiveerp-color-gray-50) !important;
+    font-weight: var(--evolvewp-predictiveerp-font-weight-semibold) !important;
+}
+
+.evolvewp-predictiveerp-table thead {
+    vertical-align: bottom !important;
+}
+
+.evolvewp-predictiveerp-table tbody {
+    vertical-align: inherit !important;
+}
+
+.evolvewp-predictiveerp-table tr:nth-child(even) {
+    background-color: var(--evolvewp-predictiveerp-color-gray-100) !important;
+}
+
+/* Responsive wrapper */
+.evolvewp-predictiveerp-table-responsive {
+    overflow-x: auto !important;
+    -webkit-overflow-scrolling: touch !important;
+    margin-bottom: var(--evolvewp-predictiveerp-spacing-lg) !important;
+}
+
+/* Table variants */
+.evolvewp-predictiveerp-table-bordered {
+    border: var(--evolvewp-predictiveerp-border-standard) !important;
+}
+
+.evolvewp-predictiveerp-table-bordered th,
+.evolvewp-predictiveerp-table-bordered td {
+    border: var(--evolvewp-predictiveerp-border-standard) !important;
+}
+
+.evolvewp-predictiveerp-table-striped tbody tr:nth-of-type(odd) {
+    background-color: var(--evolvewp-predictiveerp-color-gray-100) !important;
+}
+
+.evolvewp-predictiveerp-table-hover tbody tr:hover {
+    background-color: var(--evolvewp-predictiveerp-color-table-hover-bg) !important;
+}
+
+.evolvewp-predictiveerp-table-sm th,
+.evolvewp-predictiveerp-table-sm td {
+    padding: var(--evolvewp-predictiveerp-spacing-xs) var(--evolvewp-predictiveerp-spacing-sm) !important;
+}
+
+/* Table contextual variants */
+.evolvewp-predictiveerp-table-primary {
+    background-color: var(--evolvewp-predictiveerp-color-primary-light) !important;
+}
+
+.evolvewp-predictiveerp-table-secondary {
+    background-color: var(--evolvewp-predictiveerp-color-secondary-light) !important;
+}
+
+.evolvewp-predictiveerp-table-success {
+    background-color: var(--evolvewp-predictiveerp-color-success-light) !important;
+}
+
+.evolvewp-predictiveerp-table-warning {
+    background-color: var(--evolvewp-predictiveerp-color-warning-light) !important;
+}
+
+.evolvewp-predictiveerp-table-danger {
+    background-color: var(--evolvewp-predictiveerp-color-error-light) !important;
+}
+
+.evolvewp-predictiveerp-table-light {
+    background-color: var(--evolvewp-predictiveerp-color-gray-50) !important;
+}
+
+.evolvewp-predictiveerp-table-dark {
+    background-color: var(--evolvewp-predictiveerp-color-gray-900) !important;
+    color: var(--evolvewp-predictiveerp-color-white) !important;
+}
+
+/* Fixed layout tables */
+.evolvewp-predictiveerp-table-fixed {
+    table-layout: fixed !important;
+}
+
+.evolvewp-predictiveerp-table-fixed td, 
+.evolvewp-predictiveerp-table-fixed th {
+    word-break: break-word !important;
+}
+
+/* Caption */
+.evolvewp-predictiveerp-table caption {
+    padding: var(--evolvewp-predictiveerp-spacing-sm) 0 !important;
+    color: var(--evolvewp-predictiveerp-color-gray-600) !important;
+    text-align: left !important;
+    caption-side: top !important;
+}
+
+/* Table alignment classes */
+.evolvewp-predictiveerp-table-center {
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+.evolvewp-predictiveerp-table-right {
+    margin-left: auto !important;
+    margin-right: 0 !important;
+}
+
+/* Pagination row */
+.evolvewp-predictiveerp-table-pagination {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    margin-top: var(--evolvewp-predictiveerp-spacing-md) !important;
+}
+
+.evolvewp-predictiveerp-pagination-info {
+    color: var(--evolvewp-predictiveerp-color-gray-600) !important;
+}
+
+.evolvewp-predictiveerp-pagination-controls {
+    display: flex !important;
+    gap: var(--evolvewp-predictiveerp-spacing-sm) !important;
+}
+
+/* Row/cell states */
+.evolvewp-predictiveerp-table tr.active {
+    background-color: var(--evolvewp-predictiveerp-color-table-active-bg) !important;
+}
+
+.evolvewp-predictiveerp-table tr.selected td,
+.evolvewp-predictiveerp-table td.selected {
+    background-color: var(--evolvewp-predictiveerp-color-highlight-bg) !important;
+}
+
+/* Support for WordPress Gutenberg block tables */
+.evolvewp-predictiveerp-block-table {
+    overflow-x: auto !important;
+}
+
+.evolvewp-predictiveerp-block-table table {
+    border-collapse: collapse !important;
+    width: 100% !important;
+}
+
+.evolvewp-predictiveerp-block-table thead {
+    border-bottom: 3px solid !important;
+}
+
+.evolvewp-predictiveerp-block-table tfoot {
+    border-top: 3px solid !important;
+}
+
+.evolvewp-predictiveerp-block-table.aligncenter,
+.evolvewp-predictiveerp-block-table.alignleft,
+.evolvewp-predictiveerp-block-table.alignright {
+    display: table !important;
+    width: auto !important;
+}
+
+/* Specific styles for evolvewp-predictiveerp tables */
+.evolvewp-predictiveerp-tasks-table th {
+    background-color: var(--evolvewp-predictiveerp-color-gray-50) !important;
+    text-align: left !important;
+    padding: 10px !important;
+    border-bottom: var(--evolvewp-predictiveerp-border-standard) !important;
+}
+
+.evolvewp-predictiveerp-tasks-table td {
+    padding: 12px 10px !important;
+    border-bottom: 1px solid var(--evolvewp-predictiveerp-color-gray-200) !important;
+    vertical-align: top !important;
+}
+
+.evolvewp-predictiveerp-tasks-table tr:hover {
+    background-color: var(--evolvewp-predictiveerp-color-gray-100) !important;
+}
+
+.evolvewp-predictiveerp-sortable {
+    cursor: pointer !important;
+    position: relative !important;
+}
+
+.evolvewp-predictiveerp-sortable:after {
+    content: "\25BC" !important; /* Down triangle */
+    font-size: 8px !important;
+    color: var(--evolvewp-predictiveerp-color-gray-500) !important;
+    margin-left: var(--evolvewp-predictiveerp-spacing-xs) !important;
+    visibility: hidden !important;
+}
+
+.evolvewp-predictiveerp-sortable:hover:after {
+    visibility: visible !important;
+}
+
+.evolvewp-predictiveerp-sortable.evolvewp-predictiveerp-sorted-asc:after {
+    content: "\25BC" !important;
+    visibility: visible !important;
+    color: var(--evolvewp-predictiveerp-color-text) !important;
+}
+
+.evolvewp-predictiveerp-sortable.evolvewp-predictiveerp-sorted-desc:after {
+    content: "\25B2" !important;
+    visibility: visible !important;
+    color: var(--evolvewp-predictiveerp-color-text) !important;
+}
+
+/* Task Table Styles */
+.evolvewp-predictiveerp-table-container {
+    margin-bottom: var(--evolvewp-predictiveerp-spacing-xl);
+}
+
+.evolvewp-predictiveerp-table {
+    border-collapse: collapse !important;
+    width: 100% !important;
+    margin-top: var(--evolvewp-predictiveerp-spacing-md) !important;
+}
+
+.evolvewp-predictiveerp-table th {
+    background-color: #f5f5f5 !important;
+    text-align: left !important;
+    padding: var(--evolvewp-predictiveerp-spacing-md) !important;
+    border-bottom: var(--evolvewp-predictiveerp-border-standard) !important;
+}
+
+.evolvewp-predictiveerp-table td {
+    padding: 12px var(--evolvewp-predictiveerp-spacing-md) !important;
+    border-bottom: 1px solid #eee !important;
+    vertical-align: top !important;
+}
+
+.evolvewp-predictiveerp-table tr:hover {
+    background-color: #f9f9f9 !important;
+}
+
+/* Sortable columns */
+.evolvewp-predictiveerp-sortable {
+    cursor: pointer !important;
+    position: relative !important;
+}
+
+.evolvewp-predictiveerp-sortable:after {
+    content: "▼" !important;
+    font-size: 8px !important;
+    color: #999 !important;
+    margin-left: var(--evolvewp-predictiveerp-spacing-xs) !important;
+    visibility: hidden !important;
+}
+
+.evolvewp-predictiveerp-sortable:hover:after {
+    visibility: visible !important;
+}
+
+.evolvewp-predictiveerp-sortable.sorted-asc:after {
+    content: "▼" !important;
+    visibility: visible !important;
+    color: #333 !important;
+}
+
+.evolvewp-predictiveerp-sortable.sorted-desc:after {
+    content: "▲" !important;
+    visibility: visible !important;
+    color: #333 !important;
+}
+
+/* Directives Table Styles */
+.evolvewp-predictiveerp-directives-table {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.evolvewp-predictiveerp-directives-table th {
+    font-weight: 600;
+}
+
+.evolvewp-predictiveerp-directives-actions {
+    margin-top: 20px;
+}
+
+.evolvewp-predictiveerp-test-data-table {
+    margin-bottom: 20px;
+}
+
+/* Legacy class mappings */
+.evolvewp-predictiveerp-table-container {
+    overflow-x: auto;
+    margin-bottom: 20px;
+}
+
+/* Data Preview Table Styles (from admin-database.css) */
+#table-data-preview {
+    overflow-x: auto;
+    margin-bottom: 15px;
+}
+
+#table-data-preview table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#table-data-preview th, 
+#table-data-preview td {
+    padding: 8px;
+    text-align: left;
+    border: 1px solid #e5e5e5;
+}
+
+#table-data-preview th {
+    background: #f8f8f8;
+    font-weight: bold;
+}
+
+#table-data-preview tr:nth-child(even) {
+    background: #f9f9f9;
+}
+
+.data-pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.pagination-info {
+    font-size: 13px;
+    color: #666;
+}
+
+.current-page, .total-pages {
+    font-weight: bold;
+}

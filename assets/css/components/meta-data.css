@@ -1,0 +1,72 @@
+/**
+ * evolvewp-predictiveerp - Meta Data Component Styles
+ * 
+ * Styles for displaying meta information like task details, assignments, timestamps.
+ * 
+ * HTML Structure:
+ * <div class="evolvewp-predictiveerp-meta-block">
+ *   <div class="evolvewp-predictiveerp-meta-item">
+ *     <span class="evolvewp-predictiveerp-meta-label">Label</span>
+ *     <span class="evolvewp-predictiveerp-meta-value">Value</span>
+ *   </div>
+ * </div>
+ * 
+ * @package evolvewp-predictiveerp/CSS/Components
+ * @since 1.0.0
+ */
+
+.evolvewp-predictiveerp-meta {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 13px;
+    color: #555;
+}
+
+.evolvewp-predictiveerp-meta-item {
+    margin-right: var(--evolvewp-predictiveerp-spacing-lg);
+    display: flex;
+    align-items: center;
+}
+
+.evolvewp-predictiveerp-meta-item .dashicons {
+    margin-right: var(--evolvewp-predictiveerp-spacing-xs);
+    font-size: 16px;
+    color: #666;
+}
+
+.evolvewp-predictiveerp-meta-block {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--evolvewp-predictiveerp-spacing-md);
+    margin-bottom: var(--evolvewp-predictiveerp-spacing-lg);
+}
+
+.evolvewp-predictiveerp-meta-item {
+    display: flex;
+    flex-direction: column;
+    min-width: 120px;
+}
+
+.evolvewp-predictiveerp-meta-label {
+    font-size: 12px;
+    color: #666;
+    margin-bottom: var(--evolvewp-predictiveerp-spacing-xs);
+    font-weight: var(--evolvewp-predictiveerp-font-weight-medium);
+}
+
+.evolvewp-predictiveerp-meta-value {
+    font-size: var(--evolvewp-predictiveerp-font-size);
+    font-weight: var(--evolvewp-predictiveerp-font-weight-semibold);
+}
+
+.evolvewp-predictiveerp-meta-value.highlight {
+    color: #2271b1;
+}
+
+.evolvewp-predictiveerp-meta-block.inline .evolvewp-predictiveerp-meta-item {
+    flex-direction: row;
+    align-items: center;
+    gap: var(--evolvewp-predictiveerp-spacing-xs);
+}
+
+/* Legacy classes mapping for backward compatibility */

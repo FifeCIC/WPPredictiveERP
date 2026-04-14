@@ -1,0 +1,119 @@
+/**
+ * evolvewp-predictiveerp - Data Filter Component Styles
+ * 
+ * For filtering and searching data tables.
+ * 
+ * HTML Structure:
+ * <div class="evolvewp-predictiveerp-filter-form">
+ *   <div class="evolvewp-predictiveerp-filter-controls">
+ *     <div class="evolvewp-predictiveerp-filter-row">
+ *       <div class="evolvewp-predictiveerp-filter-item">
+ *         <label>Filter Label</label>
+ *         <select></select>
+ *       </div>
+ *     </div>
+ *   </div>
+ * </div>
+ * 
+ * @package evolvewp-predictiveerp/CSS/Components
+ * @since 1.0.0
+ */
+
+/* Filter Form */
+.evolvewp-predictiveerp-filter-form {
+    background: var(--evolvewp-predictiveerp-color-white);
+    border: 1px solid #ccd0d4;
+    border-radius: var(--evolvewp-predictiveerp-border-radius);
+    padding: var(--evolvewp-predictiveerp-spacing-lg);
+    margin-bottom: var(--evolvewp-predictiveerp-spacing-xl);
+}
+
+/* Filter Controls */
+.evolvewp-predictiveerp-filter-controls {
+    display: flex;
+    flex-direction: column;
+    gap: var(--evolvewp-predictiveerp-spacing-md);
+}
+
+.evolvewp-predictiveerp-filter-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--evolvewp-predictiveerp-spacing-lg);
+    align-items: flex-end;
+}
+
+.evolvewp-predictiveerp-filter-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.evolvewp-predictiveerp-filter-actions {
+    display: flex;
+    gap: 5px;
+}
+
+/* Data Filter Controls */
+.evolvewp-predictiveerp-data-filter-controls {
+    margin-bottom: var(--evolvewp-predictiveerp-spacing-lg);
+    padding: var(--evolvewp-predictiveerp-spacing-md);
+    background: #f8f8f8;
+    border: 1px solid #e5e5e5;
+    border-radius: 3px;
+}
+
+.evolvewp-predictiveerp-data-search {
+    flex-grow: 1;
+}
+
+/* Data Table Preview */
+.evolvewp-predictiveerp-table-data-preview {
+    overflow-x: auto;
+    margin-bottom: var(--evolvewp-predictiveerp-spacing-lg);
+}
+
+.evolvewp-predictiveerp-table-data-preview table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.evolvewp-predictiveerp-table-data-preview th, 
+.evolvewp-predictiveerp-table-data-preview td {
+    padding: 8px;
+    text-align: left;
+    border: 1px solid #e5e5e5;
+}
+
+.evolvewp-predictiveerp-table-data-preview th {
+    background: #f8f8f8;
+    font-weight: bold;
+}
+
+.evolvewp-predictiveerp-table-data-preview tr:nth-child(even) {
+    background: #f9f9f9;
+}
+
+/* Data Pagination */
+.evolvewp-predictiveerp-data-pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--evolvewp-predictiveerp-spacing-md);
+}
+
+.evolvewp-predictiveerp-pagination-info {
+    font-size: 13px;
+    color: #666;
+}
+
+.evolvewp-predictiveerp-current-page, .evolvewp-predictiveerp-total-pages {
+    font-weight: bold;
+}
+
+/* Loading State */
+.evolvewp-predictiveerp-loading {
+    text-align: center;
+    padding: var(--evolvewp-predictiveerp-spacing-xl);
+    color: #666;
+}
+
+/* Legacy classes mapping for backward compatibility */

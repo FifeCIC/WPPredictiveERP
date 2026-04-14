@@ -1,0 +1,93 @@
+/**
+ * evolvewp-predictiveerp - Shortcodes Layout Styles
+ * 
+ * Layout structures for shortcodes pages.
+ * 
+ * @package evolvewp-predictiveerp/CSS/Layouts
+ * @since 1.0.0
+ */
+
+/* Shortcodes Grid Layout */
+.evolvewp-predictiveerp-shortcode-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: var(--evolvewp-predictiveerp-spacing-lg);
+    margin-bottom: var(--evolvewp-predictiveerp-spacing-xl);
+}
+
+/* Shortcode Documentation Section */
+.evolvewp-predictiveerp-shortcode-documentation {
+    background-color: var(--evolvewp-predictiveerp-color-white);
+    border: var(--evolvewp-predictiveerp-border-standard);
+    border-radius: var(--evolvewp-predictiveerp-border-radius);
+    padding: var(--evolvewp-predictiveerp-spacing-xl);
+    margin-top: var(--evolvewp-predictiveerp-spacing-xl);
+}
+
+.evolvewp-predictiveerp-shortcode-documentation h3 {
+    margin-top: 0;
+    margin-bottom: var(--evolvewp-predictiveerp-spacing-lg);
+    padding-bottom: var(--evolvewp-predictiveerp-spacing-sm);
+    border-bottom: var(--evolvewp-predictiveerp-border-standard);
+}
+
+/* Shortcodes Settings Container */
+.evolvewp-predictiveerp-shortcodes-settings {
+    margin: var(--evolvewp-predictiveerp-spacing-xl) 0;
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 782px) {
+    .evolvewp-predictiveerp-shortcode-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .evolvewp-predictiveerp-shortcode-documentation {
+        padding: var(--evolvewp-predictiveerp-spacing-lg);
+    }
+}
+
+/* Status Badges */
+.shortcode-status-badge.live {
+    background-color: #e7f7ed;
+    color: #46b450;
+    border: 1px solid #c8e6d0;
+}
+
+.shortcode-status-badge.demo {
+    background-color: #fef8e8;
+    color: #f0c33c;
+    border: 1px solid #f8e6b8;
+}
+
+/* Hover Effects */
+.shortcode-card {
+    transition: box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+.shortcode-card:hover {
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    transform: translateY(-2px);
+}
+
+.copy-shortcode:hover {
+    color: #0073aa;
+}
+
+.shortcode-code:focus-within {
+    box-shadow: 0 0 0 1px #2271b1;
+}
+
+/* Copy Animation */
+@keyframes copy-success {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+
+.dashicons-yes {
+    animation: copy-success 0.3s ease;
+    color: #46b450;
+}
+
+/* Legacy classes mapping for backward compatibility */

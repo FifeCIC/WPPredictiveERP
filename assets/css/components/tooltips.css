@@ -1,0 +1,341 @@
+/**
+ * Tooltip Components
+ * Styles for tooltip elements and hover-triggered information displays
+ */
+
+.tooltip-examples {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--evolvewp-predictiveerp-spacing-md);
+}
+
+.tooltip-item {
+    margin-bottom: var(--evolvewp-predictiveerp-spacing-sm);
+}
+
+.tooltip-trigger {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    color: var(--evolvewp-predictiveerp-color-primary);
+    text-decoration: underline dotted;
+}
+
+.tooltip-warning {
+    color: var(--evolvewp-predictiveerp-color-warning);
+}
+
+.tooltip-success {
+    color: var(--evolvewp-predictiveerp-color-success);
+}
+
+.tooltip-error {
+    color: var(--evolvewp-predictiveerp-color-error);
+}
+
+/* Tooltip positions */
+.tooltip-top, .tooltip-bottom, .tooltip-left, .tooltip-right {
+    position: relative;
+}
+
+.positioning-demo {
+    padding: var(--evolvewp-predictiveerp-spacing-md);
+}
+
+.positioning-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--evolvewp-predictiveerp-spacing-lg);
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.position-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Trading metrics grid */
+.trading-metrics-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--evolvewp-predictiveerp-spacing-md);
+}
+
+.metric-card {
+    background: var(--evolvewp-predictiveerp-color-white);
+    border: 1px solid var(--evolvewp-predictiveerp-border-color);
+    border-radius: var(--evolvewp-predictiveerp-border-radius);
+    padding: var(--evolvewp-predictiveerp-spacing-sm);
+}
+
+.metric-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--evolvewp-predictiveerp-spacing-sm);
+}
+
+/* Symbol list for tooltips */
+.symbol-list {
+    width: 100%;
+}
+
+.symbol-row {
+    display: flex;
+    align-items: center;
+    padding: var(--evolvewp-predictiveerp-spacing-sm);
+    border-bottom: 1px solid var(--evolvewp-predictiveerp-border-color);
+}
+
+.symbol-info {
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+
+.symbol-name {
+    font-weight: var(--evolvewp-predictiveerp-font-weight-bold);
+    margin-right: var(--evolvewp-predictiveerp-spacing-sm);
+}
+
+.rich-tooltip-trigger {
+    cursor: pointer;
+    color: var(--evolvewp-predictiveerp-color-primary);
+}
+
+.symbol-price {
+    margin-right: var(--evolvewp-predictiveerp-spacing-md);
+    font-weight: var(--evolvewp-predictiveerp-font-weight-bold);
+}
+
+.symbol-price.positive,
+.symbol-change.positive {
+    color: var(--evolvewp-predictiveerp-color-success);
+}
+
+.symbol-price.negative,
+.symbol-change.negative {
+    color: var(--evolvewp-predictiveerp-color-error);
+}
+
+/* Rich tooltip templates */
+.rich-tooltip-templates,
+.interactive-tooltip-templates,
+.chart-tooltip-template {
+    display: none;
+}
+
+.rich-tooltip-content,
+.interactive-tooltip-content,
+.chart-tooltip-content {
+    padding: var(--evolvewp-predictiveerp-spacing-sm);
+}
+
+.tooltip-header {
+    margin-bottom: var(--evolvewp-predictiveerp-spacing-sm);
+    border-bottom: 1px solid var(--evolvewp-predictiveerp-border-color);
+    padding-bottom: var(--evolvewp-predictiveerp-spacing-xs);
+}
+
+.tooltip-metrics {
+    margin-bottom: var(--evolvewp-predictiveerp-spacing-sm);
+}
+
+.tooltip-metric {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: var(--evolvewp-predictiveerp-spacing-xs);
+}
+
+.metric-name {
+    color: var(--evolvewp-predictiveerp-color-gray-600);
+}
+
+.tooltip-footer {
+    font-size: 0.8em;
+    color: var(--evolvewp-predictiveerp-color-gray-500);
+    border-top: 1px solid var(--evolvewp-predictiveerp-border-color);
+    padding-top: var(--evolvewp-predictiveerp-spacing-xs);
+    margin-top: var(--evolvewp-predictiveerp-spacing-sm);
+}
+
+/* Interactive tooltips */
+.interactive-tooltip-examples {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--evolvewp-predictiveerp-spacing-md);
+}
+
+.interactive-tooltip-trigger {
+    display: inline-flex;
+    align-items: center;
+    background: var(--evolvewp-predictiveerp-color-primary);
+    color: var(--evolvewp-predictiveerp-color-white);
+    border: none;
+    padding: var(--evolvewp-predictiveerp-spacing-sm) var(--evolvewp-predictiveerp-spacing-md);
+    border-radius: var(--evolvewp-predictiveerp-border-radius);
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: var(--evolvewp-predictiveerp-font-weight-medium);
+    transition: all 0.2s ease;
+    text-decoration: none;
+    position: relative;
+}
+
+.interactive-tooltip-trigger:hover {
+    background: var(--evolvewp-predictiveerp-color-primary-dark);
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.interactive-tooltip-trigger:active {
+    transform: translateY(0);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+}
+
+.interactive-tooltip-trigger.warning {
+    background: var(--evolvewp-predictiveerp-color-warning);
+}
+
+.interactive-tooltip-trigger.warning:hover {
+    background: var(--evolvewp-predictiveerp-color-warning-dark);
+}
+
+.interactive-tooltip-trigger.success {
+    background: var(--evolvewp-predictiveerp-color-success);
+}
+
+.interactive-tooltip-trigger.success:hover {
+    background: var(--evolvewp-predictiveerp-color-success-dark);
+}
+
+.interactive-tooltip-trigger.error {
+    background: var(--evolvewp-predictiveerp-color-danger);
+}
+
+.interactive-tooltip-trigger.error:hover {
+    background: var(--evolvewp-predictiveerp-color-danger-dark);
+}
+
+.tooltip-body {
+    margin-bottom: var(--evolvewp-predictiveerp-spacing-sm);
+}
+
+.tooltip-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: var(--evolvewp-predictiveerp-spacing-xs);
+}
+
+/* API status list */
+.api-status-list {
+    margin-top: var(--evolvewp-predictiveerp-spacing-sm);
+}
+
+.api-status-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: var(--evolvewp-predictiveerp-spacing-xs);
+}
+
+.status-connected {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: var(--evolvewp-predictiveerp-color-success);
+    margin-right: var(--evolvewp-predictiveerp-spacing-xs);
+}
+
+.api-name {
+    margin-right: var(--evolvewp-predictiveerp-spacing-sm);
+}
+
+/* Chart tooltips */
+.chart-tooltip-demo {
+    position: relative;
+}
+
+.mini-chart {
+    border: 1px solid var(--evolvewp-predictiveerp-border-color);
+    border-radius: var(--evolvewp-predictiveerp-border-radius);
+    padding: var(--evolvewp-predictiveerp-spacing-sm);
+    background: var(--evolvewp-predictiveerp-color-white);
+}
+
+.chart-header {
+    margin-bottom: var(--evolvewp-predictiveerp-spacing-sm);
+}
+
+.chart-body {
+    position: relative;
+    height: 150px;
+}
+
+.chart-points {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 100%;
+}
+
+.chart-point {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    flex: 1;
+}
+
+.point-indicator {
+    width: 8px;
+    height: 8px;
+    background-color: var(--evolvewp-predictiveerp-color-primary);
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+/* Time display in tooltips */
+.tooltip-time {
+    display: inline-block;
+    font-size: 12px;
+    color: var(--evolvewp-predictiveerp-color-text-muted);
+    font-weight: var(--evolvewp-predictiveerp-font-weight-normal);
+    background: var(--evolvewp-predictiveerp-color-bg-secondary);
+    padding: 2px 6px;
+    border-radius: 3px;
+    margin-right: var(--evolvewp-predictiveerp-spacing-xs);
+    font-family: 'Courier New', monospace;
+    letter-spacing: 0.5px;
+}
+
+.tooltip-time.live {
+    color: var(--evolvewp-predictiveerp-color-success);
+    background: rgba(var(--evolvewp-predictiveerp-color-success-rgb), 0.1);
+    animation: pulse 2s infinite;
+}
+
+.tooltip-time.delayed {
+    color: var(--evolvewp-predictiveerp-color-warning);
+    background: rgba(var(--evolvewp-predictiveerp-color-warning-rgb), 0.1);
+}
+
+.tooltip-time.stale {
+    color: var(--evolvewp-predictiveerp-color-text-muted);
+    background: var(--evolvewp-predictiveerp-color-bg-secondary);
+    opacity: 0.7;
+}
+
+@keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.6; }
+}
+
+/* Dynamic tooltip content */
+.price-value, .volume-value {
+    font-weight: var(--evolvewp-predictiveerp-font-weight-bold);
+}

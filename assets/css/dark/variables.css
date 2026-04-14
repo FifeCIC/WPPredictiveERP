@@ -1,0 +1,97 @@
+/**
+ * evolvewp-predictiveerp Dark Theme CSS Variables
+ * 
+ * Dark theme color overrides for evolvewp-predictiveerp
+ * 
+ * @package evolvewp-predictiveerp/CSS/Dark
+ * @since 1.0.0
+ * @created 2024-12-21
+ */
+
+.evolvewp-predictiveerp-dark-theme {
+    /* Dark Theme Colors */
+    --evolvewp-predictiveerp-color-primary: #4a9eff;
+    --evolvewp-predictiveerp-color-primary-dark: #2271b1;
+    --evolvewp-predictiveerp-color-primary-light: #72aee6;
+    
+    --evolvewp-predictiveerp-color-secondary: #8c8f94;
+    --evolvewp-predictiveerp-color-secondary-dark: #646970;
+    --evolvewp-predictiveerp-color-secondary-light: #a7aaad;
+    
+    --evolvewp-predictiveerp-color-success: #46d369;
+    --evolvewp-predictiveerp-color-success-dark: #00a32a;
+    --evolvewp-predictiveerp-color-success-light: #68de7c;
+    
+    --evolvewp-predictiveerp-color-warning: #f0c33c;
+    --evolvewp-predictiveerp-color-warning-dark: #dba617;
+    --evolvewp-predictiveerp-color-warning-light: #ffeb3b;
+    
+    --evolvewp-predictiveerp-color-error: #ff6b6b;
+    --evolvewp-predictiveerp-color-error-dark: #d63638;
+    --evolvewp-predictiveerp-color-error-light: #ff8a80;
+    
+    --evolvewp-predictiveerp-color-info: #4a9eff;
+    --evolvewp-predictiveerp-color-info-dark: #2271b1;
+    --evolvewp-predictiveerp-color-info-light: #a7c7e7;
+    
+    /* Dark Neutral Colors */
+    --evolvewp-predictiveerp-color-white: #1e1e1e;
+    --evolvewp-predictiveerp-color-black: #ffffff;
+    
+    --evolvewp-predictiveerp-color-gray-50: #2d2d2d;
+    --evolvewp-predictiveerp-color-gray-100: #3a3a3a;
+    --evolvewp-predictiveerp-color-gray-200: #4a4a4a;
+    --evolvewp-predictiveerp-color-gray-300: #5a5a5a;
+    --evolvewp-predictiveerp-color-gray-400: #6a6a6a;
+    --evolvewp-predictiveerp-color-gray-500: #7a7a7a;
+    --evolvewp-predictiveerp-color-gray-600: #8a8a8a;
+    --evolvewp-predictiveerp-color-gray-700: #9a9a9a;
+    --evolvewp-predictiveerp-color-gray-800: #aaaaaa;
+    --evolvewp-predictiveerp-color-gray-900: #e0e0e0;
+    
+    /* Dark Status Colors */
+    --evolvewp-predictiveerp-status-success-bg: #1a3d1a;
+    --evolvewp-predictiveerp-status-success-border: #2d5a2d;
+    --evolvewp-predictiveerp-status-success-text: #68de7c;
+    
+    --evolvewp-predictiveerp-status-warning-bg: #3d3d1a;
+    --evolvewp-predictiveerp-status-warning-border: #5a5a2d;
+    --evolvewp-predictiveerp-status-warning-text: #f0c33c;
+    
+    --evolvewp-predictiveerp-status-error-bg: #3d1a1a;
+    --evolvewp-predictiveerp-status-error-border: #5a2d2d;
+    --evolvewp-predictiveerp-status-error-text: #ff6b6b;
+    
+    --evolvewp-predictiveerp-status-info-bg: #1a2d3d;
+    --evolvewp-predictiveerp-status-info-border: #2d4a5a;
+    --evolvewp-predictiveerp-status-info-text: #4a9eff;
+
+    /* Dark Form Controls */
+    --evolvewp-predictiveerp-input-bg: #2d2d2d;
+    --evolvewp-predictiveerp-input-border: 1px solid #4a4a4a;
+    --evolvewp-predictiveerp-input-border-focus: 1px solid #4a9eff;
+    
+    /* Update backward compatibility variables */
+    --evolvewp-predictiveerp-color-white: var(--evolvewp-predictiveerp-color-white);
+    --evolvewp-predictiveerp-color-gray-50: var(--evolvewp-predictiveerp-color-gray-50);
+    --evolvewp-predictiveerp-color-gray-300: var(--evolvewp-predictiveerp-color-gray-300);
+    --color-white: var(--evolvewp-predictiveerp-color-white);
+    --color-gray-50: var(--evolvewp-predictiveerp-color-gray-50);
+    --color-gray-300: var(--evolvewp-predictiveerp-color-gray-300);
+}
+
+/* Dark Theme Color Swatch Classes */
+.evolvewp-predictiveerp-dark-theme .evolvewp-predictiveerp-color-primary { background-color: var(--evolvewp-predictiveerp-color-primary) !important; }
+.evolvewp-predictiveerp-dark-theme .evolvewp-predictiveerp-color-primary-dark { background-color: var(--evolvewp-predictiveerp-color-primary-dark) !important; }
+.evolvewp-predictiveerp-dark-theme .evolvewp-predictiveerp-color-primary-light { background-color: var(--evolvewp-predictiveerp-color-primary-light) !important; }
+
+.evolvewp-predictiveerp-dark-theme .evolvewp-predictiveerp-color-success { background-color: var(--evolvewp-predictiveerp-color-success) !important; }
+.evolvewp-predictiveerp-dark-theme .evolvewp-predictiveerp-color-warning { background-color: var(--evolvewp-predictiveerp-color-warning) !important; }
+.evolvewp-predictiveerp-dark-theme .evolvewp-predictiveerp-color-error { background-color: var(--evolvewp-predictiveerp-color-error) !important; }
+
+.evolvewp-predictiveerp-dark-theme .evolvewp-predictiveerp-color-white { background-color: var(--evolvewp-predictiveerp-color-white) !important; border: 1px solid var(--evolvewp-predictiveerp-color-gray-300) !important; }
+.evolvewp-predictiveerp-dark-theme .evolvewp-predictiveerp-color-gray-100 { background-color: var(--evolvewp-predictiveerp-color-gray-100) !important; }
+.evolvewp-predictiveerp-dark-theme .evolvewp-predictiveerp-color-gray-300 { background-color: var(--evolvewp-predictiveerp-color-gray-300) !important; }
+.evolvewp-predictiveerp-dark-theme .evolvewp-predictiveerp-color-gray-500 { background-color: var(--evolvewp-predictiveerp-color-gray-500) !important; }
+.evolvewp-predictiveerp-dark-theme .evolvewp-predictiveerp-color-gray-700 { background-color: var(--evolvewp-predictiveerp-color-gray-700) !important; }
+.evolvewp-predictiveerp-dark-theme .evolvewp-predictiveerp-color-gray-900 { background-color: var(--evolvewp-predictiveerp-color-gray-900) !important; }

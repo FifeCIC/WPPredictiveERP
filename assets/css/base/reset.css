@@ -1,0 +1,87 @@
+/**
+ * EvolveWP PredictiveERP — Scoped CSS Reset
+ *
+ * Normalises rendering ONLY within .evolvewp-predictiveerp-admin-wrap containers.
+ * A plugin must never apply a global reset — that breaks the WordPress
+ * admin menu, toolbar, and every other plugin's UI.
+ *
+ * The only global rule is box-sizing: border-box, which is safe and
+ * already expected by WordPress core since 4.4.
+ *
+ * @package evolvewp-predictiveerp/CSS/Base
+ * @since   1.0.0
+ * @since   3.1.0 Scoped to .evolvewp-predictiveerp-admin-wrap. No longer global.
+ */
+
+/* Box sizing — safe to apply globally */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* ─────────────────────────────────────────────────────────────────────
+   Everything below is scoped to EvolveWP PredictiveERP's own admin content wrapper.
+   WordPress admin chrome (menus, toolbar, notices) is untouched.
+   ───────────────────────────────────────────────────────────────────── */
+
+.evolvewp-predictiveerp-admin-wrap {
+  font-size: 13px;
+  line-height: 1.4;
+  color: var(--evolvewp-predictiveerp-color-gray-900);
+}
+
+.evolvewp-predictiveerp-admin-wrap h1,
+.evolvewp-predictiveerp-admin-wrap h2,
+.evolvewp-predictiveerp-admin-wrap h3,
+.evolvewp-predictiveerp-admin-wrap h4,
+.evolvewp-predictiveerp-admin-wrap h5,
+.evolvewp-predictiveerp-admin-wrap h6,
+.evolvewp-predictiveerp-admin-wrap p,
+.evolvewp-predictiveerp-admin-wrap blockquote,
+.evolvewp-predictiveerp-admin-wrap pre,
+.evolvewp-predictiveerp-admin-wrap dl,
+.evolvewp-predictiveerp-admin-wrap dd,
+.evolvewp-predictiveerp-admin-wrap ol,
+.evolvewp-predictiveerp-admin-wrap ul,
+.evolvewp-predictiveerp-admin-wrap fieldset,
+.evolvewp-predictiveerp-admin-wrap figure {
+  margin: 0;
+  padding: 0;
+}
+
+.evolvewp-predictiveerp-admin-wrap ol,
+.evolvewp-predictiveerp-admin-wrap ul {
+  list-style: none;
+}
+
+.evolvewp-predictiveerp-admin-wrap table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.evolvewp-predictiveerp-admin-wrap img {
+  max-width: 100%;
+  height: auto;
+}
+
+.evolvewp-predictiveerp-admin-wrap a {
+  color: var(--evolvewp-predictiveerp-color-wp-blue);
+  text-decoration: none;
+}
+
+.evolvewp-predictiveerp-admin-wrap a:hover,
+.evolvewp-predictiveerp-admin-wrap a:focus {
+  color: var(--evolvewp-predictiveerp-color-primary-dark);
+  text-decoration: underline;
+}
+
+/* Focus ring for interactive elements within EvolveWP PredictiveERP content */
+.evolvewp-predictiveerp-admin-wrap a:focus,
+.evolvewp-predictiveerp-admin-wrap button:focus,
+.evolvewp-predictiveerp-admin-wrap input:focus,
+.evolvewp-predictiveerp-admin-wrap textarea:focus,
+.evolvewp-predictiveerp-admin-wrap select:focus {
+  outline: var(--evolvewp-predictiveerp-focus-ring);
+  outline-offset: var(--evolvewp-predictiveerp-focus-ring-offset);
+}

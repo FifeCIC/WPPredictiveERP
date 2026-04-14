@@ -1,0 +1,247 @@
+/**
+ * Roadmap component styles.
+ *
+ * Ported from WPVerifier's wp-verifier-tabs.css roadmap section.
+ * All class prefixes use evolvewp-predictiveerp- for plugin-agnostic reuse.
+ *
+ * @package EvolveWP PredictiveERP
+ * @since   3.0.0
+ */
+
+/* Status grid */
+.evolvewp-predictiveerp-roadmap-status-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 12px;
+    margin-bottom: 24px;
+}
+
+.evolvewp-predictiveerp-roadmap-status-card {
+    background: #fff;
+    border: 1px solid #c3c4c7;
+    border-radius: 4px;
+    padding: 16px;
+    text-align: center;
+    border-top: 3px solid #c3c4c7;
+}
+
+.evolvewp-predictiveerp-roadmap-status-card h3 {
+    margin: 0 0 4px;
+    font-size: 13px;
+    color: #646970;
+}
+
+.evolvewp-predictiveerp-status-title {
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.evolvewp-predictiveerp-status-badge {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.evolvewp-predictiveerp-status-completed { border-top-color: #00a32a; }
+.evolvewp-predictiveerp-status-active    { border-top-color: #2271b1; }
+.evolvewp-predictiveerp-status-pending   { border-top-color: #dba617; }
+
+/* Phase accordion */
+.evolvewp-predictiveerp-roadmap-phase {
+    background: #fff;
+    border: 1px solid #c3c4c7;
+    border-radius: 4px;
+    margin-bottom: 12px;
+}
+
+.evolvewp-predictiveerp-roadmap-phase-active {
+    border-color: #2271b1;
+    border-width: 2px;
+}
+
+.evolvewp-predictiveerp-roadmap-phase-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 18px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.evolvewp-predictiveerp-roadmap-phase-header:hover {
+    background: #f6f7f7;
+}
+
+.evolvewp-predictiveerp-roadmap-phase-header h2 {
+    margin: 0;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.evolvewp-predictiveerp-roadmap-phase-toggle {
+    font-size: 14px;
+    color: #646970;
+}
+
+.evolvewp-predictiveerp-roadmap-phase-content {
+    padding: 0 18px 18px;
+}
+
+/* Objective block */
+.evolvewp-predictiveerp-roadmap-objective {
+    background: #f0f6fc;
+    border-left: 4px solid #2271b1;
+    padding: 12px 16px;
+    margin-bottom: 18px;
+    border-radius: 0 4px 4px 0;
+}
+
+/* Section header with priority badge */
+.evolvewp-predictiveerp-roadmap-section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.evolvewp-predictiveerp-roadmap-section-header h3 {
+    margin: 0;
+}
+
+.evolvewp-predictiveerp-priority-badge {
+    font-size: 11px;
+    font-weight: 700;
+    padding: 3px 10px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.evolvewp-predictiveerp-priority-high   { background: #fcf0f1; color: #d63638; }
+.evolvewp-predictiveerp-priority-medium { background: #fef8ee; color: #dba617; }
+.evolvewp-predictiveerp-priority-low    { background: #edf5e6; color: #00a32a; }
+
+/* Two-column task/architecture grid */
+.evolvewp-predictiveerp-roadmap-tasks-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+@media (max-width: 960px) {
+    .evolvewp-predictiveerp-roadmap-tasks-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.evolvewp-predictiveerp-roadmap-tasks-column h4,
+.evolvewp-predictiveerp-roadmap-architecture-column h4 {
+    margin: 0 0 10px;
+    font-size: 13px;
+    color: #1d2327;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 6px;
+}
+
+/* Task checkboxes */
+.evolvewp-predictiveerp-roadmap-task {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    padding: 6px 10px;
+    border-radius: 3px;
+    transition: transform 0.15s, border-color 0.15s;
+    border: 1px solid transparent;
+}
+
+.evolvewp-predictiveerp-roadmap-task:hover {
+    background: #f6f7f7;
+    transform: translateX(3px);
+    border-color: #2271b1;
+}
+
+.evolvewp-predictiveerp-roadmap-task label {
+    font-size: 13px;
+    line-height: 1.5;
+    cursor: pointer;
+}
+
+.evolvewp-predictiveerp-task-checkbox {
+    margin-top: 3px;
+    flex-shrink: 0;
+}
+
+/* Architecture column items */
+.evolvewp-predictiveerp-roadmap-arch-item {
+    background: #f6f7f7;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    padding: 10px 12px;
+    margin-bottom: 8px;
+    font-size: 13px;
+    transition: background 0.15s;
+}
+
+.evolvewp-predictiveerp-roadmap-arch-item:hover {
+    background: #e3f2fd;
+}
+
+.evolvewp-predictiveerp-roadmap-arch-item code {
+    font-size: 12px;
+    background: #e8e8e8;
+    padding: 1px 5px;
+    border-radius: 2px;
+}
+
+/* Progress bars */
+.evolvewp-predictiveerp-roadmap-summary {
+    background: #fff;
+    border: 1px solid #c3c4c7;
+    border-radius: 4px;
+    padding: 18px;
+    margin-top: 20px;
+}
+
+.evolvewp-predictiveerp-roadmap-summary h3 {
+    margin: 0 0 14px;
+}
+
+.evolvewp-predictiveerp-progress-item {
+    margin-bottom: 14px;
+}
+
+.evolvewp-predictiveerp-progress-item label {
+    display: block;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.evolvewp-predictiveerp-progress-bar {
+    height: 10px;
+    background: #e0e0e0;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 3px;
+}
+
+.evolvewp-predictiveerp-progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #2271b1, #46b450);
+    border-radius: 5px;
+    transition: width 0.4s ease;
+}
+
+.evolvewp-predictiveerp-progress-text {
+    font-size: 12px;
+    color: #646970;
+}
+
+/* Intro */
+.evolvewp-predictiveerp-roadmap-intro {
+    margin-bottom: 20px;
+}
+
+.evolvewp-predictiveerp-roadmap-intro p {
+    color: #646970;
+}

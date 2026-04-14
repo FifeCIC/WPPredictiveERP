@@ -1,0 +1,221 @@
+/**
+ * evolvewp-predictiveerp - Tasks Page Styles
+ * 
+ * Page-specific styles for the tasks management page.
+ * Only includes styles that are specific to the tasks page layout
+ * and don't belong in the reusable components.
+ * 
+ * @package evolvewp-predictiveerp/CSS/Pages
+ * @since 1.0.0
+ */
+
+/* Task Page Layout */
+.evolvewp-predictiveerp-tasks-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: var(--evolvewp-predictiveerp-spacing-lg) 0 !important;
+}
+
+.evolvewp-predictiveerp-tasks-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--evolvewp-predictiveerp-spacing-xl);
+    padding-bottom: var(--evolvewp-predictiveerp-spacing-md);
+    border-bottom: var(--evolvewp-predictiveerp-border-standard);
+}
+
+.evolvewp-predictiveerp-tasks-title {
+    margin: 0;
+    font-size: 23px;
+    font-weight: 400;
+}
+
+.evolvewp-predictiveerp-tasks-actions {
+    display: flex;
+    gap: var(--evolvewp-predictiveerp-spacing-md);
+}
+
+/* Task Table Column Widths */
+.evolvewp-predictiveerp-tasks-table .column-status {
+    width: 40px !important;
+    text-align: center !important;
+}
+
+.evolvewp-predictiveerp-tasks-table .column-title {
+    width: 35% !important;
+}
+
+.evolvewp-predictiveerp-tasks-table .column-source {
+    width: 15% !important;
+}
+
+.evolvewp-predictiveerp-tasks-table .column-phase {
+    width: 15% !important;
+}
+
+.evolvewp-predictiveerp-tasks-table .column-priority {
+    width: 15% !important;
+}
+
+.evolvewp-predictiveerp-tasks-table .column-actions {
+    width: 20% !important;
+}
+
+/* Task Detail Layout */
+.evolvewp-predictiveerp-task-detail {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: var(--evolvewp-predictiveerp-spacing-xl);
+}
+
+.evolvewp-predictiveerp-task-main {
+    background: var(--evolvewp-predictiveerp-color-white);
+    border: var(--evolvewp-predictiveerp-border-standard);
+    border-radius: var(--evolvewp-predictiveerp-border-radius);
+    padding: var(--evolvewp-predictiveerp-spacing-xl);
+}
+
+.evolvewp-predictiveerp-task-sidebar {
+    background: var(--evolvewp-predictiveerp-color-white);
+    border: var(--evolvewp-predictiveerp-border-standard);
+    border-radius: var(--evolvewp-predictiveerp-border-radius);
+    padding: var(--evolvewp-predictiveerp-spacing-xl);
+}
+
+.evolvewp-predictiveerp-task-header {
+    margin-bottom: var(--evolvewp-predictiveerp-spacing-xl);
+    padding-bottom: var(--evolvewp-predictiveerp-spacing-md);
+    border-bottom: var(--evolvewp-predictiveerp-border-standard);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.evolvewp-predictiveerp-task-title {
+    margin: 0 0 var(--evolvewp-predictiveerp-spacing-md) 0;
+    font-size: 18px;
+    font-weight: var(--evolvewp-predictiveerp-font-weight-semibold);
+    font-weight: var(--evolvewp-predictiveerp-font-weight-medium) !important;
+    display: block !important;
+    text-decoration: none !important;
+}
+
+.evolvewp-predictiveerp-task-title:hover {
+    color: #0073aa !important;
+    text-decoration: underline !important;
+}
+
+.evolvewp-predictiveerp-task-actions {
+    display: flex;
+    gap: var(--evolvewp-predictiveerp-spacing-sm);
+    flex-wrap: wrap !important;
+    gap: var(--evolvewp-predictiveerp-spacing-xs) !important;
+}
+
+.evolvewp-predictiveerp-task-actions .button {
+    font-size: 12px !important;
+    padding: 2px 8px !important;
+    height: auto !important;
+    line-height: 2 !important;
+}
+
+/* Current Task Specific */
+.evolvewp-predictiveerp-current-task {
+    background: var(--evolvewp-predictiveerp-color-white);
+    border: var(--evolvewp-predictiveerp-border-standard);
+    border-radius: var(--evolvewp-predictiveerp-border-radius);
+    padding: var(--evolvewp-predictiveerp-spacing-xl);
+    margin-bottom: var(--evolvewp-predictiveerp-spacing-xl);
+}
+
+.evolvewp-predictiveerp-current-task-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--evolvewp-predictiveerp-spacing-lg);
+    padding-bottom: var(--evolvewp-predictiveerp-spacing-md);
+    border-bottom: var(--evolvewp-predictiveerp-border-standard);
+}
+
+.evolvewp-predictiveerp-current-task-title {
+    margin: 0;
+    font-size: 18px;
+    font-weight: var(--evolvewp-predictiveerp-font-weight-semibold);
+}
+
+.evolvewp-predictiveerp-current-task-status {
+    margin-left: auto;
+}
+
+.evolvewp-predictiveerp-no-current-task {
+    text-align: center;
+    padding: var(--evolvewp-predictiveerp-spacing-xl) 0;
+    color: #666;
+}
+
+/* Recent Tasks */
+.evolvewp-predictiveerp-recent-tasks {
+    background: var(--evolvewp-predictiveerp-color-white);
+    border: var(--evolvewp-predictiveerp-border-standard);
+    border-radius: var(--evolvewp-predictiveerp-border-radius);
+    padding: var(--evolvewp-predictiveerp-spacing-xl);
+    margin-top: var(--evolvewp-predictiveerp-spacing-xl);
+}
+
+.evolvewp-predictiveerp-recent-tasks-header {
+    margin-bottom: var(--evolvewp-predictiveerp-spacing-md);
+    padding-bottom: var(--evolvewp-predictiveerp-spacing-sm);
+    border-bottom: var(--evolvewp-predictiveerp-border-standard);
+}
+
+.evolvewp-predictiveerp-recent-tasks-title {
+    margin: 0;
+    font-size: 16px;
+    font-weight: var(--evolvewp-predictiveerp-font-weight-semibold);
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 782px) {
+    .evolvewp-predictiveerp-task-detail {
+        grid-template-columns: 1fr;
+    }
+    
+    .evolvewp-predictiveerp-tasks-header,
+    .evolvewp-predictiveerp-current-task-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .evolvewp-predictiveerp-tasks-actions,
+    .evolvewp-predictiveerp-current-task-status {
+        margin-top: var(--evolvewp-predictiveerp-spacing-md);
+        margin-left: 0;
+    }
+    
+    .evolvewp-predictiveerp-filter-bar {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .evolvewp-predictiveerp-filter-search {
+        width: 100%;
+    }
+    
+    .evolvewp-predictiveerp-filter-search-input {
+        flex: 1;
+    }
+}
+
+/* Utility Classes */
+.evolvewp-predictiveerp-hidden {
+    display: none !important;
+}
+
+/* Task Detail Content */
+#task-detail-content {
+    margin-top: var(--evolvewp-predictiveerp-spacing-md) !important;
+}
+
+/* Legacy classes mapping for backward compatibility */

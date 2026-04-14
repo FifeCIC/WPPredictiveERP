@@ -1,0 +1,212 @@
+/**
+ * evolvewp-predictiveerp - Features Layout Styles
+ * 
+ * Layout for features management page.
+ * 
+ * @package evolvewp-predictiveerp/CSS/Layouts
+ * @since 1.0.0
+ */
+
+/* Features Management Header */
+.evolvewp-predictiveerp-features-header {
+    margin-bottom: var(--evolvewp-predictiveerp-spacing-xl);
+}
+
+/* Features Controls */
+.evolvewp-predictiveerp-features-controls {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: var(--evolvewp-predictiveerp-spacing-xl);
+    background: #f9f9f9;
+    padding: var(--evolvewp-predictiveerp-spacing-md);
+    border: var(--evolvewp-predictiveerp-border-standard);
+    border-radius: var(--evolvewp-predictiveerp-border-radius);
+}
+
+/* Feature Page Sections */
+.evolvewp-predictiveerp-feature-page-section {
+    margin-bottom: var(--evolvewp-predictiveerp-spacing-xl);
+    border: var(--evolvewp-predictiveerp-border-standard);
+    border-radius: var(--evolvewp-predictiveerp-border-radius);
+    background: var(--evolvewp-predictiveerp-color-white);
+    box-shadow: var(--evolvewp-predictiveerp-shadow);
+    transition: box-shadow 0.3s ease;
+}
+
+.evolvewp-predictiveerp-feature-page-section:hover {
+    box-shadow: 0 2px 5px rgba(0,0,0,.08);
+}
+
+.evolvewp-predictiveerp-feature-page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--evolvewp-predictiveerp-spacing-md) var(--evolvewp-predictiveerp-spacing-lg);
+    background: #f7fcf7;
+    border-left: 3px solid #46b450;
+    border-bottom: var(--evolvewp-predictiveerp-border-standard);
+    cursor: pointer;
+}
+
+.evolvewp-predictiveerp-feature-page-header h3 {
+    margin: 0;
+}
+
+.evolvewp-predictiveerp-feature-page-header h3 a {
+    text-decoration: none;
+    color: #2c7636;
+}
+
+.evolvewp-predictiveerp-feature-page-header h3 .dashicons {
+    font-size: 16px;
+    vertical-align: text-bottom;
+}
+
+.evolvewp-predictiveerp-feature-page-header .toggle-section {
+    color: #46b450;
+}
+
+.evolvewp-predictiveerp-feature-page-content {
+    padding: var(--evolvewp-predictiveerp-spacing-lg);
+    display: none; /* Initially hidden */
+}
+
+/* Feature Tables */
+.evolvewp-predictiveerp-feature-table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.evolvewp-predictiveerp-feature-table th {
+    text-align: left;
+    padding: var(--evolvewp-predictiveerp-spacing-md);
+    border-bottom: 2px solid #ddd;
+}
+
+.evolvewp-predictiveerp-feature-table td {
+    padding: var(--evolvewp-predictiveerp-spacing-md);
+    border-bottom: 1px solid #eee;
+}
+
+.evolvewp-predictiveerp-feature-table tr:hover {
+    background-color: #f7fcfe;
+}
+
+.evolvewp-predictiveerp-tab-cell {
+    background-color: #f7f7f7;
+    border-right: 1px solid #eee;
+    vertical-align: top;
+}
+
+.evolvewp-predictiveerp-tab-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.evolvewp-predictiveerp-tab-content a {
+    text-decoration: none;
+    font-weight: var(--evolvewp-predictiveerp-font-weight-semibold);
+    color: #23282d;
+}
+
+.evolvewp-predictiveerp-feature-mode select {
+    width: 100px;
+}
+
+/* Feature Summary */
+.evolvewp-predictiveerp-feature-summary {
+    margin: var(--evolvewp-predictiveerp-spacing-xl) 0;
+}
+
+.evolvewp-predictiveerp-summary-box {
+    background: var(--evolvewp-predictiveerp-color-white);
+    border: var(--evolvewp-predictiveerp-border-standard);
+    border-radius: var(--evolvewp-predictiveerp-border-radius);
+    padding: var(--evolvewp-predictiveerp-spacing-lg);
+}
+
+.evolvewp-predictiveerp-summary-box h4 {
+    margin-top: 0;
+    border-bottom: 1px solid #eee;
+    padding-bottom: var(--evolvewp-predictiveerp-spacing-md);
+}
+
+/* Feature Navigation */
+.evolvewp-predictiveerp-feature-navigation {
+    position: sticky;
+    top: 32px;
+    background: var(--evolvewp-predictiveerp-color-white);
+    border-bottom: var(--evolvewp-predictiveerp-border-standard);
+    padding: var(--evolvewp-predictiveerp-spacing-md) 0;
+    z-index: 100;
+    margin-bottom: var(--evolvewp-predictiveerp-spacing-lg);
+}
+
+.evolvewp-predictiveerp-feature-sections-nav {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding-bottom: 5px;
+}
+
+.evolvewp-predictiveerp-feature-nav-item {
+    display: inline-block;
+    padding: 5px 12px;
+    margin-right: 5px;
+    border-radius: var(--evolvewp-predictiveerp-border-radius);
+    text-decoration: none;
+    color: #646970;
+    background: #f0f0f1;
+}
+
+.evolvewp-predictiveerp-feature-nav-item:hover,
+.evolvewp-predictiveerp-feature-nav-item.active {
+    background: #2271b1;
+    color: var(--evolvewp-predictiveerp-color-white);
+}
+
+/* Feature row states */
+.evolvewp-predictiveerp-feature-row.disabled {
+    opacity: 0.6;
+}
+
+/* Tab header */
+.evolvewp-predictiveerp-tab-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: var(--evolvewp-predictiveerp-spacing-xl);
+    border-bottom: 1px solid #eee;
+    padding-bottom: var(--evolvewp-predictiveerp-spacing-md);
+}
+
+.evolvewp-predictiveerp-tab-header h2 {
+    margin: 0;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 782px) {
+    .evolvewp-predictiveerp-stats-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .evolvewp-predictiveerp-tab-cell {
+        display: block;
+        width: 100%;
+        text-align: center;
+        border-right: none;
+        border-bottom: 1px solid #eee;
+    }
+    
+    .evolvewp-predictiveerp-tab-content {
+        flex-direction: column;
+        gap: var(--evolvewp-predictiveerp-spacing-md);
+    }
+}
+
+/* Features Container */
+.evolvewp-predictiveerp-features-container {
+    margin-top: var(--evolvewp-predictiveerp-spacing-xl);
+}
+
+/* Legacy classes mapping for backward compatibility */

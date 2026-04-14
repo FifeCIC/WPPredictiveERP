@@ -1,0 +1,76 @@
+/**
+ * evolvewp-predictiveerp - WordPress Admin Dashboard Styles: evolvewp-predictiveerp/wp-admin/index.php
+ * 
+ * @package evolvewp-predictiveerp/CSS/Pages
+ * @since 1.0.0
+ */
+
+/* Recent Symbols Widget Styles */
+.evolvewp-predictiveerp-recent-symbols-widget {
+    margin: -12px;
+}
+
+.evolvewp-predictiveerp-recent-symbol-item {
+    display: flex;
+    padding: 12px;
+    border-bottom: 1px solid #eee;
+    align-items: center;
+}
+
+.evolvewp-predictiveerp-recent-symbol-item:last-child {
+    border-bottom: none;
+}
+
+.evolvewp-predictiveerp-symbol-icon {
+    margin-right: 12px;
+}
+
+.evolvewp-predictiveerp-symbol-icon img {
+    border-radius: 4px;
+    background: #f0f0f0;
+}
+
+.evolvewp-predictiveerp-symbol-info {
+    flex: 1;
+}
+
+.evolvewp-predictiveerp-symbol-name {
+    margin: 0 0 2px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.evolvewp-predictiveerp-company-name {
+    margin: 0;
+    color: #666;
+    font-size: 12px;
+}
+
+.evolvewp-predictiveerp-symbol-price {
+    text-align: right;
+}
+
+.evolvewp-predictiveerp-price-value {
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.evolvewp-predictiveerp-price-change {
+    font-size: 12px;
+}
+
+.evolvewp-predictiveerp-price-change.positive {
+    color: #0c833f;
+}
+
+.evolvewp-predictiveerp-price-change.negative {
+    color: #dc3232;
+}
+
+.evolvewp-predictiveerp-widget-footer {
+    padding: 8px 12px;
+    background: #f8f8f8;
+    border-top: 1px solid #eee;
+    text-align: right;
+}
+
